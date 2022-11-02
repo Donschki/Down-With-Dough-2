@@ -1,0 +1,82 @@
+* {
+    // border: solid 1px black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs {
+    background: $blue;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.title {
+    padding-top: 6em ;
+}
+
+.box {
+    gap: 2em;
+}
+
+form {
+    margin: auto;
+    width: 98%;
+}
+
+.contactForm {
+    padding: 1em;
+    margin: auto;
+}
+
+.inputBox {
+     padding: 1em;
+     display: flex;  
+     flex-direction: column;
+}
+
+input {
+    background:#202a4579;
+    border-style: none;
+    color: white;
+    padding: 1em;
+}
+
+textarea {
+    background:#202a4579;
+    border-style: none;
+    padding: 1em;
+    width: 100%;
+    height: 10em;
+    color: white;
+}
+
+span {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.contactMap {
+    width: 100%;
+}
+
+#addressP {
+    font-size: 0.8em;
+}
+
+@media screen and (min-width:800px){
+
+    .contactForm {
+        width: 50em;
+    }
+}

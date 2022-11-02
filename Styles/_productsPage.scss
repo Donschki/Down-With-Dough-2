@@ -1,0 +1,210 @@
+#logo {
+    width: 6em;
+    height: 6em;
+}
+
+.navListExtended {
+    display: flex;
+    align-items: center;
+    display: none;
+    padding: 1em;
+}
+
+.extended-nav-item {
+    list-style: none;
+}
+
+
+/* ------------------------------------ Bakery Section ------------------------------ */
+
+.bakery-section {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #202a45;
+    padding-top: 3em;
+    gap: 3em;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.bakery-section::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------------ HEADINGS ------------------------------ */
+
+.main-heading {
+    @include flexCenter;
+    font-size: 6vw;
+    margin: auto;
+    padding-top: 2em;
+    color: $maize;
+    background-color: $blue;
+    text-align: center;
+    text-transform: uppercase;
+    @media screen and(min-width: 760px) {
+        h1 {
+            font-size: 8vw;
+            width: 8em;
+        }
+    }
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+.sub-heading {
+    justify-content: center;
+    padding: 5px;
+    margin: auto;
+    color: #fcd059;
+    text-align: center;
+    font-size: 0.6em;
+    border-top: solid 1px #fcd059;
+    border-bottom: solid 1px #fcd059;
+    background-color: #202a45da;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.containers {
+    text-align: center;
+    width: 100%;
+}
+
+.info {
+    display: grid;
+}
+
+.dogTreatsHeading {
+    margin: auto;
+    width: 15em;
+    text-align: center;
+    h1 {
+        margin: auto;
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+}
+
+h2 {
+    color: $maize;
+    text-align: center;
+    font-size: 2em;
+    width: 80%;
+    margin: auto;
+    @include flexCenter;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.3em;
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    text-align: center;
+    height: 100%;
+}
+
+.bakery-section img {
+    width: 80vw;
+    height: 20em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: -1;
+    @media screen and(min-width: 400px) {
+        width: 70vw;
+    }
+}
+
+.productInfo {
+    @include flexCenter;
+    font-size: 1em;
+}
+
+.Peanut-Butter-And-Butternut-Dog-Treats-container {
+    padding-bottom: 7em;
+}
+
+
+/*------------------------------------ Mobile Platform -----------------------------------*/
+
+@media all and (min-width: 660px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .navListExtended {
+        @include navListExtended //mixin in navbar.scss
+    }
+    .extended-nav-item {
+        list-style: none;
+    }
+    .bakery-section {
+        flex-direction: row;
+        overflow: scroll;
+        display: flex;
+        gap: 5em;
+        .containers {
+            display: flex;
+            width: 100%;
+        }
+        .reverse {
+            flex-direction: row-reverse;
+        }
+        .info {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+        }
+        h2 {
+            font-size: 7vw;
+            margin: auto;
+            letter-spacing: 6px;
+        }
+        h1 {
+            font: 5vw;
+        }
+        p {
+            font-size: 3vw;
+            letter-spacing: 6px;
+        }
+        img {
+            width: 50vw;
+            height: 100%;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 20px;
+        }
+        .Peanut-Butter-And-Butternut-Dog-Treats-container {
+            padding-bottom: 7em;
+        }
+        .dogTreatsHeading {
+            margin: auto;
+            width: 30em;
+            text-align: center;
+            h1 {
+                font-size: 5em;
+            }
+        }
+    }
+    /*------------------------------------- Desktop Platform ------------------------------------*/
+    /* 1000px */
+    @media all and (min-width: 1000px) {
+        .sub-heading {
+            height: fit-content;
+            font-size: 0.9em;
+        }}}

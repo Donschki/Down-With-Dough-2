@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./footer";
+@import "./navbar";
+@import "./hamburger";
+@import "./IndexPage";
+@import "./productsPage";
+@import "./visionPage.scss";
+@import "./slogan";
+@import "./contactForm";
+
+* {
+    padding: 0;
+    margin: 0;
+    // border: solid 1px black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fcd059;
+    background-color: #202a45be;
+    font-family: 'Abel', sans-serif;
+}

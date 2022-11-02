@@ -1,0 +1,159 @@
+/* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
+  
+.visionSection {
+    overflow: scroll;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    background-color: #202a45;
+    padding: 4em 0;
+
+    h1 {
+      font-size: 3em;
+    }
+} 
+
+.container1 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+
+  } 
+  
+   #EmmaJosh {
+    width: 100%;
+    height: 100%;
+  }
+
+.container2 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+
+  } 
+  
+   #apron {
+    width: 100%;
+    height: 100%;
+  }
+
+.container3 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+
+  } 
+  
+   #lynneRutherfoord {
+    width: 100%;
+    height: 100%;
+  }
+
+.imgContainer {
+  transform: skewX(3deg);
+}
+
+.paragraph-section::-webkit-scrollbar {
+   display: none;
+}
+
+.headingContainer { 
+   height: 1.5em;
+   text-align: center;
+   
+}
+
+.paragraphs {
+   margin: auto;
+   width: 95%;
+   text-align: left ;
+   line-height: 1.4em;
+   font-size: 0.9em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ------------------------------------- INFOR NTAINERS ----------------------------- */
+.containerInfo {
+   margin: 1em auto;
+   margin-bottom: 5em;
+   padding: 1em;
+   text-align: center;
+   width: 82%;
+   display: grid;
+   gap: 3em;
+}
+
+ /*------------------------------------ Phone & Tablet -----------------------------------*/
+       /* 768px */
+ @media all and (min-width : 48em) {
+ 
+ /*------------------------------------ Navigation Bar -----------------------------------------*/
+ 
+ .logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+ }
+ 
+ #Logo-img {   
+   height: 15.5em;
+   border-radius: 100%;   
+   z-index: 1;  
+ }
+   
+ .side-bar {
+   width: 16.3em;
+   height: 10em;  
+   padding-bottom: 25em;
+   left: -18em;
+ }
+ 
+ .change {
+   left: 0;
+ }
+ 
+ .nav-link {
+   font-size: 1.4em; 
+   letter-spacing: 10px;
+ }
+ 
+ .nav-item {
+   margin-top: 3em;
+   display: flex;
+   width: fit-content;
+ }
+ 
+ /*------------------------------------ Vision Container -----------------------------------------*/
+ .info-containers {
+ width: 80%;
+ margin-bottom: 1em;
+ }}
+  
+ /*------------------------------------ Desktop & Laptop -----------------------------------*/
+       /* 1000px */
+ @media all and (min-width : 62.5em) {
+ 
+ .paragraphs {
+   font-size: 1em;
+   height: 100%;
+   width: 80%;
+ }
+ 
+ .heading-container {
+   font-size: 1.2em;
+   height: 2em;
+ }
+ 
+ .info-containers {
+ width: 50em;
+ margin-bottom: 1em;
+ 
+ }}
+ 
