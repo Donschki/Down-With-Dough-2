@@ -8,7 +8,7 @@ $message = $_POST['message'];
 $email_from = 'info@downwithdough.co.za';
 
 
-$email_subject = "Website Form Submission";
+$email_subject = "DWD Website Form";
 
 $email_body = "User Name: $name.\n".
               "User Last Name: $lastName.\n".
