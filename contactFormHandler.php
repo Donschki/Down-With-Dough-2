@@ -5,7 +5,7 @@ $visitor_email = $_POST['email'];
 $mobile = $_POST['mobile'];
 $message = $_POST['message'];
 
-$email_from = 'hello@downwithdough.co.za';
+$email_from = 'donvonkrog@gmail.com';
 
 
 $email_subject = "Website Form Submission";
@@ -16,7 +16,7 @@ $email_body = "User Name: $name.\n".
               "User Mobile: $mobile.\n".
               "User Message: $message.\n";
 
-                  $to "hello@downwithdough.co.za'"
+                  $to "donvonkrog@gmail.com'"
 
                   $headers = "From: $email_from\r\n";
 
