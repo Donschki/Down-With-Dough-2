@@ -14,10 +14,9 @@
     list-style: none;
 }
 
-
 /* ------------------------------------ Bakery Section ------------------------------ */
 
-.bakery-section {
+.bakerySection {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +30,7 @@
     /* Firefox */
 }
 
-.bakery-section::-webkit-scrollbar {
+.bakerySection::-webkit-scrollbar {
     display: none;
 }
 
@@ -78,6 +77,7 @@ hr {
 .containers {
     text-align: center;
     width: 100%;
+    padding: 2em;
 }
 
 .info {
@@ -98,11 +98,10 @@ hr {
 h2 {
     color: $maize;
     text-align: center;
-    font-size: 2em;
-    width: 80%;
     margin: auto;
     @include flexCenter;
     text-transform: uppercase;
+    font-size: 9vw;
 }
 
 p {
@@ -121,7 +120,7 @@ a {
     height: 100%;
 }
 
-.bakery-section img {
+.bakerySection img {
     width: 80vw;
     height: 20em;
     border-top-left-radius: 20px;
@@ -154,7 +153,7 @@ a {
     .extended-nav-item {
         list-style: none;
     }
-    .bakery-section {
+    .bakerySection {
         flex-direction: row;
         overflow: scroll;
         display: flex;
@@ -170,11 +169,14 @@ a {
             flex-direction: column;
             display: flex;
             justify-content: center;
+            padding: 1em;
         }
         h2 {
             font-size: 7vw;
             margin: auto;
             letter-spacing: 6px;
+    width: 100%;
+
         }
         h1 {
             font: 5vw;
@@ -182,6 +184,8 @@ a {
         p {
             font-size: 3vw;
             letter-spacing: 6px;
+    width: 100%;
+
         }
         img {
             width: 50vw;
@@ -201,10 +205,28 @@ a {
             }
         }
     }
+}
+
+@media all and (min-width: 1000px) {
+    .bakerySection h2 {
+        font-size: 5vw;
+    }
+
+    
+     p {
+        font-size: 2.5vw;
+    }
+
+
+}
     /*------------------------------------- Desktop Platform ------------------------------------*/
-    /* 1000px */
-    @media all and (min-width: 1000px) {
+@media all and (min-width: 1200px) {
+
+    .main-heading {
+        font-size: 2vw;
+    }
         .sub-heading {
             height: fit-content;
             font-size: 0.9em;
-        }}}
+        }
+}
