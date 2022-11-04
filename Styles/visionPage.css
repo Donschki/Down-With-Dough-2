@@ -1,12 +1,16 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
-.visionSection {
+main .visionSection {
   overflow: scroll;
-  height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #202a45;
   padding: 4em 0;
   display: flex;
+  flex-direction: column;
+}
+main .visionSection .visionContainers {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 h1 {
@@ -15,10 +19,6 @@ h1 {
 
 .imgContainer {
   transform: skewX(3deg);
-}
-
-#EmmaJosh {
-  width: 10%;
 }
 
 .paragraph-section::-webkit-scrollbar {
@@ -86,10 +86,6 @@ h1 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-  .visionSection {
-    display: flex;
-    flex-direction: row;
   }
   /*------------------------------------ Vision Container -----------------------------------------*/
   .infoContainers {

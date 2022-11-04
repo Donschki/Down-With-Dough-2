@@ -591,52 +591,22 @@ a {
   }
 }
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
-.visionSection {
-  overflow: scroll;
-  height: 100vh;
+main .visionSection {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #202a45;
   padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
 }
-.visionSection h1 {
+main .visionSection .visionContainers {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+h1 {
   font-size: 3em;
-}
-
-.container1 {
-  width: 90vw;
-  display: flex;
-  flex-direction: column-reverse;
-  margin: auto;
-}
-
-#EmmaJosh {
-  width: 100%;
-  height: 100%;
-}
-
-.container2 {
-  width: 90vw;
-  display: flex;
-  flex-direction: column-reverse;
-  margin: auto;
-}
-
-#apron {
-  width: 100%;
-  height: 100%;
-}
-
-.container3 {
-  width: 90vw;
-  display: flex;
-  flex-direction: column-reverse;
-  margin: auto;
-}
-
-#lynneRutherfoord {
-  width: 100%;
-  height: 100%;
 }
 
 .imgContainer {
@@ -676,8 +646,7 @@ a {
 }
 
 /*------------------------------------ Phone & Tablet -----------------------------------*/
-/* 768px */
-@media all and (min-width: 48em) {
+@media all and (min-width: 768px) {
   /*------------------------------------ Navigation Bar -----------------------------------------*/
   .logo-container {
     display: flex;
@@ -711,14 +680,13 @@ a {
     width: fit-content;
   }
   /*------------------------------------ Vision Container -----------------------------------------*/
-  .info-containers {
+  .infoContainers {
     width: 80%;
     margin-bottom: 1em;
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
-/* 1000px */
-@media all and (min-width: 62.5em) {
+@media all and (min-width: 1000px) {
   .paragraphs {
     font-size: 1em;
     height: 100%;
@@ -847,6 +815,7 @@ span {
 * {
   padding: 0;
   margin: 0;
+  border: solid 1px black;
 }
 
 html {
