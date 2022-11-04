@@ -1,9 +1,10 @@
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  header {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
+header {
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
+
 /* ----------------------------- Navigation ----------------------------------- */
 nav {
   z-index: 100;
@@ -351,7 +352,6 @@ p {
   display: flex;
   align-items: center;
   display: none;
-  padding: 1em;
 }
 
 .extended-nav-item {
@@ -384,14 +384,13 @@ p {
   align-items: center;
   font-size: 6vw;
   margin: auto;
-  padding-top: 2em;
   color: #fcd059;
   background-color: rgba(32, 42, 69, 0.8549019608);
   text-align: center;
   text-transform: uppercase;
 }
 @media screen and (min-width: 760px) {
-  .mainHeading mainHeading {
+  .mainHeading .mainHeading {
     font-size: 8vw;
     width: 8em;
   }
@@ -532,7 +531,6 @@ a {
   }
   .bakerySection .mainHeading {
     font-size: 5vw;
-    padding-top: 3em;
   }
   .bakerySection .productParagraph {
     font-size: 3vw;
@@ -560,7 +558,6 @@ a {
 @media all and (min-width: 1000px) {
   .bakerySection .mainHeading {
     font-size: 5vw;
-    padding-top: 2em;
   }
   .bakerySection .productParagraph {
     font-size: 2vw;
@@ -682,6 +679,9 @@ main {
 @media all and (min-width: 660px) {
   .visionHeadings {
     font-size: 10vw;
+  }
+  hr {
+    width: 80%;
   }
   .containerInfo {
     display: flex;

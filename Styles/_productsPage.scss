@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     display: none;
-    padding: 1em;
 }
 
 .extended-nav-item {
@@ -40,13 +39,12 @@
     @include flexCenter;
     font-size: 6vw;
     margin: auto;
-    padding-top: 2em;
     color: $maize;
     background-color: $blue;
     text-align: center;
     text-transform: uppercase;
     @media screen and(min-width: 760px) {
-        mainHeading {
+        .mainHeading {
             font-size: 8vw;
             width: 8em;
         }
@@ -180,7 +178,6 @@ a {
         }
         .mainHeading {
             font-size: 5vw;
-            padding-top: 3em;
         }
         .productParagraph {
             font-size: 3vw;
@@ -215,7 +212,6 @@ a {
     
         .mainHeading {
             font-size: 5vw;
-            padding-top: 2em;
         }
 
      .productParagraph {
