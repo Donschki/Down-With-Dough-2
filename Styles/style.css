@@ -373,10 +373,6 @@ p {
   /* Firefox */
 }
 
-.bakerySection::-webkit-scrollbar {
-  display: none;
-}
-
 /* ------------------------------------ HEADINGS ------------------------------ */
 .mainHeading {
   display: flex;
@@ -591,6 +587,14 @@ a {
 main {
   height: 100vh;
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 .visionSection {

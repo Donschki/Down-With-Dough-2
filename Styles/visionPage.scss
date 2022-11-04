@@ -2,11 +2,20 @@
   main {
     height: 100vh;
     overflow: scroll;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
   }
+  
+  main::-webkit-scrollbar {
+    display: none;
+}
 
 .visionSection {
     overflow: scroll;
     overflow-x: hidden;
+    
 
     -ms-overflow-style: none;
     scrollbar-width: none; 
@@ -16,6 +25,7 @@
     justify-content: space-around;
     gap: 3em;
 }
+
 
 .visionContainers {
       display: flex;
