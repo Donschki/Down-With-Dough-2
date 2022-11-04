@@ -1,95 +1,95 @@
-        /* ----------------------------- Navigation ----------------------------------- */
-        
-        nav {
-            z-index: 10;
-            width: 100%;
-        }
-        
-        @mixin navListExtended {
-            width: 100vw;
-            flex-direction: row;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .side-bar {
-            width: 11.5em;
-            height: 12em;
-            background-color: #202a45da;
-            border-right: solid thin #fcd059;
-            position: fixed;
-            top: 0;
-            left: -18em;
-            display: flex;
-            flex-direction: column;
-            border-radius: 0 20% 60% 0%;
-            transition: left 0.5s cubic-bezier(1, 1, 1, 1);
-            padding-bottom: 13em;
-            z-index: 1000;
-        }
-        
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 3.5em;
-            margin-bottom: 1em;
-            z-index: 1;
-        }
-        
-        #Logo-img {
-            border-radius: 50%;
-            height: 10.8em;
-            border: solid 3px white;
-        }
-        
-        .nav-list {
-            display: flex;
-            flex-direction: column;
-            padding: 5px;
-            position: relative;
-            top: -2em;
-        }
-        
-        .nav-item {
-            list-style: none;
-            text-align: left;
-            margin-top: 2em;
-        }
-        
-        .nav-link {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font-size: 1.1em;
-            font-weight: 300;
-            position: relative;
-        }
-        
-        .nav-link::before,
-        .nav-link::after {
-            content: "";
-            width: 100%;
-            height: 2px;
-            position: absolute;
-            background-color: #fcd059;
-            left: 0;
-            transform: scaleX(0);
-            transition: transform 0.25s;
-            margin: -5px 0px;
-        }
-        
-        .nav-link::after {
-            bottom: 0;
-            transform-origin: right;
-        }
-        
-        .nav-link::before {
-            top: 0;
-            transform-origin: left;
-        }
-        
-        .nav-link:hover::before,
-        .nav-link:hover::after {
-            transform: scaleX(1);
-        }
+/* ----------------------------- Navigation ----------------------------------- */
+
+nav {
+    z-index: 100;
+    width: 100%;
+}
+
+@mixin navListExtended {
+    width: 100vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.side-bar {
+    width: 11.5em;
+    height: 12em;
+    background-color: #202a45da;
+    border-right: solid thin #fcd059;
+    position: fixed;
+    top: 0;
+    left: -18em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 20% 60% 0%;
+    transition: left 0.5s cubic-bezier(1, 1, 1, 1);
+    padding-bottom: 13em;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5em;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+#Logo-img {
+    border-radius: 50%;
+    height: 10.8em;
+    border: solid 3px white;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+    top: -2em;
+}
+
+.nav-item {
+    list-style: none;
+    text-align: left;
+    margin-top: 2em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 300;
+    position: relative;
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #fcd059;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+    margin: -5px 0px;
+}
+
+.nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}

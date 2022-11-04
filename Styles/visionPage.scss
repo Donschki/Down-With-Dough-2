@@ -1,63 +1,118 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
   main {
+    height: 100vh;
+    overflow: scroll;
+  }
+
 .visionSection {
     overflow: scroll;
+    overflow-x: hidden;
+
     -ms-overflow-style: none;
     scrollbar-width: none; 
     background-color: #202a45;
-    padding: 4em 0;
-    display: flex;
+    display: grid;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+}
 
-    .visionContainers {
+.visionContainers {
       display: flex;
       flex-direction: column-reverse;
-    }
-}}
+      justify-content: center;
+      margin: 2em 0;
+      height: 100%;
+      gap: 1em;
+}
 
+.containerInfo {
+  display: grid;
+  gap: 2em;
+}
 
-h1 {
-  font-size: 3em;
+.visionHeadings {
+  font-size: 13vw;
+  margin: auto;
+  width: 100%;
+}
+
+.paragraphs {
+  text-align: center ;
+  line-height: 2;
+  letter-spacing: 3px;
+  font-size: 6vw;
+  text-transform: uppercase;
+
+  display: grid;
+  align-items: center;
+  
 }
 
 .imgContainer {
-  transform: skewX(3deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
+.visionImages{
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+
+}
+
 
 .paragraph-section::-webkit-scrollbar {
    display: none;
 }
 
 .headingContainer { 
-   height: 1.5em;
    text-align: center;
    
 }
 
-.paragraphs {
-   margin: auto;
-   width: 95%;
-   text-align: left ;
-   line-height: 1.4em;
-   font-size: 0.9em;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.CEO {
+  text-align: center;
+  font-size: 10vw;
+  color: $maize;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
-.containerInfo {
-   margin: 1em auto;
-   margin-bottom: 5em;
-   padding: 1em;
-   text-align: center;
-   width: 82%;
-   display: grid;
-   gap: 3em;
-}
+
 
  /*------------------------------------ Phone & Tablet -----------------------------------*/
+ 
+ @media all and (min-width : 400px) {
+  .visionHeadings {
+    font-size: 3em;
+    width: 100%;
+  }
+
+  .paragraphs {
+    padding: 0 1em;
+    font-size: 1em;
+  }
+
+  hr {
+    width: 20em;
+  }
+ }
+
+ @media all and (min-width : 660px) {
+
+  .visionHeadings {
+    font-size: 10vw;
+  }
+
+  .containerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+ }
+
  @media all and (min-width : 768px) {
  
  /*------------------------------------ Navigation Bar -----------------------------------------*/
@@ -96,31 +151,71 @@ h1 {
    display: flex;
    width: fit-content;
  }
- 
-
  /*------------------------------------ Vision Container -----------------------------------------*/
+
  .infoContainers {
- width: 80%;
- margin-bottom: 1em;
+  width: 80%;
+  margin-bottom: 1em;
  }}
-  
+ 
  /*------------------------------------ Desktop & Laptop -----------------------------------*/
  @media all and (min-width : 1000px) {
- 
- .paragraphs {
-   font-size: 1em;
-   height: 100%;
-   width: 80%;
+
+  .visionSection {
+    padding-top: 8em;
+  }
+
+ .visionContainers {
+  flex-direction: row;
+  margin: 0;
+ }
+
+ .visionContainers:nth-child(1){
+
+   img {
+    width: 100%;
+    height: 100%;
+   }
+ }
+
+ .visionContainers:nth-child(2) {
+  flex-direction: row-reverse;
+ }
+
+ .visionContainers:nth-child(3) {
+  flex-direction: column-reverse;
+  width: 100%;
+
+ }
+
+ .imgContainer {
+  width: 100%;
+ }
+
+ .imgContainer:nth-child(1) {
+    transform: skewX(3deg);
  }
  
+ .containerInfo {
+   transform: skewX(3deg);
+   width: 50%;
+   height: 100%;
+
+ }
+
+ .containerInfo:nth-child(2) {
+  width: 100%;
+ }
+
  .heading-container {
    font-size: 1.2em;
-   height: 2em;
+ }
+
+ .paragraphs {
+  font-size: 1em;
+ }
  }
  
- .info-containers {
- width: 50em;
- margin-bottom: 1em;
- 
- }}
- 
+ @media all and (min-width : 1200px) {
+  
+ }

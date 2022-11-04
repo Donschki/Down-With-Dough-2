@@ -1,5 +1,10 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
-main .visionSection {
+main {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.visionSection {
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -7,18 +12,42 @@ main .visionSection {
   padding: 4em 0;
   display: flex;
   flex-direction: column;
-}
-main .visionSection .visionContainers {
-  display: flex;
-  flex-direction: column-reverse;
+  justify-content: space-evenly;
 }
 
-h1 {
-  font-size: 3em;
+.visionContainers {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 4em;
+}
+
+.containerInfo {
+  margin: 1em auto;
+  width: 95%;
+  display: grid;
+  gap: 3em;
+}
+
+.visionHeadings {
+  font-size: 13vw;
+  margin: auto;
+  width: 100%;
+}
+
+.paragraphs {
+  margin: auto;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 3px;
+  font-size: 6vw;
+  text-transform: uppercase;
 }
 
 .imgContainer {
   transform: skewX(3deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .paragraph-section::-webkit-scrollbar {
@@ -30,30 +59,31 @@ h1 {
   text-align: center;
 }
 
-.paragraphs {
-  margin: auto;
-  width: 95%;
-  text-align: left;
-  line-height: 1.4em;
-  font-size: 0.9em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.CEO {
+  text-align: center;
+  font-size: 10vw;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
-.containerInfo {
-  margin: 1em auto;
-  margin-bottom: 5em;
-  padding: 1em;
-  text-align: center;
-  width: 82%;
-  display: grid;
-  gap: 3em;
-}
-
 /*------------------------------------ Phone & Tablet -----------------------------------*/
+@media all and (min-width: 400px) {
+  .visionHeadings {
+    font-size: 3em;
+    width: 100%;
+  }
+  .paragraphs {
+    padding: 0;
+    font-size: 1em;
+  }
+  hr {
+    width: 20em;
+  }
+}
+@media all and (min-width: 600px) {
+  .visionSection {
+    padding-top: 7em;
+  }
+}
 @media all and (min-width: 768px) {
   /*------------------------------------ Navigation Bar -----------------------------------------*/
   .logo-container {
@@ -96,7 +126,6 @@ h1 {
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
 @media all and (min-width: 1000px) {
   .paragraphs {
-    font-size: 1em;
     height: 100%;
     width: 80%;
   }

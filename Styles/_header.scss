@@ -1,6 +1,9 @@
 
-header {
-    top: 0;
-    left: 0;
-    position: absolute;
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    header {
+        -webkit-backdrop-filter: blur(10px);
+        
+        backdrop-filter: blur(10px);
+    }
 }

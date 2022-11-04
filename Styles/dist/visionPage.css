@@ -1,42 +1,25 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
+main {
+  height: 100vh;
+  overflow: scroll;
+}
+
 .visionSection {
   overflow: scroll;
-  height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #202a45;
   padding: 4em 0;
+  display: flex;
+  flex-direction: column;
 }
-.visionSection h1 {
-  font-size: 10em;
-}
-
-.container1 {
-  width: 90vw;
+.visionSection .visionContainers {
   display: flex;
   flex-direction: column-reverse;
-  padding: 1em;
-  gap: 1em;
-  margin: auto;
 }
 
-#EmmaJosh {
-  width: 100%;
-  height: 100%;
-}
-
-.container2 {
-  width: 90vw;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 1em;
-  gap: 1em;
-  margin: auto;
-}
-
-#apron {
-  width: 100%;
-  height: 100%;
+h1 {
+  font-size: 3em;
 }
 
 .imgContainer {
@@ -49,6 +32,7 @@
 
 .headingContainer {
   height: 1.5em;
+  text-align: center;
 }
 
 .paragraphs {
@@ -64,29 +48,18 @@
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
-.info-containers {
+.containerInfo {
   margin: 1em auto;
   margin-bottom: 5em;
   padding: 1em;
   text-align: center;
   width: 82%;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1em;
-  border-top: solid 3.5px #fcd059;
-  border-bottom: solid 3.5px #fcd059;
-  backdrop-filter: 0px 20px #ffffff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-radius: 30px;
-  background-color: #202a4560;
+  gap: 3em;
 }
 
 /*------------------------------------ Phone & Tablet -----------------------------------*/
-/* 768px */
-@media all and (min-width: 48em) {
+@media all and (min-width: 768px) {
   /*------------------------------------ Navigation Bar -----------------------------------------*/
   .logo-container {
     display: flex;
@@ -124,14 +97,13 @@
   }
 
   /*------------------------------------ Vision Container -----------------------------------------*/
-  .info-containers {
+  .infoContainers {
     width: 80%;
     margin-bottom: 1em;
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
-/* 1000px */
-@media all and (min-width: 62.5em) {
+@media all and (min-width: 1000px) {
   .paragraphs {
     font-size: 1em;
     height: 100%;
