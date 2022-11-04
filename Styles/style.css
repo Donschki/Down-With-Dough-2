@@ -609,6 +609,10 @@ main::-webkit-scrollbar {
   gap: 3em;
 }
 
+.visionImages {
+  width: 100%;
+}
+
 .visionContainers {
   display: flex;
   flex-direction: column-reverse;
@@ -753,13 +757,10 @@ main::-webkit-scrollbar {
     width: 100%;
   }
   .imgContainer {
-    width: 100%;
-  }
-  .imgContainer:nth-child(1) {
-    transform: skewX(3deg);
+    width: 80%;
+    transform: skewX(5deg);
   }
   .containerInfo {
-    transform: skewX(3deg);
     width: 50%;
     height: 100%;
   }

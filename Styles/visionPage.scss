@@ -26,6 +26,9 @@
     gap: 3em;
 }
 
+.visionImages {
+  width: 100%;
+}
 
 .visionContainers {
       display: flex;
@@ -203,15 +206,12 @@
  }
 
  .imgContainer {
-  width: 100%;
- }
+  width: 80%;
+  transform: skewX(5deg);
 
- .imgContainer:nth-child(1) {
-    transform: skewX(3deg);
  }
  
  .containerInfo {
-   transform: skewX(3deg);
    width: 50%;
    height: 100%;
 
