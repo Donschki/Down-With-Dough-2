@@ -589,18 +589,11 @@ a {
   }
 }
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
-main {
-  height: 100vh;
-  overflow: scroll;
-}
-
-main:-webkit-scrollbar {
-  display: none;
-}
-
 .visionSection {
   overflow: scroll;
   overflow-x: hidden;
+  height: 100vh;
+  overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #202a45;
@@ -797,6 +790,9 @@ main:-webkit-scrollbar {
   .visionSection {
     padding-top: 7em;
   }
+  .contactForm {
+    width: 100vw;
+  }
 }
 @media all and (min-width: 1500px) {
   .visionSection {
@@ -830,10 +826,15 @@ main:-webkit-scrollbar {
   background: rgba(32, 42, 69, 0.8549019608);
   overflow: scroll;
   height: 100vh;
+  scrollbar-width: none;
+}
+
+.contactUs::-webkit-scrollbar {
+  display: none;
 }
 
 .title {
-  padding-top: 6em;
+  padding-top: 2em;
 }
 
 .box {
@@ -898,7 +899,7 @@ span {
   .contactForm {
     width: 600px;
   }
-  contactHeading {
+  .contactHeading {
     font-size: 6em;
   }
 }
@@ -908,11 +909,32 @@ span {
     flex-direction: row;
   }
   .contactForm {
-    width: 100%;
+    width: 50%;
     margin: 0;
+    flex-direction: row;
+    display: flex;
+    padding: 0;
+  }
+  .nameSurnameBox {
+    display: flex;
+  }
+  .emailMobileBox {
+    display: flex;
+  }
+  .inputBox {
+    width: 100%;
   }
   .contactInfo {
-    width: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .infoBox {
+    height: 100%;
+    width: 50%;
+    justify-content: start;
+    gap: 6em;
+    margin: auto;
   }
 }
 * {

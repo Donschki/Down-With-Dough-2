@@ -1,18 +1,11 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
-  main {
-    height: 100vh;
-    overflow: scroll;
-
-  }
-
-  main:-webkit-scrollbar {
-    display: none;
-    
-  }
 
 .visionSection {
     overflow: scroll;
     overflow-x: hidden;
+    height: 100vh;
+    overflow: scroll;
+
     
     -ms-overflow-style: none;
     scrollbar-width: none; 
@@ -29,14 +22,10 @@
 
 }
 
-
 .visionSection:-webkit-scrollbar {
   display: none;
   scrollbar-width: none;
-  
 }
-
-
 
 .visionContainers {
       display: flex;
@@ -257,6 +246,10 @@
  @media all and (min-width : 1280px) {
   .visionSection {
     padding-top: 7em;
+  }
+
+  .contactForm {
+    width: 100vw;
   }
  }
  
