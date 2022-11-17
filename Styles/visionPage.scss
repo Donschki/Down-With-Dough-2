@@ -12,11 +12,11 @@
     display: none;
 }
 
+
 .visionSection {
     overflow: scroll;
     overflow-x: hidden;
     
-
     -ms-overflow-style: none;
     scrollbar-width: none; 
     background-color: #202a45;
@@ -26,10 +26,6 @@
     gap: 3em;
 }
 
-.visionImages {
-  width: 100%;
-}
-
 .visionContainers {
       display: flex;
       flex-direction: column-reverse;
@@ -37,6 +33,7 @@
       margin: 2em 0;
       height: 100%;
       gap: 1em;
+
 }
 
 .containerInfo {
@@ -67,6 +64,10 @@
   align-items: center;
   justify-content: center;
 
+  .visionImages {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .paragraph-section::-webkit-scrollbar {
