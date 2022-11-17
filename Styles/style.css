@@ -1,3 +1,4 @@
+@import "./style.css";
 header {
   top: 0;
   left: 0;
@@ -373,6 +374,10 @@ p {
   /* Firefox */
 }
 
+.bakerySection::-webkit-scrollbar {
+  display: none;
+}
+
 /* ------------------------------------ HEADINGS ------------------------------ */
 .mainHeading {
   display: flex;
@@ -587,13 +592,9 @@ a {
 main {
   height: 100vh;
   overflow: scroll;
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
 }
 
-main::-webkit-scrollbar {
+main:-webkit-scrollbar {
   display: none;
 }
 
@@ -607,10 +608,15 @@ main::-webkit-scrollbar {
   flex-direction: column;
   justify-content: space-around;
   gap: 3em;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
-.visionImages {
-  width: 100%;
+.visionSection:-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
 }
 
 .visionContainers {
@@ -625,6 +631,7 @@ main::-webkit-scrollbar {
 .containerInfo {
   display: grid;
   gap: 2em;
+  justify-content: center;
 }
 
 .visionHeadings {
@@ -648,6 +655,10 @@ main::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
 }
+.imgContainer .visionImages {
+  width: 100%;
+  height: 100%;
+}
 
 .paragraph-section::-webkit-scrollbar {
   display: none;
@@ -659,8 +670,8 @@ main::-webkit-scrollbar {
 
 .CEO {
   text-align: center;
-  font-size: 10vw;
-  color: #fcd059;
+  font-size: 7vw;
+  padding: 2em;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
@@ -733,30 +744,44 @@ main::-webkit-scrollbar {
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
 @media all and (min-width: 1000px) {
   .visionSection {
-    padding-top: 8em;
+    padding-top: 5em;
+  }
+  .CEO {
+    text-align: center;
+    font-size: 4vw;
   }
   .visionContainers {
     flex-direction: row;
     margin: 0;
   }
+  .visionHeadings {
+    font-size: 8em;
+  }
+  .visionContainers:nth-child(1) {
+    transform: skewX(5deg);
+  }
   .visionContainers:nth-child(1) img {
-    width: 100%;
-    height: 100%;
+    width: 600px;
   }
   .visionContainers:nth-child(2) {
     flex-direction: row-reverse;
+    transform: skewX(-5deg);
   }
   .visionContainers:nth-child(3) {
-    flex-direction: column-reverse;
     width: 100%;
+  }
+  .visionContainers:nth-child(4) {
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 10em;
   }
   .imgContainer {
     width: 80%;
-    transform: skewX(5deg);
   }
   .containerInfo {
-    width: 50%;
     height: 100%;
+    justify-content: center;
+    padding: 1em;
   }
   .containerInfo:nth-child(2) {
     width: 100%;
@@ -766,6 +791,17 @@ main::-webkit-scrollbar {
   }
   .paragraphs {
     font-size: 1em;
+  }
+}
+@media all and (min-width: 1280px) {
+  .visionSection {
+    padding-top: 7em;
+  }
+}
+@media all and (min-width: 1500px) {
+  .visionSection {
+    width: 1280px;
+    margin: auto;
   }
 }
 /* ------------------------------------- SLOGAN ----------------------------- */
@@ -809,7 +845,7 @@ form {
   width: 98%;
 }
 
-contactHeading {
+#contactHeading {
   text-align: center;
   font-size: 14vw;
 }
