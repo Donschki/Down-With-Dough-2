@@ -23,7 +23,8 @@
 }
 
 .title {
-    padding-top: 2em ;
+    padding-top: 2em;
+    text-transform: uppercase;
 }
 
 .box {
@@ -77,6 +78,23 @@ span {
     display: inline-flex;
 }
 
+.infoBoxChild {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    a {
+        display: flex;
+        align-items: center;
+    }
+}
+
+span {
+    ion-icon {
+        font-size: 2em;
+    }
+}
+
 .contactMap {
     width: 100%;
 }
@@ -85,7 +103,7 @@ span {
     font-size: 0.8em;
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width: 600px){
 
 .contactForm {
         width: 600px;
@@ -96,15 +114,17 @@ span {
 }
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width: 1200px){
 .box {
     display: flex;
     flex-direction: row;
+    gap: 1em;
+    justify-content: space-evenly;
 
 }
 
 .contactForm {
-    width: 50%;
+    width: 550px;
     margin: 0;
     flex-direction: row;
     display: flex;
@@ -113,31 +133,35 @@ span {
 
 .nameSurnameBox {
     display: flex;
-    
+    width: 100%;
 }
 
 .emailMobileBox {
     display: flex;
 }
 
-.inputBox {
-    width: 100%;
-}
-
 .contactInfo {
-    width: 50%;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    
+
+    h3 {
+        font-size: 2em;
+        padding: 1em;
+        text-align: center;
+    }
 }
 
 .infoBox {
-    height: 100%;
-    width: 50%;
-    justify-content: start;
     gap: 6em;
-    margin: auto;
+}
 
+.contactMap {
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
 }
 
 }

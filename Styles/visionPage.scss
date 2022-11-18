@@ -5,7 +5,6 @@
     overflow-x: hidden;
     height: 100vh;
     overflow: scroll;
-
     
     -ms-overflow-style: none;
     scrollbar-width: none; 
@@ -31,9 +30,9 @@
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
-      margin: 2em 0;
       height: 100%;
-      gap: 1em;
+    gap: 3em;
+
 
 }
 
@@ -50,15 +49,11 @@
 }
 
 .paragraphs {
-  text-align: center ;
   line-height: 2;
   letter-spacing: 3px;
-  font-size: 6vw;
+  font-size: 1em;
   text-transform: uppercase;
-
-  display: grid;
-  align-items: center;
-  
+  padding:0 1em;
 }
 
 .imgContainer {
@@ -124,6 +119,10 @@
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .paragraphs {
+    text-align: center;
+  }
  }
 
  @media all and (min-width : 768px) {
@@ -175,36 +174,36 @@
  @media all and (min-width : 1000px) {
 
   .visionSection {
-    padding-top: 5em;
+    padding: 7em 0;
+    gap: 0;
   }
 
   .CEO {
     text-align: center;
     font-size: 4vw;
+    padding: 0.95em;
   }
 
  .visionContainers {
   flex-direction: row;
   margin: 0;
+  gap: 0;
  }
 
  .visionHeadings {
   font-size: 8em;
  }
 
+ .imgContainer {
+  width: 10%;
+ }
+
 
 // SKEWING VISION CONTAINERS
- .visionContainers:nth-child(1){
-  transform: skewX(5deg);
-
-  img {
-    width: 600px;
-  }
- }
 
  .visionContainers:nth-child(2) {
   flex-direction: row-reverse;
-  transform: skewX(-5deg);
+  height: 800px;
 
  }
 
@@ -214,20 +213,17 @@
  
  .visionContainers:nth-child(4) {
   width: 100%;
-  flex-direction: row-reverse;
-  padding: 10em;
  
  }
 //  SKEWING VISION CONTAINERS
 
  .imgContainer {
-  width: 80%;
+  width: 100%;
  } 
 
  .containerInfo {
    height: 100%;
    justify-content: center;
-   padding: 1em;
  }
 
  .containerInfo:nth-child(2) {
@@ -254,10 +250,7 @@
  }
  
  @media all and (min-width : 1500px) {
- .visionSection {
-  width: 1280px;
-  margin: auto;
- }
+
 
 
  }

@@ -26,9 +26,8 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  margin: 2em 0;
   height: 100%;
-  gap: 1em;
+  gap: 3em;
 }
 
 .containerInfo {
@@ -44,13 +43,11 @@
 }
 
 .paragraphs {
-  text-align: center;
   line-height: 2;
   letter-spacing: 3px;
-  font-size: 6vw;
+  font-size: 1em;
   text-transform: uppercase;
-  display: grid;
-  align-items: center;
+  padding: 0 1em;
 }
 
 .imgContainer {
@@ -104,6 +101,9 @@
     flex-direction: column;
     justify-content: space-around;
   }
+  .paragraphs {
+    text-align: center;
+  }
 }
 @media all and (min-width: 768px) {
   /*------------------------------------ Navigation Bar -----------------------------------------*/
@@ -147,44 +147,41 @@
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
 @media all and (min-width: 1000px) {
   .visionSection {
-    padding-top: 5em;
+    padding: 7em 0;
+    gap: 0;
   }
   .CEO {
     text-align: center;
     font-size: 4vw;
+    padding: 0.95em;
   }
   .visionContainers {
     flex-direction: row;
     margin: 0;
+    gap: 0;
   }
   .visionHeadings {
     font-size: 8em;
   }
-  .visionContainers:nth-child(1) {
-    transform: skewX(5deg);
-  }
-  .visionContainers:nth-child(1) img {
-    width: 600px;
+  .imgContainer {
+    width: 10%;
   }
   .visionContainers:nth-child(2) {
     flex-direction: row-reverse;
-    transform: skewX(-5deg);
+    height: 800px;
   }
   .visionContainers:nth-child(3) {
     width: 100%;
   }
   .visionContainers:nth-child(4) {
     width: 100%;
-    flex-direction: row-reverse;
-    padding: 10em;
   }
   .imgContainer {
-    width: 80%;
+    width: 100%;
   }
   .containerInfo {
     height: 100%;
     justify-content: center;
-    padding: 1em;
   }
   .containerInfo:nth-child(2) {
     width: 100%;
@@ -202,11 +199,5 @@
   }
   .contactForm {
     width: 100vw;
-  }
-}
-@media all and (min-width: 1500px) {
-  .visionSection {
-    width: 1280px;
-    margin: auto;
   }
 }/*# sourceMappingURL=visionPage.css.map */
