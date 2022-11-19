@@ -10,6 +10,10 @@ nav {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+    background:#3b4f8879;
+    padding: 5px;
+  
+
 }
 
 .side-bar {
@@ -47,7 +51,7 @@ nav {
     flex-direction: column;
     padding: 5px;
     position: relative;
-    top: -2em;
+
 }
 
 .nav-item {

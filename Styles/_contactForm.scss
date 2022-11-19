@@ -8,6 +8,7 @@
 .infoBox {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .contactUs {
@@ -52,19 +53,18 @@ form {
      display: flex;  
      flex-direction: column;
      text-align: center;
+     width: 100%;
 }
 
 input {
-    background:#202a4579;
-    border-style:inset;
-    border-width: 5px;
-    border-left-color: black;
+    background:#3b4f8879;
     color: white;
     padding: 1em;
+    border: none;
 }
 
 textarea {
-    background:#202a4579;
+    background:#3b4f8879;
     border-style: none;
     padding: 1em;
     width: 100%;
@@ -76,89 +76,181 @@ span {
     font-size: 1.5em;
     text-transform: uppercase;
     display: inline-flex;
-}
+    padding: 10px;
 
-.infoBoxChild {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     
-    a {
-        display: flex;
-        align-items: center;
-    }
-}
-
-span {
     ion-icon {
         font-size: 2em;
     }
 }
 
-.contactMap {
+.infoBoxChild {
+    display: flex;
+    align-items: center;
+    padding: 3em ;
     width: 100%;
 }
+
+#contactInfoh3 {
+    font-size: 10vw;
+    text-align: center;
+}
+
+.contactMap {
+    width: 100%;
+    height: 50%;
+}
+
+
+.contactMap2 {
+    display: none;
+}
+
 
 #addressP {
     font-size: 0.8em;
 }
 
-@media screen and (min-width: 600px){
+.nameSurnameBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.emailMobileBox {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media  screen and (min-width: 600px) {
+
+.box {
+    gap: 0;
+}
+
+    .contactForm {
+        padding: 1em 6em;
+    }
+
+    .infoBox {
+        flex-direction: row;
+
+    }
+
+    .infoBoxChild {
+        padding: 0;
+        justify-content: center;
+
+    }
+
+    .nameSurnameBox {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .emailMobileBox {
+        flex-direction: row;
+    
+    }
+}
+
+@media screen and (min-width: 730px){
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .contactForm {
-        width: 600px;
+    padding: 0;
+    margin: 0;
 }
 
 .contactHeading {
     font-size: 6em;
 }
+
+.infoBox {
+    flex-direction: column;
+
+}
+
+.infoBoxChild {
+    justify-content: normal;
+    padding: 3em 1.5em;
+    
+}
+
+.contactInfo{
+    width: 40%;
+}
+
+#contactInfoh3 {
+    font-size: 5vw;
+
+}
+
+.contactMap {
+   height: 70%;
+}
+
+.contactMap2 {
+    display: none;
+}
 }
 
 @media screen and (min-width: 1200px){
+
+#contactHeading {
+    font-size: 10vw;
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+form {
+    margin: 0;
+}
+
 .box {
     display: flex;
     flex-direction: row;
-    gap: 1em;
-    justify-content: space-evenly;
-
+    justify-content: flex-start;
+    width: 60%;
 }
 
 .contactForm {
-    width: 550px;
+    width: 480px;
     margin: 0;
     flex-direction: row;
     display: flex;
     padding: 0;
 }
 
-.nameSurnameBox {
-    display: flex;
-    width: 100%;
-}
-
-.emailMobileBox {
-    display: flex;
+.infoBox {
+    height: 50%;
 }
 
 .contactInfo {
     width: 300px;
     display: flex;
     flex-direction: column;
-
-    h3 {
-        font-size: 2em;
-        padding: 1em;
-        text-align: center;
-    }
 }
 
-.infoBox {
-    gap: 6em;
+#contactInfoh3 {
+    font-size: 4vw;
 }
 
 .contactMap {
-    width: 50%;
+    height: 100vh;
 }
+
+
+
 
 iframe {
     width: 100%;

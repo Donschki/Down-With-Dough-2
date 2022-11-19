@@ -39,7 +39,6 @@ nav {
   flex-direction: column;
   padding: 5px;
   position: relative;
-  top: -2em;
 }
 
 .nav-item {
@@ -285,6 +284,8 @@ p {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+    background: rgba(59, 79, 136, 0.4745098039);
+    padding: 5px;
   }
 }
 @media all and (min-width: 30.0625em) {
@@ -455,7 +456,6 @@ hr {
 
 a {
   text-align: center;
-  height: 100%;
 }
 
 .bakerySection img {
@@ -492,6 +492,8 @@ a {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+    background: rgba(59, 79, 136, 0.4745098039);
+    padding: 5px;
   }
   .extended-nav-item {
     list-style: none;
@@ -572,6 +574,7 @@ a {
   }
   .mainHeading {
     font-size: 3vw;
+    padding: 2em 0;
   }
   .sub-heading {
     height: -webkit-fit-content;
@@ -803,6 +806,7 @@ a {
 .infoBox {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .contactUs {
@@ -845,19 +849,18 @@ form {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 input {
-  background: rgba(32, 42, 69, 0.4745098039);
-  border-style: inset;
-  border-width: 5px;
-  border-left-color: black;
+  background: rgba(59, 79, 136, 0.4745098039);
   color: white;
   padding: 1em;
+  border: none;
 }
 
 textarea {
-  background: rgba(32, 42, 69, 0.4745098039);
+  background: rgba(59, 79, 136, 0.4745098039);
   border-style: none;
   padding: 1em;
   width: 100%;
@@ -869,74 +872,140 @@ span {
   font-size: 1.5em;
   text-transform: uppercase;
   display: inline-flex;
+  padding: 10px;
+}
+span ion-icon {
+  font-size: 2em;
 }
 
 .infoBoxChild {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-.infoBoxChild a {
-  display: flex;
-  align-items: center;
+  padding: 3em;
+  width: 100%;
 }
 
-span ion-icon {
-  font-size: 2em;
+#contactInfoh3 {
+  font-size: 10vw;
+  text-align: center;
 }
 
 .contactMap {
   width: 100%;
+  height: 50%;
+}
+
+.contactMap2 {
+  display: none;
 }
 
 #addressP {
   font-size: 0.8em;
 }
 
+.nameSurnameBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emailMobileBox {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 600px) {
+  .box {
+    gap: 0;
+  }
   .contactForm {
-    width: 600px;
+    padding: 1em 6em;
+  }
+  .infoBox {
+    flex-direction: row;
+  }
+  .infoBoxChild {
+    padding: 0;
+    justify-content: center;
+  }
+  .nameSurnameBox {
+    flex-direction: row;
+    width: 100%;
+  }
+  .emailMobileBox {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 730px) {
+  .box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contactForm {
+    padding: 0;
+    margin: 0;
   }
   .contactHeading {
     font-size: 6em;
   }
+  .infoBox {
+    flex-direction: column;
+  }
+  .infoBoxChild {
+    justify-content: normal;
+    padding: 3em 1.5em;
+  }
+  .contactInfo {
+    width: 40%;
+  }
+  #contactInfoh3 {
+    font-size: 5vw;
+  }
+  .contactMap {
+    height: 70%;
+  }
+  .contactMap2 {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
+  #contactHeading {
+    font-size: 10vw;
+  }
+  .contactUs {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  form {
+    margin: 0;
+  }
   .box {
     display: flex;
     flex-direction: row;
-    gap: 1em;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    width: 60%;
   }
   .contactForm {
-    width: 550px;
+    width: 480px;
     margin: 0;
     flex-direction: row;
     display: flex;
     padding: 0;
   }
-  .nameSurnameBox {
-    display: flex;
-    width: 100%;
-  }
-  .emailMobileBox {
-    display: flex;
+  .infoBox {
+    height: 50%;
   }
   .contactInfo {
     width: 300px;
     display: flex;
     flex-direction: column;
   }
-  .contactInfo h3 {
-    font-size: 2em;
-    padding: 1em;
-    text-align: center;
-  }
-  .infoBox {
-    gap: 6em;
+  #contactInfoh3 {
+    font-size: 4vw;
   }
   .contactMap {
-    width: 50%;
+    height: 100vh;
   }
   iframe {
     width: 100%;
@@ -945,7 +1014,6 @@ span ion-icon {
 * {
   padding: 0;
   margin: 0;
-  border: solid 1px black;
 }
 
 html {

@@ -115,7 +115,6 @@ hr {
 
 a {
     text-align: center;
-    height: 100%;
 }
 
 .bakerySection img {
@@ -206,6 +205,10 @@ a {
     }
 }
 
+@media all and (min-width:760px) {
+    
+}
+
 @media all and (min-width: 1000px) {
 
     .bakerySection {
@@ -241,6 +244,7 @@ a {
 
     .mainHeading {
         font-size: 3vw;
+        padding: 2em 0;
     }
         .sub-heading {
             height: fit-content;
