@@ -1,3 +1,4 @@
+/* Slideshow container */
 /* ----------------------------- Navigation ----------------------------------- */
 nav {
   z-index: 100;
@@ -131,10 +132,6 @@ body {
   overflow: hidden;
 }
 
-.slogan-container {
-  text-align: center;
-}
-
 #slogan {
   font-size: 1.1em;
   margin: auto;
@@ -148,17 +145,14 @@ p {
 
 .slideshow-container {
   overflow: hidden;
-  height: 100vh;
   margin: auto;
-  /* Slideshow container */
   /* Caption text */
   /* Number text (1/3 etc) */
   /* The dots/bullets/indicators */
   /* Fading animation */
   /* On smaller screens, decrease text size */
-}
-.slideshow-container * {
-  box-sizing: border-box;
+  margin: auto;
+  height: 100%;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -174,6 +168,7 @@ p {
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
+  z-index: 10;
 }
 .slideshow-container .dot {
   height: 15px;
@@ -213,6 +208,10 @@ p {
   .slideshow-container .text {
     font-size: 11px;
   }
+}
+
+.mySlides {
+  height: 100%;
 }
 
 /* --------------------------- Contact Info Footer ------------------- */
@@ -297,14 +296,13 @@ p {
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 @media all and (min-width: 1025px) {
   .contact-info-container {
-    position: absolute;
     top: 35%;
     left: 0;
     flex-direction: column;
     margin: 0;
     width: 6em;
     height: 45%;
-    padding: 10px;
+    transition: 1s;
   }
   #slogan {
     font-size: 1.3em;

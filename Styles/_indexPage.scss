@@ -3,10 +3,6 @@ body {
     overflow: hidden;
 }
 
-.slogan-container {
-    text-align: center;
-}
-
 #slogan {
     font-size: 1.1em;
     margin: auto;
@@ -20,7 +16,14 @@ p {
 
 .slideshow-container {
     @include slideShow;
+    margin: auto;
+    height: 100%;
 }
+
+.mySlides {
+    height: 100%;
+ 
+    }
 
 /* --------------------------- Contact Info Footer ------------------- */
 
@@ -45,8 +48,8 @@ p {
     margin: auto;
     padding: 5px;
     cursor: pointer;
-}
 
+}
 
 .headings {
     color: #ffffff;
@@ -69,7 +72,6 @@ p {
 .slogan-container {
     background: none;
 }
-
 
 /* The Close Button + HOVER*/
 
@@ -116,14 +118,13 @@ p {
 @media all and (min-width: 1025px) {
 
     .contact-info-container {
-        position: absolute;
         top: 35%;
         left: 0;
         flex-direction: column;
         margin: 0;
         width: 6em;
         height: 45%;
-        padding: 10px;
+       transition: 1s ;
     }
  
     #slogan {

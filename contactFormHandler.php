@@ -14,13 +14,13 @@ $email_body = "User Name: $name.\n".
               "User Last Name: $lastName.\n".
               "User Email: $visitor_email.\n".
               "User Mobile: $mobile.\n".
-              "User Message: $message.\n";
+              "User Message: $message.\n".
 
-                  $to "info@downwithdough.co.za"
+                  $to "info@downwithdough.co.za";
 
                   $headers = "From: $email_from\r\n";
 
-                  $headers = "Reply-To: $visitor_email \r\n"
+                  $headers = "Reply-To: $visitor_email \r\n";
 
                   mail($to,$email_subject,$email_body,$headers);
 
