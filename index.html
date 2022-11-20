@@ -79,36 +79,39 @@
 
                         <!-- Slideshow container -->
 
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numberText">1/5</div>
-  <img src="Photos/Family.jpg" style="width:100%; height: 100vh">
+  <div class="numbertext">1 / 3</div>
+  <img src="Photos/Family.jpg" style="width:100%; height:100vh">
   <!-- <div class="text">Caption Text</div> -->
 </div>
 
 <div class="mySlides fade">
-  <div class="numberText">2/5</div>
-  <img src="Photos/familyFromTop.jpg" style="width:100%; height: 100vh">
+  <div class="numbertext">2 / 3</div>
+  <img src="Photos/FamilyFlo.jpg" style="width:100%; height:100vh">
   <!-- <div class="text">Caption Two</div> -->
 </div>
 
 <div class="mySlides fade">
-  <div class="numberText">3/5</div>
-  <img src="Photos/familyBreakTime.jpg" style="width:100%; height: 100vh;">
+  <div class="numbertext">3 / 3</div>
+  <img src="Photos/familyFromTop.jpg" style="width:100%; height:100vh">
   <!-- <div class="text">Caption Three</div> -->
 </div>
 
 <div class="mySlides fade">
-  <div class="numberText">4/5</div>
-  <img src="Photos/FamilyFlo.jpg" style="width:100%; height: 100vh;">
+  <div class="numbertext">3 / 3</div>
+  <img src="Photos/familyBreakTime.jpg" style="width:100%; height:100vh">
   <!-- <div class="text">Caption Three</div> -->
 </div>
 
 <div class="mySlides fade">
-  <div class="numberText">5/5</div>
-  <img src="Photos/family4.jpg" style="width:100%; height: 100vh;">
+  <div class="numbertext">3 / 3</div>
+  <img src="Photos/family4.jpg" style="width:100%; height:100vh">
   <!-- <div class="text">Caption Three</div> -->
+</div>
+
 </div>
 
 </div>
@@ -119,12 +122,14 @@
     <span class="dot"></span> 
     <span class="dot"></span> 
     <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
   </div>
 
                         <!-- SLIDESHOW SCRIPT -->
 
   <script>
-  let slideIndex = 0;
+ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -141,14 +146,13 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
   </script>
     
 </div>
 
 <br>
-
 
         <div class="contact-info-container">
             <div class="contact-containers">

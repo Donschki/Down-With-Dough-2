@@ -158,7 +158,6 @@ p {
 
 .slideshow-container {
   /* Slideshow container */
-  max-width: 100%;
   position: relative;
   margin: auto;
   /* Caption text */
@@ -313,7 +312,8 @@ p {
     flex-direction: column;
     margin: 0;
     width: 6em;
-    height: 50%;
+    height: 45%;
+    padding: 10px;
   }
   #slogan {
     font-size: 1.3em;
