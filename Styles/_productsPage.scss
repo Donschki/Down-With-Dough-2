@@ -85,11 +85,8 @@ hr {
     margin: auto;
     width: 15em;
     text-align: center;
-    mainHeading {
-        margin: auto;
-        font-size: 2.5em;
-        text-transform: uppercase;
-    }
+    font-size: 5vw;
+    text-transform: uppercase;
 }
 
 .titles {
@@ -205,7 +202,7 @@ a {
     }
 }
 
-@media all and (min-width:760px) {
+@media all and (min-width: 760px) {
     
 }
 
@@ -250,4 +247,10 @@ a {
             height: fit-content;
             font-size: 0.9em;
         }
+}
+
+@media all and (min-width : 1600px) {
+    .mainHeading {
+        padding: 1em 0;
+    }
 }

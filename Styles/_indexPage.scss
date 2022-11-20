@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+}
 body {
     overflow: hidden;
 }
@@ -49,6 +54,11 @@ p {
     list-style: none;
 }
 
+.slideshow-container{
+    @include slideShow;
+}
+
+
 /* --------------------------- Contact Info Footer ------------------- */
 
 .contact-info-container {
@@ -58,14 +68,12 @@ p {
     width: 95VW;
     height: 4em;
     border-radius: 20px;
-    bottom: 1em;
+    bottom: 2em;
     left: 0;
     right: 0;
     display: flex;
     margin: auto;
     justify-content: center;
-    border-top: solid #fcd059 3px;
-    border-bottom: solid #fcd059 3px;
 }
 
 .contact-info-container img {
