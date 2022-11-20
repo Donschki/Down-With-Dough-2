@@ -147,6 +147,7 @@ p {
 }
 
 .slideshow-container {
+  overflow: hidden;
   height: 100vh;
   margin: auto;
   /* Slideshow container */
