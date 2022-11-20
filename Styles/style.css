@@ -167,17 +167,9 @@ p {
 .slideshow-container * {
   box-sizing: border-box;
 }
-.slideshow-container body {
-  font-family: Verdana, sans-serif;
-}
-.slideshow-container .mySlides {
-  display: none;
-}
-.slideshow-container img {
-  vertical-align: middle;
-}
 .slideshow-container .slideshow-container {
-  max-width: 1000px;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
   margin: auto;
 }

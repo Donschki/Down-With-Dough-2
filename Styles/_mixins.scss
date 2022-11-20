@@ -16,13 +16,11 @@
 
 @mixin slideShow {
     * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
   margin: auto;
 }
