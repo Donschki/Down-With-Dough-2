@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    .mySlides {display: none;}
-    img {vertical-align: middle;}
-}
+
 body {
     overflow: hidden;
 }
@@ -23,10 +19,9 @@ p {
     list-style: none;
 }
 
-.slideshow-container{
+.slideshow-container {
     @include slideShow;
 }
-
 
 /* --------------------------- Contact Info Footer ------------------- */
 

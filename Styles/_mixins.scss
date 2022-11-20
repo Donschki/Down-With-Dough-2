@@ -17,13 +17,10 @@
 @mixin slideShow {
     * {box-sizing: border-box;}
 
-/* Slideshow container */
-.slideshow-container {
-  min-width: 100vw;
-  height: 100%;
-  margin: auto;
-}
+    min-height: 100vh;
+    margin: auto;
 
+/* Slideshow container */
 /* Caption text */
 .text {
   color: #fcd059;
@@ -41,7 +38,6 @@
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
-
 }
 
 /* The dots/bullets/indicators */
