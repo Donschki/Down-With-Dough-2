@@ -138,6 +138,7 @@ nav {
 
 body {
   overflow: hidden;
+  height: 100vh;
 }
 
 .slogan-container {
@@ -162,7 +163,7 @@ p {
 .indexMain {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 .slideshow-container {
@@ -293,10 +294,12 @@ p {
   height: 0.3em;
 }
 
-@media all and (min-width: 660px) {
-  .slideshow-container {
-    position: relative;
+@media all and (max-width: 480px) {
+  .indexMain {
+    height: 100vh;
   }
+}
+@media all and (min-width: 660px) {
   .contact-info-container {
     z-index: 10;
     width: 40em;

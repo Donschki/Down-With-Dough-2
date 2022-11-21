@@ -1,6 +1,7 @@
 
 body {
     overflow: hidden;
+    height: 100vh;
 }
 
 .slogan-container {
@@ -25,7 +26,7 @@ p {
 .indexMain {
     display: flex;
     flex-direction: column;
-    height: 100vh
+    height: 100%
 }
 .slideshow-container {
     @include slideShow;
@@ -103,12 +104,12 @@ p {
 ///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
 
 @media all and (max-width: 480px) {
+    .indexMain {
+        height: 100vh;
+    }
 }
 
 @media all and (min-width: 660px) {
-    .slideshow-container {
-     position: relative;
-    }
 
     .contact-info-container {
      z-index: 10;
