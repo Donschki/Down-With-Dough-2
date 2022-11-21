@@ -22,5 +22,9 @@ body {
     color: #fcd059;
     background-color: #202a45;
     font-family: 'Abel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
