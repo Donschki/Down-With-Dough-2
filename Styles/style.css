@@ -136,11 +136,6 @@ nav {
   left: 0;
 }
 
-body {
-  overflow: hidden;
-  height: 100vh;
-}
-
 .slogan-container {
   width: 100%;
   display: flex;
@@ -163,20 +158,19 @@ p {
 .indexMain {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: center;
+  gap: 1em;
 }
 
 .slideshow-container {
   overflow: hidden;
-  margin: auto;
   /* Caption text */
   /* Number text (1/3 etc) */
   /* The dots/bullets/indicators */
   /* Fading animation */
   /* On smaller screens, decrease text size */
-  margin: auto;
-  height: 100%;
   width: 100%;
+  height: 65vh;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -242,23 +236,25 @@ p {
   height: 100%;
 }
 
+.dot {
+  display: none;
+}
+
 /* --------------------------- Contact Info Footer ------------------- */
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
-  margin: auto;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
 }
 
 .contact-containers {
   display: flex;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  width: 100%;
 }
 .contact-containers svg {
-  width: 5em;
+  width: 4em;
 }
 
 .headings {
@@ -294,15 +290,19 @@ p {
   height: 0.3em;
 }
 
-@media all and (max-width: 480px) {
-  .indexMain {
-    height: 100vh;
+@media all and (min-width: 400px) {
+  .slideshow-container {
+    height: 75vh;
+  }
+  .contact-info-container svg {
+    width: 5em;
   }
 }
 @media all and (min-width: 660px) {
   .contact-info-container {
     z-index: 10;
     width: 40em;
+    margin: auto;
   }
   .hamburger-menu {
     display: none;
@@ -313,10 +313,14 @@ p {
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
     padding: 5px;
+    position: relative;
   }
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 @media all and (min-width: 1024px) {
+  body {
+    height: normal;
+  }
   .contact-info-container {
     top: 35%;
     left: 0;
@@ -498,6 +502,7 @@ a {
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
     padding: 5px;
+    position: relative;
   }
   .extended-nav-item {
     list-style: none;
@@ -1025,5 +1030,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100vh;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

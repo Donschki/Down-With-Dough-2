@@ -1,8 +1,4 @@
 
-body {
-    overflow: hidden;
-    height: 100vh;
-}
 
 .slogan-container {
     width: 100%;
@@ -26,13 +22,14 @@ p {
 .indexMain {
     display: flex;
     flex-direction: column;
-    height: 100%
+    justify-content: center;
+    gap: 1em
 }
+
 .slideshow-container {
     @include slideShow;
-    margin: auto;
-    height: 100%;
     width: 100%;
+    height: 65vh;
 }
 
 .mySlides {
@@ -44,26 +41,27 @@ p {
     }
 }
 
+.dot {
+    display: none;
+}
+
 /* --------------------------- Contact Info Footer ------------------- */
 
 .contact-info-container {
     background-color: #202a45b9;
     display: flex;
-    margin: auto;
-    justify-content: center;
-    padding: 15px;
-
-    width: 100%;
 }
 
 .contact-containers {
     display: flex;
-    margin: auto;
-    
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 
+    width: 100%;
+
     svg {
-        width: 5em;
+        width: 4em;
     }
 }
 
@@ -103,10 +101,16 @@ p {
 
 ///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
 
-@media all and (max-width: 480px) {
-    .indexMain {
-        height: 100vh;
-    }
+@media all and (min-width: 400px) {
+ .slideshow-container {
+    height: 75vh;
+ }
+
+ .contact-info-container {
+ svg {
+    width: 5em;
+ }
+}
 }
 
 @media all and (min-width: 660px) {
@@ -114,6 +118,7 @@ p {
     .contact-info-container {
      z-index: 10;
      width: 40em;
+     margin: auto;
     }
 
     .hamburger-menu {
@@ -127,6 +132,9 @@ p {
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 
 @media all and (min-width: 1024px) {
+    body {
+        height: normal;
+    }
 
     .contact-info-container {
         top: 35%;
