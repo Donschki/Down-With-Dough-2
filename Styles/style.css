@@ -29,6 +29,7 @@ nav {
   margin-top: 3.5em;
   margin-bottom: 1em;
   z-index: 1;
+  cursor: pointer;
 }
 
 #Logo-img {
@@ -295,7 +296,6 @@ p {
     display: none;
   }
   .navListExtended {
-    width: 100vw;
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
@@ -389,7 +389,7 @@ p {
 }
 
 hr {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -483,7 +483,6 @@ a {
     display: none;
   }
   .navListExtended {
-    width: 100vw;
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;

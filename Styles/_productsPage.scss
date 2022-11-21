@@ -53,7 +53,7 @@
 }
 
 hr {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -138,16 +138,19 @@ a {
 /*------------------------------------ Mobile Platform -----------------------------------*/
 
 @media all and (min-width: 660px) {
-    .hamburger-menu {
+.hamburger-menu {
         display: none;
-    }
-    .navListExtended {
-        @include navListExtended //mixin in navbar.scss
-    }
-    .extended-nav-item {
+}
+
+.navListExtended {
+    @include navListExtended //mixin in navbar.scss
+}
+
+.extended-nav-item {
         list-style: none;
-    }
-    .bakerySection {
+}
+
+.bakerySection {
         flex-direction: row;
         overflow: scroll;
         display: flex;
@@ -200,7 +203,8 @@ a {
                 font-size: 5em;
             }
         }
-    }
+}
+
 }
 
 @media all and (min-width: 760px) {
