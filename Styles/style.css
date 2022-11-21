@@ -159,7 +159,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1em;
 }
 
 .slideshow-container {
@@ -244,6 +243,7 @@ p {
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
+  padding: 1em 0;
 }
 
 .contact-containers {

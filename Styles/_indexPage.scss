@@ -23,7 +23,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1em
 }
 
 .slideshow-container {
@@ -50,6 +49,7 @@ p {
 .contact-info-container {
     background-color: #202a45b9;
     display: flex;
+    padding: 1em 0;
 }
 
 .contact-containers {
