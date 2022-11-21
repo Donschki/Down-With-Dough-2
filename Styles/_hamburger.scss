@@ -1,10 +1,16 @@
 
-/* ---------------------------- Hamburger Menu ----------------------------- */        
+/* ---------------------------- Hamburger Menu ----------------------------- */       
+
+.hamburgerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hamburger-menu {
     width: 24px;
     height: 40px; 
     
-    position: fixed;
     left: 0;
     top: 0;
     margin: 0.9px 6px;

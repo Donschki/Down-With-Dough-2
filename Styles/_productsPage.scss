@@ -43,6 +43,7 @@
     background-color: $blue;
     text-align: center;
     text-transform: uppercase;
+
     @media screen and(min-width: 760px) {
         .mainHeading {
             font-size: 8vw;
@@ -225,6 +226,8 @@ a {
 @media all and (min-width: 1200px) {
 
 .bakerySection {
+    padding-top: 0;
+
     .titles {
         font-size: 5vw;
         letter-spacing: 3px;
@@ -241,7 +244,7 @@ a {
 
     .mainHeading {
         font-size: 3vw;
-        padding: 2em 0;
+        padding: 1em 0;
     }
         .sub-heading {
             height: fit-content;

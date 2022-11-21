@@ -2,7 +2,9 @@
 /* ----------------------------- Navigation ----------------------------------- */
 nav {
   z-index: 100;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .side-bar {
@@ -87,10 +89,15 @@ nav {
 }
 
 /* ---------------------------- Hamburger Menu ----------------------------- */
+.hamburgerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hamburger-menu {
   width: 24px;
   height: 40px;
-  position: fixed;
   left: 0;
   top: 0;
   margin: 0.9px 6px;
@@ -132,9 +139,17 @@ body {
   overflow: hidden;
 }
 
+.slogan-container {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+
 #slogan {
   font-size: 1.1em;
+  width: 100%;
   margin: auto;
+  text-align: center;
 }
 
 p {
@@ -213,6 +228,10 @@ p {
 .mySlides {
   height: 100%;
 }
+.mySlides img {
+  width: 100%;
+  height: 100vh;
+}
 
 /* --------------------------- Contact Info Footer ------------------- */
 .contact-info-container {
@@ -271,12 +290,6 @@ p {
   height: 0.3em;
 }
 
-@media all and (max-width: 480px) {
-  #slogan {
-    width: 75%;
-    font-size: 0.9em;
-  }
-}
 @media all and (min-width: 660px) {
   .hamburger-menu {
     display: none;
@@ -294,7 +307,7 @@ p {
   }
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
   .contact-info-container {
     top: 35%;
     left: 0;
@@ -309,6 +322,9 @@ p {
     width: 90%;
     letter-spacing: 2px;
     font-weight: 1000;
+  }
+  .hamburgerBox {
+    display: none;
   }
 }
 @media all and (min-width: 1500px) {
@@ -539,6 +555,9 @@ a {
 }
 /*------------------------------------- Desktop Platform ------------------------------------*/
 @media all and (min-width: 1200px) {
+  .bakerySection {
+    padding-top: 0;
+  }
   .bakerySection .titles {
     font-size: 5vw;
     letter-spacing: 3px;
@@ -553,7 +572,7 @@ a {
   }
   .mainHeading {
     font-size: 3vw;
-    padding: 2em 0;
+    padding: 1em 0;
   }
   .sub-heading {
     height: -webkit-fit-content;
@@ -770,17 +789,6 @@ a {
     width: 100vw;
   }
 }
-/* ------------------------------------- SLOGAN ----------------------------- */
-.slogan-container {
-  width: 100%;
-  display: flex;
-  padding: 0.5em;
-}
-
-#slogan {
-  font-size: 1em;
-}
-
 * {
   margin: 0;
   padding: 0;

@@ -3,9 +3,17 @@ body {
     overflow: hidden;
 }
 
+.slogan-container {
+    width: 100%;
+    display: flex;
+    padding: 5px ;
+}
+
 #slogan {
     font-size: 1.1em;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 p {
@@ -22,8 +30,12 @@ p {
 
 .mySlides {
     height: 100%;
- 
+
+    img {
+        width: 100%;
+        height: 100vh;
     }
+}
 
 /* --------------------------- Contact Info Footer ------------------- */
 
@@ -48,7 +60,6 @@ p {
     margin: auto;
     padding: 5px;
     cursor: pointer;
-
 }
 
 .headings {
@@ -85,17 +96,9 @@ p {
     height: 0.3em;
 }
 
-
-
 ///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
 
-
 @media all and (max-width: 480px) {
-    #slogan {
-        width: 75%;
-        font-size: 0.9em;
-    }
-
 }
 
 @media all and (min-width: 660px) {
@@ -115,7 +118,7 @@ p {
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
 
     .contact-info-container {
         top: 35%;
@@ -132,6 +135,10 @@ p {
         width: 90%;
         letter-spacing: 2px;
         font-weight: 1000;
+    }
+
+    .hamburgerBox {
+        display: none;
     }
 }
 
