@@ -23,6 +23,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh
 }
 
 .slideshow-container {
@@ -146,8 +147,13 @@ p {
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 
 @media all and (min-width: 1024px) {
-    body {
-        height: normal;
+
+    .indexMain {
+        justify-content: flex-start;
+    }
+
+    .slideshow-container {
+        height: 100%;
     }
 
     .contact-info-container {
