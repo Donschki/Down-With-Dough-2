@@ -251,6 +251,7 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: auto;
   width: 100%;
 }
 .contact-containers svg {
@@ -1039,4 +1040,5 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

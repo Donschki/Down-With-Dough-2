@@ -57,6 +57,8 @@ p {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+     margin: auto;
+
 
     width: 100%;
 
@@ -126,7 +128,7 @@ p {
 }
 
 @media all and (min-width: 660px) {
-
+ 
     .contact-info-container {
      z-index: 10;
      width: 40em;
