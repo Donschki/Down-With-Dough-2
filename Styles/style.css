@@ -290,23 +290,13 @@ p {
   height: 0.3em;
 }
 
-@media all and (min-width: 400px) {
-  .slideshow-container {
-    height: 60vh;
-  }
-}
-@media all and (min-width: 450px) {
-  .slideshow-container {
-    height: 60vh;
-  }
-}
 @media all and (min-width: 660px) {
   #slogan {
     letter-spacing: 2px;
   }
   .contact-info-container {
     z-index: 10;
-    width: 40em;
+    width: 30em;
     margin: auto;
   }
   .hamburger-menu {

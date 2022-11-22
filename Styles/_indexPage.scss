@@ -105,16 +105,11 @@ p {
 ///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
 
 @media all and (min-width: 400px) {
- .slideshow-container {
-    height: 60vh;
- }
 
 }
 
 @media all and (min-width: 450px) {
- .slideshow-container {
-    height: 60vh;
- }
+ 
 }
 
 @media all and (min-width: 660px) {
@@ -124,7 +119,7 @@ p {
 
     .contact-info-container {
      z-index: 10;
-     width: 40em;
+     width: 30em;
      margin: auto;
     }
 
