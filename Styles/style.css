@@ -246,12 +246,7 @@ p {
 }
 
 .contact-containers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   cursor: pointer;
-  margin: auto;
 }
 .contact-containers svg {
   width: 50%;
@@ -1030,6 +1025,5 @@ body {
   font-family: "Abel", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   height: 100vh;
 }/*# sourceMappingURL=style.css.map */
