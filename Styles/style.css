@@ -169,7 +169,7 @@ p {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -323,6 +323,7 @@ p {
     height: 45%;
     transition: 1s;
     position: absolute;
+    justify-content: space-evenly;
   }
   #slogan {
     font-size: 1.3em;
@@ -1026,4 +1027,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
