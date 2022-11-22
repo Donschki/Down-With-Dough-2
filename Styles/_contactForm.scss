@@ -14,7 +14,6 @@
 .contactUs {
     background: $blue;
     overflow: scroll;
-    height: 100vh;
     scrollbar-width: none;
 
 }
@@ -31,20 +30,26 @@
     gap: 2em;
 }
 
+#contactHeading {
+    font-size: 0em;
+}
+
 form {
-    margin: auto;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #contactHeading {
     text-align: center;
     font-size: 14vw;
+    text-transform: uppercase;
+
 }
 
 .contactForm {
-    padding: 1em;
     margin: auto;
-
 }
 
 .inputBox {
@@ -52,7 +57,10 @@ form {
      display: flex;  
      flex-direction: column;
      text-align: center;
-     width: 100%;
+    text-decoration: none;
+
+    width: 100%;
+
 }
 
 input {
@@ -60,6 +68,8 @@ input {
     color: white;
     padding: 1em;
     border: none;
+    width: 100%;
+
 }
 
 textarea {
@@ -75,11 +85,9 @@ span {
     font-size: 1.5em;
     text-transform: uppercase;
     display: inline-flex;
-    padding: 10px;
-
     
     ion-icon {
-        font-size: 2em;
+        font-size: 3em;
     }
 }
 
@@ -90,20 +98,18 @@ span {
     width: 100%;
 }
 
-#contactInfoh3 {
+#contactInfoh1 {
     font-size: 10vw;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
 }
-
-.contactMap {
-    width: 100%;
-    height: 50%;
-}
-
-
 
 #addressP {
     font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+
 }
 
 .nameSurnameBox {
@@ -115,14 +121,11 @@ span {
 .emailMobileBox {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
 }
+
 
 @media  screen and (min-width: 600px) {
-
-.box {
-    gap: 0;
-}
 
     .contactForm {
         padding: 1em 6em;
@@ -154,7 +157,9 @@ span {
 
 .box {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+
 }
 
 .contactForm {
@@ -166,19 +171,10 @@ span {
     font-size: 6em;
 }
 
-.infoBox {
-    flex-direction: column;
-
-}
 
 .infoBoxChild {
-    justify-content: normal;
-    padding: 3em 1.5em;
-    
-}
-
-.contactInfo{
-    width: 40%;
+    width: 100%;
+    height: 100%;
 }
 
 #contactInfoh3 {
@@ -195,62 +191,82 @@ span {
 }
 }
 
-@media screen and (min-width: 1200px){
-
-#contactHeading {
-    font-size: 10vw;
-}
-
-.contactUs {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    padding: 2em 0;
-}
-
-form {
-    margin: 0;
-}
+@media screen and (min-width: 1000px){
 
 .box {
-    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 60%;
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    gap: 0;
+}
+
+.boxContainers {
+    height: 100%;
+}
+
+#contactHeading {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+Form {
+    justify-content: space-evenly;
+
 }
 
 .contactForm {
-    width: 480px;
-    margin: 0;
     flex-direction: row;
     display: flex;
-    padding: 0;
+    height: 100%;
+}
+
+
+.contactInfo {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.contactMap {
+    width: 50.333333%;
+    display: flex;
+    justify-content: center;
 }
 
 .infoBox {
-    height: 50%;
+    flex-direction: column;
 }
 
-.contactInfo {
-    width: 300px;
-    display: flex;
+.infoBoxChild {
     flex-direction: column;
 }
 
 #contactInfoh3 {
-    font-size: 4vw;
+    font-size: 2em;
 }
-
-.contactMap {
-    height: 100vh;
-}
-
-
-
 
 iframe {
-    width: 100%;
+    margin: auto;
 }
 
 }
+
+@media screen and (min-width: 1200px){
+    .contactForm {
+        width: 33.333333%;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .box {
+        width: 99vw;
+        height: 80vh;
+    }
+}
+
+
 
