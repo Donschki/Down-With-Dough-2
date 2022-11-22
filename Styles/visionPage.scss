@@ -78,9 +78,13 @@
 }
 
 .CEO {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 7vw;
-  padding: 2em;
+  padding: 0.95em;
+  color: $maize;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
@@ -181,7 +185,8 @@
   .CEO {
     text-align: center;
     font-size: 4vw;
-    padding: 0.95em;
+    color: $maize;
+
   }
 
  .visionContainers {
@@ -213,6 +218,7 @@
  
  .visionContainers:nth-child(4) {
   width: 100%;
+  padding-top: 5em;
  
  }
 //  SKEWING VISION CONTAINERS
