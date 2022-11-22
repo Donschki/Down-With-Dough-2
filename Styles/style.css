@@ -169,7 +169,7 @@ p {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 .slideshow-container .text {
   color: #fcd059;
