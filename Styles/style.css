@@ -243,19 +243,18 @@ p {
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
-  padding: 1em 0;
 }
 
 .contact-containers {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   cursor: pointer;
   margin: auto;
-  width: 100%;
 }
 .contact-containers svg {
-  width: 4em;
+  width: 50%;
 }
 
 .headings {
@@ -295,16 +294,10 @@ p {
   .slideshow-container {
     height: 60vh;
   }
-  .contact-info-container svg {
-    width: 5em;
-  }
 }
 @media all and (min-width: 450px) {
   .slideshow-container {
     height: 60vh;
-  }
-  .contact-info-container svg {
-    width: 5em;
   }
 }
 @media all and (min-width: 660px) {
@@ -1032,6 +1025,7 @@ span ion-icon {
 * {
   padding: 0;
   margin: 0;
+  border: solid 1px black;
 }
 
 html {
