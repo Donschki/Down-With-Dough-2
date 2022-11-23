@@ -243,14 +243,16 @@ p {
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
-  padding: 3em 0;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 4em;
 }
 
 .contact-containers {
   cursor: pointer;
 }
 .contact-containers svg {
-  width: 50%;
+  width: 40%;
 }
 
 .headings {

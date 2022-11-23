@@ -50,7 +50,9 @@ p {
 .contact-info-container {
     background-color: #202a45b9;
     display: flex;
-    padding: 3em 0;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 4em;
 
 }
 
@@ -59,7 +61,7 @@ p {
     cursor: pointer;
 
     svg {
-        width: 50%;
+        width: 40%;
     }
 }
 
