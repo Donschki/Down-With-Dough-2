@@ -248,7 +248,7 @@ p {
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
