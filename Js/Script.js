@@ -1,8 +1,8 @@
 //HAMBURGER MENU
-let sideBar = document.querySelector(".side-bar");
-let hamburger = document.querySelector(".hamburger-menu");
+let sideBar = document.querySelectorAll(".side-bar");
+let hamburger = document.querySelectorAll(".hamburger-menu");
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener('click', () => {
     sideBar.classList.toggle("change");
     body.click.toggle("change")
 });
@@ -14,3 +14,4 @@ document.querySelector('main').addEventListener('click', () => {
 document.querySelector('.contact-info-container').addEventListener('click', () => {
   sideBar.classList.remove('change');
 });
+

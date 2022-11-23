@@ -1,4 +1,8 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
+.one {
+  height: 100vh;
+}
+
 .visionSection {
   overflow: scroll;
   overflow-x: hidden;
@@ -15,6 +19,7 @@
   /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
+  padding-top: 4em;
 }
 
 .visionSection:-webkit-scrollbar {
@@ -69,9 +74,11 @@
 }
 
 .CEO {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 7vw;
-  padding: 2em;
+  padding: 0.95em;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
@@ -85,16 +92,10 @@
     padding: 0 1em;
     font-size: 1em;
   }
-  hr {
-    width: 20em;
-  }
 }
 @media all and (min-width: 660px) {
   .visionHeadings {
     font-size: 10vw;
-  }
-  hr {
-    width: 80%;
   }
   .containerInfo {
     display: flex;
@@ -152,8 +153,7 @@
   }
   .CEO {
     text-align: center;
-    font-size: 5vw;
-    padding: 0.95em;
+    font-size: 4vw;
   }
   .visionContainers {
     flex-direction: row;
@@ -175,6 +175,7 @@
   }
   .visionContainers:nth-child(4) {
     width: 100%;
+    padding-top: 5em;
   }
   .imgContainer {
     width: 100%;

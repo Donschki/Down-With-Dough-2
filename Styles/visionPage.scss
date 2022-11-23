@@ -2,6 +2,7 @@
 .one {
   height: 100vh;
 }
+
 .visionSection {
     overflow: scroll;
     overflow-x: hidden;
@@ -20,6 +21,7 @@
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
+    padding-top: 4em;
 
 }
 
@@ -86,7 +88,6 @@
 
   font-size: 7vw;
   padding: 0.95em;
-  color: $maize;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
@@ -105,9 +106,6 @@
     font-size: 1em;
   }
 
-  hr {
-    width: 20em;
-  }
  }
 
  @media all and (min-width : 660px) {
@@ -116,9 +114,6 @@
     font-size: 10vw;
   }
 
-  hr {
-    width: 80%;
-  }
 
   .containerInfo{
     display: flex;
@@ -187,7 +182,6 @@
   .CEO {
     text-align: center;
     font-size: 4vw;
-    color: $maize;
 
   }
 

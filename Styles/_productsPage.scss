@@ -25,6 +25,13 @@
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
+
+    padding-top: 4em;
+
+    hr {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 .bakerySection::-webkit-scrollbar {
@@ -50,12 +57,7 @@
     }
 }
 
-hr {
-    width: 70%;
-    margin: auto;
-    height: 1px;
 
-}
 
 .sub-heading {
     justify-content: center;
@@ -76,7 +78,12 @@ hr {
 .containers {
     text-align: center;
     width: 100%;
-    margin-bottom: 3em
+
+    hr {
+    margin: 1em 0;
+    width: 50%
+
+    }
 }
 
 .info {
@@ -118,14 +125,11 @@ a {
 }
 
 .bakerySection img {
-    width: 80vw;
-    height: 20em;
+    width: 50vw;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     z-index: -1;
-    @media screen and(min-width: 400px) {
-        width: 70vw;
-    }
+  
 }
 
 .productParagraph {
@@ -138,10 +142,7 @@ a {
 
 /*------------------------------------ Mobile Platform -----------------------------------*/
 
-@media all and (min-width: 660px) {
-.hamburger-menu {
-        display: none;
-}
+@media only screen and (min-width: 660px) {
 
 .navListExtended {
     @include navListExtended //mixin in navbar.scss
@@ -152,66 +153,73 @@ a {
 }
 
 .bakerySection {
-        flex-direction: row;
-        overflow: scroll;
-        display: flex;
-        gap: 5em;
-        .containers {
+ flex-direction: column;
+ overflow: scroll;
+ display: flex;
+ width: 100vw;
+ margin: auto;
+}
+
+ .containers {
             display: flex;
             width: 100%;
-        }
-        .reverse {
+ }
+
+ .reverse {
             flex-direction: row-reverse;
-        }
-        .info {
-            flex-direction: column;
-            display: flex;
-            height: 0;
-        }
-        .titles {
+ }
+
+ .info {
+     flex-direction: column;
+     display: flex;
+ }
+
+ .titles {
             font-size: 7vw;
             margin: auto;
             letter-spacing: 6px;
              width: 100%;
-             padding-bottom: 0.5em;
 
-        }
-        .mainHeading {
+ }
+
+ .mainHeading {
             font-size: 5vw;
-        }
-        .productParagraph {
+ }
+
+ .productParagraph {
             font-size: 3vw;
             width: 90%;
             padding-top: 1em;
 
-        }
+ }
 
-        img {
+ img {
             width: 50vw;
             height: 100%;
             border-top-right-radius: 0px;
             border-bottom-left-radius: 20px;
-        }
-        .Peanut-Butter-And-Butternut-Dog-Treats-container {
+ }
+
+ .Peanut-Butter-And-Butternut-Dog-Treats-container {
             padding-bottom: 7em;
-        }
-        .dogTreatsHeading {
+ }
+
+ .dogTreatsHeading {
             margin: auto;
             width: 30em;
             text-align: center;
             mainHeading {
                 font-size: 5em;
             }
-        }
-}
+ }
 
 }
 
-@media all and (min-width: 760px) {
+@media only screen and (min-width: 760px) {
     
 }
 
-@media all and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
 
     .bakerySection {
     
@@ -227,7 +235,7 @@ a {
 }
 }
     /*------------------------------------- Desktop Platform ------------------------------------*/
-@media all and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
 .bakerySection {
     padding-top: 0;
@@ -256,7 +264,7 @@ a {
         }
 }
 
-@media all and (min-width : 1600px) {
+@media only screen and (min-width : 1600px) {
     .mainHeading {
         padding: 1em 0;
     }

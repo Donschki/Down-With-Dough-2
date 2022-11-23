@@ -22,6 +22,10 @@ nav {
   z-index: 1000;
 }
 
+.change {
+  left: 0;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
@@ -94,9 +98,16 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background: rgba(59, 79, 136, 0.4745098039);
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  background: rgba(59, 79, 136, 0.4745098039);
+  z-index: 10;
+}
+
+.change {
+  left: 0;
 }
 
 .hamburger-menu {
@@ -130,10 +141,6 @@ nav {
   transform: rotateZ(405deg) translate(-6px, -6px);
 }
 
-.change {
-  left: 0;
-}
-
 .slogan-container {
   width: 100%;
   display: flex;
@@ -154,11 +161,11 @@ p {
   list-style: none;
 }
 
-Main {
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100vh;
+  padding-top: 2em;
 }
 
 .slideshow-container {
@@ -168,7 +175,7 @@ Main {
   /* The dots/bullets/indicators */
   /* Fading animation */
   /* On smaller screens, decrease text size */
-  height: 70%;
+  height: 80%;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -242,8 +249,9 @@ Main {
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
-  height: 100vh;
   flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
 }
 
 .contact-containers {
@@ -278,7 +286,7 @@ Main {
 /* The Close Button + HOVER*/
 @media only screen and (min-width: 660px) {
   main {
-    height: 70vh;
+    height: 75vh;
     justify-content: space-around;
   }
   #slogan {
@@ -287,10 +295,6 @@ Main {
   .contact-info-container {
     flex-direction: row;
     height: 6em;
-  }
-  .contact-info-container hr {
-    transform: rotateZ(90deg);
-    width: 6em;
   }
   .hamburger-menu {
     display: none;
@@ -306,11 +310,7 @@ Main {
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 @media only screen and (min-width: 1024px) {
-  body {
-    overflow-y: hidden;
-  }
-  Main {
-    justify-content: flex-start;
+  .bakerySeciton {
     height: 100vh;
   }
   .slideshow-container {
@@ -335,6 +335,7 @@ Main {
     width: 90%;
     letter-spacing: 2px;
     font-weight: 1000;
+    padding: 1em 0;
   }
   .hamburgerBox {
     display: none;
@@ -374,6 +375,11 @@ Main {
   /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
+  padding-top: 4em;
+}
+.bakerySection hr {
+  width: 80%;
+  margin: auto;
 }
 
 .bakerySection::-webkit-scrollbar {
@@ -399,12 +405,6 @@ Main {
   }
 }
 
-hr {
-  width: 70%;
-  margin: auto;
-  height: 1px;
-}
-
 .sub-heading {
   justify-content: center;
   padding: 5px;
@@ -424,7 +424,10 @@ hr {
 .containers {
   text-align: center;
   width: 100%;
-  margin-bottom: 3em;
+}
+.containers hr {
+  margin: 1em 0;
+  width: 50%;
 }
 
 .info {
@@ -470,16 +473,10 @@ a {
 }
 
 .bakerySection img {
-  width: 80vw;
-  height: 20em;
+  width: 50vw;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: -1;
-}
-@media screen and (min-width: 400px) {
-  .bakerySection img {
-    width: 70vw;
-  }
 }
 
 .productParagraph {
@@ -491,10 +488,7 @@ a {
 }
 
 /*------------------------------------ Mobile Platform -----------------------------------*/
-@media all and (min-width: 660px) {
-  .hamburger-menu {
-    display: none;
-  }
+@media only screen and (min-width: 660px) {
   .navListExtended {
     flex-direction: row;
     display: flex;
@@ -507,57 +501,56 @@ a {
     list-style: none;
   }
   .bakerySection {
-    flex-direction: row;
+    flex-direction: column;
     overflow: scroll;
     display: flex;
-    gap: 5em;
+    width: 100vw;
+    margin: auto;
   }
-  .bakerySection .containers {
+  .containers {
     display: flex;
     width: 100%;
   }
-  .bakerySection .reverse {
+  .reverse {
     flex-direction: row-reverse;
   }
-  .bakerySection .info {
+  .info {
     flex-direction: column;
     display: flex;
-    height: 0;
   }
-  .bakerySection .titles {
+  .titles {
     font-size: 7vw;
     margin: auto;
     letter-spacing: 6px;
     width: 100%;
-    padding-bottom: 0.5em;
   }
-  .bakerySection .mainHeading {
+  .mainHeading {
     font-size: 5vw;
   }
-  .bakerySection .productParagraph {
+  .productParagraph {
     font-size: 3vw;
     width: 90%;
     padding-top: 1em;
   }
-  .bakerySection img {
+  img {
     width: 50vw;
     height: 100%;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 20px;
   }
-  .bakerySection .Peanut-Butter-And-Butternut-Dog-Treats-container {
+  .Peanut-Butter-And-Butternut-Dog-Treats-container {
     padding-bottom: 7em;
   }
-  .bakerySection .dogTreatsHeading {
+  .dogTreatsHeading {
     margin: auto;
     width: 30em;
     text-align: center;
   }
-  .bakerySection .dogTreatsHeading mainHeading {
+  .dogTreatsHeading mainHeading {
     font-size: 5em;
   }
 }
-@media all and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .bakerySection .mainHeading {
     font-size: 5vw;
   }
@@ -566,7 +559,7 @@ a {
   }
 }
 /*------------------------------------- Desktop Platform ------------------------------------*/
-@media all and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .bakerySection {
     padding-top: 0;
   }
@@ -593,7 +586,7 @@ a {
     font-size: 0.9em;
   }
 }
-@media all and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
   .mainHeading {
     padding: 1em 0;
   }
@@ -619,6 +612,7 @@ a {
   /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
+  padding-top: 4em;
 }
 
 .visionSection:-webkit-scrollbar {
@@ -678,7 +672,6 @@ a {
   align-items: center;
   font-size: 7vw;
   padding: 0.95em;
-  color: #fcd059;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
@@ -692,16 +685,10 @@ a {
     padding: 0 1em;
     font-size: 1em;
   }
-  hr {
-    width: 20em;
-  }
 }
 @media all and (min-width: 660px) {
   .visionHeadings {
     font-size: 10vw;
-  }
-  hr {
-    width: 80%;
   }
   .containerInfo {
     display: flex;
@@ -760,7 +747,6 @@ a {
   .CEO {
     text-align: center;
     font-size: 4vw;
-    color: #fcd059;
   }
   .visionContainers {
     flex-direction: row;
@@ -821,12 +807,6 @@ a {
   height: 100%;
 }
 
-.contactUs {
-  background: rgba(32, 42, 69, 0.8549019608);
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
 .contactUs::-webkit-scrollbar {
   display: none;
 }
@@ -837,6 +817,7 @@ a {
 
 .box {
   gap: 2em;
+  padding-top: 4em;
 }
 
 #contactHeading {
@@ -860,6 +841,12 @@ form {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: white;
+}
+
 .inputBox {
   padding: 0 0.5em;
   display: flex;
@@ -872,7 +859,7 @@ form {
 input {
   background: rgba(59, 79, 136, 0.4745098039);
   color: white;
-  padding: 1em;
+  padding: 1.5em;
   border: none;
   width: 100%;
 }
@@ -897,9 +884,11 @@ span ion-icon {
 
 .infoBoxChild {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 3em;
-  width: 100%;
+  width: 60%;
+  margin: auto;
 }
 
 #contactInfoh1 {
@@ -927,17 +916,7 @@ span ion-icon {
   width: 100%;
 }
 
-@media screen and (min-width: 600px) {
-  .contactForm {
-    padding: 1em 6em;
-  }
-  .infoBox {
-    flex-direction: row;
-  }
-  .infoBoxChild {
-    padding: 0;
-    justify-content: center;
-  }
+@media only screen and (min-width: 600px) {
   .nameSurnameBox {
     flex-direction: row;
     width: 100%;
@@ -945,12 +924,33 @@ span ion-icon {
   .emailMobileBox {
     flex-direction: row;
   }
+  .contactForm {
+    padding: 1em;
+  }
+  .contactInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 2em 0;
+  }
+  .infoBoxChild {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contactMap {
+    height: 50vh;
+  }
 }
-@media screen and (min-width: 730px) {
+@media only screen and (min-width: 730px) {
   .box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .contactInfo {
+    flex-direction: row;
   }
   .contactForm {
     padding: 0;
@@ -966,50 +966,37 @@ span ion-icon {
   #contactInfoh3 {
     font-size: 5vw;
   }
-  .contactMap {
-    height: 70%;
-  }
-  .contactMap2 {
-    display: none;
-  }
 }
-@media screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .box {
+    display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: 100%;
-    margin: auto;
-    gap: 0;
   }
   .boxContainers {
-    height: 100%;
+    width: 100%;
   }
   #contactHeading {
     font-size: 3em;
     text-transform: uppercase;
   }
   Form {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .contactForm {
+    padding: 2em;
     flex-direction: row;
     display: flex;
-    height: 100%;
+    width: 100%;
   }
   .contactInfo {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: auto;
     justify-content: space-evenly;
   }
   .contactMap {
-    width: 50.333333%;
     display: flex;
     justify-content: center;
-  }
-  .infoBox {
-    flex-direction: column;
   }
   .infoBoxChild {
     flex-direction: column;
@@ -1021,12 +1008,7 @@ span ion-icon {
     margin: auto;
   }
 }
-@media screen and (min-width: 1200px) {
-  .contactForm {
-    width: 33.333333%;
-  }
-}
-@media screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
   .box {
     width: 99vw;
     height: 80vh;
@@ -1035,17 +1017,15 @@ span ion-icon {
 * {
   padding: 0;
   margin: 0;
+  border: solid 1px black;
 }
 
 html {
   scroll-behavior: smooth;
-  height: 100vh;
 }
 
 body {
   color: #fcd059;
   background-color: #202a45;
   font-family: "Abel", sans-serif;
-  display: flex;
-  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
