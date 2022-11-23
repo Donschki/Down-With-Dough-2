@@ -169,7 +169,7 @@ p {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   width: 100%;
-  height: 70%;
+  height: 600px;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -246,7 +246,6 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin: auto;
 }
 
 .contact-containers {
@@ -1043,6 +1042,7 @@ body {
   font-family: "Abel", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=style.css.map */

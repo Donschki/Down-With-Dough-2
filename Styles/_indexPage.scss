@@ -29,7 +29,7 @@ p {
 .slideshow-container {
     @include slideShow;
     width: 100%;
-    height: 70%;
+    height: 600px;
 }
 
 .mySlides {
@@ -53,8 +53,6 @@ p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin: auto;
-
 }
 
 .contact-containers {
