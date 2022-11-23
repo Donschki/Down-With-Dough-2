@@ -34,7 +34,7 @@ p {
 
 @media (min-height: 850px) {
     .slideshow-container {
-        height: 80vh;
+        height: 70vh;
     }
 }
 
@@ -57,16 +57,17 @@ p {
     background-color: #202a45b9;
     display: flex;
     position: relative;
-    bottom: 0;
     width: 100%;
 }
 
 .contact-containers {
-
+ display: flex;
+ align-items: center;
+ justify-content: center;
     cursor: pointer;
 
     svg {
-        width: 40%;
+        width: 55%;
     }
 }
 
@@ -96,8 +97,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
+    }
 
 /* The Close Button + HOVER*/
 
@@ -126,11 +126,15 @@ footer {
         letter-spacing: 2px;
     }
 
+    .slideshow-container {
+        height: 70vh;
+    }
+
+    footer {
+        margin: auto;
+    }
     .contact-info-container {
-     width: 30em;
-     margin: auto;
-     position: relative;
-     padding-bottom: 0;
+     width: 40em;
     }
 
     .hamburger-menu {
@@ -150,14 +154,13 @@ footer {
     }
 
     .slideshow-container {
-        height: 100%;
+        height: 100vh;
     }
 
     .contact-info-container {
         top: 35%;
         left: 0;
         flex-direction: column;
-        margin: 0;
         width: 6em;
         height: 45%;
        transition: 1s ;

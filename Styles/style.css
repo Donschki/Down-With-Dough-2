@@ -229,7 +229,7 @@ p {
 
 @media (min-height: 850px) {
   .slideshow-container {
-    height: 80vh;
+    height: 70vh;
   }
 }
 .mySlides {
@@ -249,15 +249,17 @@ p {
   background-color: rgba(32, 42, 69, 0.7254901961);
   display: flex;
   position: relative;
-  bottom: 0;
   width: 100%;
 }
 
 .contact-containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .contact-containers svg {
-  width: 40%;
+  width: 55%;
 }
 
 .headings {
@@ -303,11 +305,14 @@ footer {
   #slogan {
     letter-spacing: 2px;
   }
-  .contact-info-container {
-    width: 30em;
+  .slideshow-container {
+    height: 70vh;
+  }
+  footer {
     margin: auto;
-    position: relative;
-    padding-bottom: 0;
+  }
+  .contact-info-container {
+    width: 40em;
   }
   .hamburger-menu {
     display: none;
@@ -327,13 +332,12 @@ footer {
     justify-content: flex-start;
   }
   .slideshow-container {
-    height: 100%;
+    height: 100vh;
   }
   .contact-info-container {
     top: 35%;
     left: 0;
     flex-direction: column;
-    margin: 0;
     width: 6em;
     height: 45%;
     transition: 1s;
