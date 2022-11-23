@@ -93,16 +93,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .hamburger-menu {
-  width: 24px;
-  height: 40px;
-  left: 0;
-  top: 0;
-  margin: 0.9px 6px;
-  z-index: 1100;
-  cursor: pointer;
+  width: 2em;
+  height: 3em;
   /*3 Line formation to Hamburger style*/
   display: flex;
   flex-direction: column;
@@ -601,6 +597,10 @@ a {
   }
 }
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
+.one {
+  height: 100vh;
+}
+
 .visionSection {
   overflow: scroll;
   overflow-x: hidden;
