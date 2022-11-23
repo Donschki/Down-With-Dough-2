@@ -16,12 +16,10 @@
 /* ------------------------------------ Bakery Section ------------------------------ */
 
 .bakerySection {
-    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5em;
     background-color: #202a45;
-    padding-top: 3em;
-    gap: 3em;
     overflow: scroll;
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
@@ -55,6 +53,8 @@
 hr {
     width: 70%;
     margin: auto;
+    height: 1px;
+
 }
 
 .sub-heading {
@@ -76,10 +76,13 @@ hr {
 .containers {
     text-align: center;
     width: 100%;
+    margin-bottom: 3em
 }
 
 .info {
-    display: grid;
+    @include flexCenter;
+    flex-direction: column;
+    height: 100%;
 }
 
 .dogTreatsHeading {
@@ -108,7 +111,6 @@ hr {
     letter-spacing: 4px;
     word-spacing: 2px;
     text-transform: uppercase;
-    padding-top: 3em ;
 }
 
 a {
@@ -127,7 +129,6 @@ a {
 }
 
 .productParagraph {
-    @include flexCenter;
     font-size: 1em;
 }
 

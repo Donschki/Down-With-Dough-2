@@ -94,6 +94,9 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  left: 0;
+  right: 0;
+  background: rgba(59, 79, 136, 0.4745098039);
 }
 
 .hamburger-menu {
@@ -134,14 +137,13 @@ nav {
 .slogan-container {
   width: 100%;
   display: flex;
-  padding: 5px;
   text-align: center;
 }
 
 #slogan {
   font-size: 1em;
   letter-spacing: 3px;
-  width: 80%;
+  line-height: 2;
   margin: auto;
 }
 
@@ -165,8 +167,7 @@ Main {
   /* The dots/bullets/indicators */
   /* Fading animation */
   /* On smaller screens, decrease text size */
-  width: 100%;
-  height: 80%;
+  height: 70%;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -246,14 +247,13 @@ Main {
 
 .contact-containers {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 1em;
+  align-items: center;
   height: 100%;
   cursor: pointer;
 }
 .contact-containers svg {
-  width: 40%;
+  width: 30%;
 }
 
 .headings {
@@ -274,32 +274,22 @@ Main {
   font-size: 0.5em;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* The Close Button + HOVER*/
-.close {
-  color: #aaaaaa;
-  font-size: 2em;
-  position: relative;
-  font-weight: bold;
-  width: 1em;
-  left: 0;
-  height: 0.3em;
-}
-
-@media all and (min-width: 660px) {
-  #slogan {
-    letter-spacing: 2px;
+@media only screen and (min-width: 660px) {
+  main {
+    height: 70vh;
+    justify-content: space-around;
   }
-  footer {
-    margin: auto;
+  #slogan {
+    letter-spacing: 4px;
   }
   .contact-info-container {
-    width: 40em;
+    flex-direction: row;
+    height: 6em;
+  }
+  .contact-info-container hr {
+    transform: rotateZ(90deg);
+    width: 6em;
   }
   .hamburger-menu {
     display: none;
@@ -314,9 +304,16 @@ footer {
   }
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
-@media all and (min-width: 1024px) {
-  .indexMain {
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
+  Main {
     justify-content: flex-start;
+    height: 100vh;
+  }
+  .slideshow-container {
+    height: 100%;
   }
   .contact-info-container {
     top: 35%;
@@ -328,6 +325,10 @@ footer {
     position: absolute;
     justify-content: space-evenly;
   }
+  .contact-info-container hr {
+    transform: rotateZ(0deg);
+    width: 50%;
+  }
   #slogan {
     font-size: 1.3em;
     width: 90%;
@@ -338,7 +339,7 @@ footer {
     display: none;
   }
 }
-@media all and (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
   #slogan {
     font-size: 1.5em;
     width: 100%;
@@ -363,12 +364,10 @@ footer {
 
 /* ------------------------------------ Bakery Section ------------------------------ */
 .bakerySection {
-  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5em;
   background-color: #202a45;
-  padding-top: 3em;
-  gap: 3em;
   overflow: scroll;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
@@ -402,6 +401,7 @@ footer {
 hr {
   width: 70%;
   margin: auto;
+  height: 1px;
 }
 
 .sub-heading {
@@ -423,10 +423,15 @@ hr {
 .containers {
   text-align: center;
   width: 100%;
+  margin-bottom: 3em;
 }
 
 .info {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 .dogTreatsHeading {
@@ -457,7 +462,6 @@ hr {
   letter-spacing: 4px;
   word-spacing: 2px;
   text-transform: uppercase;
-  padding-top: 3em;
 }
 
 a {
@@ -478,9 +482,6 @@ a {
 }
 
 .productParagraph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1em;
 }
 
@@ -1037,6 +1038,7 @@ span ion-icon {
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
@@ -1045,5 +1047,4 @@ body {
   font-family: "Abel", sans-serif;
   display: flex;
   flex-direction: column;
-  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

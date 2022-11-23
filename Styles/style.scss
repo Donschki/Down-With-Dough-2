@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 body {
@@ -24,6 +25,5 @@ body {
     font-family: 'Abel', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 100vw;
 }
 
