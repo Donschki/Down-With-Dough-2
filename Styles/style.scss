@@ -11,7 +11,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: solid 1px black;
+    // border: solid 1px black;
 }
 
 html {
@@ -22,5 +22,10 @@ body {
     color: #fcd059;
     background-color: #202a45;
     font-family: 'Abel', sans-serif;
+
+    display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+
 }
 

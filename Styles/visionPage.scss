@@ -1,12 +1,8 @@
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
-.one {
-  height: 100vh;
-}
 
 .visionSection {
     overflow: scroll;
     overflow-x: hidden;
-    height: 100vh;
     overflow: scroll;
     
     -ms-overflow-style: none;
@@ -21,7 +17,6 @@
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
-    padding-top: 4em;
 
 }
 
@@ -175,24 +170,18 @@
  @media all and (min-width : 1000px) {
 
   .visionSection {
-    padding: 7em 0;
     gap: 0;
   }
 
   .CEO {
     text-align: center;
     font-size: 4vw;
-
   }
 
  .visionContainers {
   flex-direction: row;
   margin: 0;
   gap: 0;
- }
-
- .visionHeadings {
-  font-size: 8em;
  }
 
  .imgContainer {
@@ -232,9 +221,6 @@
   width: 100%;
  }
 
- .heading-container {
-   font-size: 1.2em;
- }
 
  .paragraphs {
   font-size: 1em;
@@ -242,12 +228,16 @@
  }
 
  @media all and (min-width : 1280px) {
-  .visionSection {
-    padding-top: 7em;
-  }
 
   .contactForm {
     width: 100vw;
+  }
+
+  .visionHeadings {
+    font-size: 7vw;
+  }
+  .paragraphs {
+    font-size: 1.3vw;
   }
  }
  
