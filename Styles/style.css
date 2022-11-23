@@ -282,6 +282,12 @@ p {
   background: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* The Close Button + HOVER*/
 .close {
   color: #aaaaaa;
@@ -1039,7 +1045,6 @@ span ion-icon {
 
 html {
   scroll-behavior: smooth;
-  height: 100vh;
 }
 
 body {
