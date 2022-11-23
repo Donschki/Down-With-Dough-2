@@ -169,7 +169,7 @@ p {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   width: 100%;
-  height: 500px;
+  height: 70vh;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -229,7 +229,7 @@ p {
 
 @media (min-height: 850px) {
   .slideshow-container {
-    height: 700px;
+    height: 80vh;
   }
 }
 .mySlides {
@@ -1039,6 +1039,7 @@ span ion-icon {
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
