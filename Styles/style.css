@@ -169,7 +169,7 @@ p {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   width: 100%;
-  height: 60%;
+  height: 70%;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -245,7 +245,8 @@ p {
   display: flex;
   position: absolute;
   bottom: 0;
-  padding-bottom: 4em;
+  width: 100%;
+  margin: auto;
 }
 
 .contact-containers {
@@ -293,9 +294,10 @@ p {
     letter-spacing: 2px;
   }
   .contact-info-container {
-    z-index: 10;
     width: 30em;
     margin: auto;
+    position: relative;
+    padding-bottom: 0;
   }
   .hamburger-menu {
     display: none;
