@@ -141,6 +141,12 @@ nav {
   transform: rotateZ(405deg) translate(-6px, -6px);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .slogan-container {
   width: 100%;
   display: flex;
@@ -148,12 +154,12 @@ nav {
 }
 
 #slogan {
-  font-size: 1em;
+  font-size: 0.7em;
   letter-spacing: 3px;
   line-height: 2;
   margin: auto;
-  width: 90%;
-  padding: 3em 0;
+  width: 100%;
+  margin-top: 4.5em;
 }
 
 p {
@@ -167,7 +173,6 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100vh;
-  padding-top: 2em;
 }
 
 .slideshow-container {
@@ -178,6 +183,8 @@ main {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   height: 100%;
+  max-width: 680px;
+  margin: auto;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -285,18 +292,18 @@ main {
   font-size: 0.5em;
 }
 
-/* The Close Button + HOVER*/
 @media only screen and (min-width: 660px) {
-  body {
-    height: 100vh;
-  }
   main {
-    padding-top: 0;
     display: flex;
-    height: 75vh;
+    height: 100vh;
   }
   #slogan {
     letter-spacing: 4px;
+    margin-top: 0;
+    padding: 10px;
+  }
+  .slideshow-container {
+    max-width: 950px;
   }
   .contact-info-container {
     flex-direction: row;
@@ -320,6 +327,9 @@ main {
     height: 100vh;
     overflow-y: hidden;
   }
+  .slideshow-container {
+    min-width: 100%;
+  }
   .contact-info-container {
     top: 35%;
     left: 0;
@@ -335,11 +345,10 @@ main {
     width: 50%;
   }
   #slogan {
-    font-size: 1.3em;
+    font-size: 0.9em;
     width: 90%;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 1000;
-    padding: 1em 0;
   }
   .hamburgerBox {
     display: none;
@@ -353,6 +362,12 @@ main {
     word-spacing: 3px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #logo {
   width: 6em;
   height: 6em;
@@ -508,7 +523,7 @@ a {
     flex-direction: column;
     overflow: scroll;
     display: flex;
-    width: 100vw;
+    width: 100%;
     margin: auto;
   }
   .containers {
@@ -547,9 +562,6 @@ a {
     margin: auto;
     width: 30em;
     text-align: center;
-  }
-  .dogTreatsHeading mainHeading {
-    font-size: 5em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -593,6 +605,12 @@ a {
     padding: 1em 0;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
 .visionSection {
   overflow: scroll;
@@ -668,6 +686,12 @@ a {
   align-items: center;
   font-size: 7vw;
   padding: 0.95em;
+}
+
+hr {
+  transform: rotateZ(0deg);
+  width: 70%;
+  margin: auto;
 }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
@@ -783,9 +807,6 @@ a {
   .visionHeadings {
     font-size: 7vw;
   }
-  .infoContainers {
-    display: flex;
-  }
   .paragraphs {
     font-size: 1.3vw;
   }
@@ -881,6 +902,7 @@ span ion-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 3em;
   width: 60%;
   margin: auto;
@@ -911,7 +933,10 @@ span ion-icon {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 660px) {
+  .box {
+    padding-top: 0;
+  }
   .nameSurnameBox {
     flex-direction: row;
     width: 100%;

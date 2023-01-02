@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
 
 .visionSection {
@@ -17,6 +23,8 @@
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
+
+   
 
 }
 
@@ -84,6 +92,12 @@
   font-size: 7vw;
   padding: 0.95em;
 }
+
+hr {
+  transform: rotateZ(0deg);
+  width: 70%;
+  margin: auto;
+ }
 
 /* ------------------------------------- INFOR NTAINERS ----------------------------- */
 

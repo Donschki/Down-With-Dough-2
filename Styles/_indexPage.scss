@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .slogan-container {
     width: 100%;
@@ -7,12 +11,12 @@
 }
 
 #slogan {
-    font-size: 1em;
+    font-size: 0.7em;
     letter-spacing: 3px;
     line-height: 2;
     margin: auto;
-    width: 90%;
-    padding: 3em 0;
+    width: 100%;
+    margin-top: 4.5em;
 }
 
 p {
@@ -26,12 +30,13 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
-    padding-top: 2em;
 }
 
 .slideshow-container {
     @include slideShow;
     height: 100%;
+    max-width: 680px;
+    margin: auto;
 }
 
 .mySlides {
@@ -59,6 +64,7 @@ main {
 
 .contact-containers {
  @include flexCenter;
+ 
  height: 100%;
 
     cursor: pointer;
@@ -86,7 +92,6 @@ main {
     font-size: 0.5em;
 }
 
-/* The Close Button + HOVER*/
 
 ///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
 
@@ -99,43 +104,51 @@ main {
 
 @media only screen and (min-width: 660px) {
 
-    body {
-        height: 100vh;
-    }
 
-    main {
-         padding-top:0 ;
+main {
          display: flex;
-         height: 75vh;
+         height: 100vh;
 
-    }
-    
-    #slogan {
-        letter-spacing: 4px;
-    }
+}
 
-    .contact-info-container {
-        flex-direction: row;
-        height: 6em;
-    }
 
-    .hamburger-menu {
+#slogan {
+     letter-spacing: 4px;
+     margin-top: 0 ;
+     padding: 10px;
+
+}
+
+.slideshow-container {
+    max-width: 950px;
+}
+
+
+.contact-info-container {
+     flex-direction: row;
+     height: 6em;
+}
+
+.hamburger-menu {
         display: none;
-    }
+}
 
-    .navListExtended {
+.navListExtended {
         @include navListExtended; //mixin in navbar.scss
-    }
+}
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 
 @media only screen and (min-width: 1024px) {
 
 main {
-    height: 100vh;
-    overflow-y: hidden;
+     height: 100vh;
+     overflow-y: hidden;
 }    
 
+.slideshow-container {
+    min-width: 100%;
+}
 
     .contact-info-container {
         top: 35%;
@@ -154,23 +167,22 @@ main {
     }
  
     #slogan {
-        font-size: 1.3em;
-        width: 90%;
-        letter-spacing: 2px;
-        font-weight: 1000;
-        padding: 1em 0;
+     font-size: 0.9em;
+     width: 90%;
+     letter-spacing: 3px;
+     font-weight: 1000;
     }
 
     .hamburgerBox {
-        display: none;
+         display: none;
     }
 }
 
 @media only screen and (min-width: 1500px) {
-    #slogan {
-        font-size: 1.5em;
-        width: 100%;
-        letter-spacing: 4px;
-        word-spacing: 3px;
+     #slogan {
+     font-size: 1.5em;
+     width: 100%;
+     letter-spacing: 4px;
+     word-spacing: 3px;
     }
 }

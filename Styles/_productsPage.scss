@@ -1,3 +1,10 @@
+* {
+    // border: solid 1px black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #logo {
     width: 6em;
     height: 6em;
@@ -149,24 +156,24 @@ a {
 }
 
 .extended-nav-item {
-        list-style: none;
+     list-style: none;
 }
 
 .bakerySection {
- flex-direction: column;
- overflow: scroll;
- display: flex;
- width: 100vw;
- margin: auto;
+     flex-direction: column;
+     overflow: scroll;
+     display: flex;
+     width: 100%;
+     margin: auto;
 }
 
  .containers {
-            display: flex;
-            width: 100%;
+     display: flex;
+     width: 100%;
  }
 
  .reverse {
-            flex-direction: row-reverse;
+     flex-direction: row-reverse;
  }
 
  .info {
@@ -175,15 +182,15 @@ a {
  }
 
  .titles {
-            font-size: 7vw;
-            margin: auto;
-            letter-spacing: 6px;
-             width: 100%;
+     font-size: 7vw;
+     margin: auto;
+     letter-spacing: 6px;
+      width: 100%;
 
  }
 
  .mainHeading {
-            font-size: 5vw;
+     font-size: 5vw;
  }
 
  .productParagraph {
@@ -198,16 +205,13 @@ a {
  }
 
  .Peanut-Butter-And-Butternut-Dog-Treats-container {
-            padding-bottom: 7em;
+     padding-bottom: 7em;
  }
 
  .dogTreatsHeading {
-            margin: auto;
-            width: 30em;
-            text-align: center;
-            mainHeading {
-                font-size: 5em;
-            }
+     margin: auto;
+     width: 30em;
+     text-align: center;
  }
 
 }
