@@ -5,6 +5,10 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
 }
+nav a {
+  display: flex;
+  text-align: center;
+}
 
 .side-bar {
   width: 11.5em;
@@ -59,7 +63,6 @@ nav {
   color: rgb(255, 255, 255);
   letter-spacing: 5px;
   text-transform: uppercase;
-  font-size: 1.1em;
   font-weight: 300;
   position: relative;
 }
@@ -300,7 +303,6 @@ main {
   #slogan {
     letter-spacing: 4px;
     margin-top: 0;
-    padding: 10px;
   }
   .slideshow-container {
     max-width: 950px;
@@ -317,7 +319,6 @@ main {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    padding: 5px;
     position: relative;
   }
 }
@@ -369,8 +370,8 @@ main {
 }
 
 #logo {
-  width: 6em;
-  height: 6em;
+  width: 3em;
+  height: 3em;
 }
 
 .navListExtended {
@@ -514,7 +515,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    padding: 5px;
     position: relative;
   }
   .extended-nav-item {
@@ -566,10 +566,6 @@ a {
   }
 }
 @media only screen and (min-width: 760px) {
-  .containers {
-    height: 90vh;
-    margin: auto;
-  }
   .sub-heading {
     font-size: 1vw;
   }
@@ -598,6 +594,10 @@ a {
     word-spacing: 2px;
     padding-top: 1em;
     font-size: 1.5em;
+  }
+  .bakerySection .containers {
+    height: 90vh;
+    margin: auto;
   }
   .mainHeading {
     font-size: 3vw;
@@ -756,10 +756,6 @@ hr {
   }
   .change {
     left: 0;
-  }
-  .nav-link {
-    font-size: 1.4em;
-    letter-spacing: 10px;
   }
   .nav-item {
     margin-top: 3em;

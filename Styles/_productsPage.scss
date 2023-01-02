@@ -6,8 +6,8 @@
 }
 
 #logo {
-    width: 6em;
-    height: 6em;
+    width: 3em;
+    height: 3em;
 }
 
 .navListExtended {
@@ -217,10 +217,7 @@ a {
 }
 
 @media only screen and (min-width: 760px) {
-    .containers {
-        height:90vh;
-        margin:auto;
-    }
+  
 
     .sub-heading {
         font-size: 1vw;
@@ -259,6 +256,10 @@ a {
         word-spacing: 2px;
         padding-top: 1em;
         font-size: 1.5em;
+}
+.containers {
+    height:90vh;
+    margin:auto;
 }}
 
     .mainHeading {
