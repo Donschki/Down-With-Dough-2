@@ -4,6 +4,7 @@ nav {
     z-index: 100;
     flex-direction: column;
     justify-content: space-evenly;
+   
     
     a {
         display: flex;
@@ -18,7 +19,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     background:#3b4f8879;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .side-bar {

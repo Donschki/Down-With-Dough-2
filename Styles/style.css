@@ -157,12 +157,11 @@ nav a {
 }
 
 #slogan {
-  font-size: 0.7em;
+  font-size: 4vw;
   letter-spacing: 3px;
   line-height: 2;
   margin: auto;
   width: 100%;
-  margin-top: 4.5em;
 }
 
 p {
@@ -171,11 +170,17 @@ p {
   list-style: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 3em;
+}
+
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 100vh;
+  height: 90vh;
 }
 
 .slideshow-container {
@@ -185,7 +190,7 @@ main {
   /* The dots/bullets/indicators */
   /* Fading animation */
   /* On smaller screens, decrease text size */
-  height: 100%;
+  height: 550px;
   max-width: 680px;
   margin: auto;
 }
@@ -260,21 +265,36 @@ main {
 /* --------------------------- Contact Info Footer ------------------- */
 .contact-info-container {
   background-color: rgba(32, 42, 69, 0.7254901961);
+  display: block;
+  flex-direction: row;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100vh;
+  width: 100%;
+  justify-content: space-evenly;
+  color: whitesmoke;
 }
-
-.contact-containers {
+.contact-info-container a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+.contact-info-container hr {
   height: 100%;
+}
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-size: 12px;
+  width: 100%;
+  height: 10em;
   cursor: pointer;
 }
-.contact-containers svg {
-  width: 30%;
+.socialMediaIcons svg {
+  font-size: 3em;
+  width: 1em;
 }
 
 .headings {
@@ -295,21 +315,55 @@ main {
   font-size: 0.5em;
 }
 
+hr {
+  width: 30%;
+}
+
+@media only screen and (min-width: 400px) {
+  #slogan {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .socialMediaIcons {
+    height: 7em;
+  }
+}
 @media only screen and (min-width: 660px) {
-  main {
-    display: flex;
+  body {
+    padding-top: 0;
     height: 100vh;
+  }
+  #slogan {
+    padding: 100px;
+  }
+  .socialMediaIcons {
+    height: 100%;
+    padding: 10px;
   }
   #slogan {
     letter-spacing: 4px;
     margin-top: 0;
+    padding: 2px;
   }
   .slideshow-container {
-    max-width: 950px;
+    min-width: 100%;
+    height: 100%;
   }
   .contact-info-container {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     flex-direction: row;
-    height: 6em;
+    width: 50%;
+    height: 4em;
+    transition: 1s;
+    position: absolute;
+    justify-content: space-evenly;
+  }
+  .contact-info-container hr {
+    height: 100%;
   }
   .hamburger-menu {
     display: none;
@@ -319,59 +373,35 @@ main {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
 @media only screen and (min-width: 1024px) {
   main {
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .slideshow-container {
     min-width: 100%;
-  }
-  .contact-info-container {
-    top: 35%;
-    left: 0;
-    flex-direction: column;
-    width: 6em;
-    height: 45%;
-    transition: 1s;
-    position: absolute;
-    justify-content: space-evenly;
-  }
-  .contact-info-container hr {
-    transform: rotateZ(0deg);
-    width: 50%;
+    min-height: 90%;
   }
   #slogan {
     font-size: 0.9em;
-    width: 90%;
-    letter-spacing: 3px;
+    width: 100%;
+    letter-spacing: 7px;
     font-weight: 1000;
   }
   .hamburgerBox {
     display: none;
   }
 }
-@media only screen and (min-width: 1500px) {
-  #slogan {
-    font-size: 1.5em;
-    width: 100%;
-    letter-spacing: 4px;
-    word-spacing: 3px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-#logo {
-  width: 3em;
-  height: 3em;
 }
 
 .navListExtended {
@@ -384,13 +414,16 @@ main {
   list-style: none;
 }
 
-/* ------------------------------------ Bakery Section ------------------------------ */
+.change {
+  left: 0;
+}
+
 .bakerySection {
   display: flex;
   flex-direction: column;
-  gap: 5em;
   background-color: #202a45;
   overflow: scroll;
+  gap: 3em;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
   scrollbar-width: none;
@@ -406,7 +439,6 @@ main {
   display: none;
 }
 
-/* ------------------------------------ HEADINGS ------------------------------ */
 .mainHeading {
   display: flex;
   justify-content: center;
@@ -443,7 +475,6 @@ main {
 
 .containers {
   text-align: center;
-  width: 100%;
 }
 .containers hr {
   margin: 1em 0;
@@ -515,7 +546,9 @@ a {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   .extended-nav-item {
     list-style: none;
@@ -526,10 +559,15 @@ a {
     display: flex;
     width: 100%;
     margin: auto;
+    gap: 0;
+  }
+  .bakerySection img {
+    height: 100%;
   }
   .containers {
     display: flex;
-    width: 100%;
+    height: 70vh;
+    padding: 4em;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -539,7 +577,7 @@ a {
     display: flex;
   }
   .titles {
-    font-size: 7vw;
+    font-size: 2em;
     margin: auto;
     letter-spacing: 6px;
     width: 100%;
@@ -548,13 +586,9 @@ a {
     font-size: 5vw;
   }
   .productParagraph {
-    font-size: 3vw;
+    font-size: 1em;
     width: 90%;
     padding-top: 1em;
-  }
-  img {
-    width: 50vw;
-    height: 80%;
   }
   .Peanut-Butter-And-Butternut-Dog-Treats-container {
     padding-bottom: 7em;
@@ -566,17 +600,19 @@ a {
   }
 }
 @media only screen and (min-width: 760px) {
+  .side-bar {
+    display: none;
+  }
   .sub-heading {
     font-size: 1vw;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .bakerySection .mainHeading {
+  .mainHeading {
     font-size: 5vw;
   }
-  .bakerySection img {
-    width: 50vw;
-    height: 100%;
+  .containers {
+    height: 80vh;
   }
   .titles {
     font-size: 3em;
@@ -595,9 +631,9 @@ a {
     padding-top: 1em;
     font-size: 1.5em;
   }
-  .bakerySection .containers {
-    height: 90vh;
+  .containers {
     margin: auto;
+    height: 80vh;
   }
   .mainHeading {
     font-size: 3vw;
@@ -706,7 +742,6 @@ a {
 
 hr {
   transform: rotateZ(0deg);
-  width: 70%;
   margin: auto;
 }
 
@@ -719,12 +754,12 @@ hr {
   }
   .paragraphs {
     padding: 0 1em;
-    font-size: 1em;
+    text-align: center;
   }
 }
 @media all and (min-width: 660px) {
   .visionHeadings {
-    font-size: 10vw;
+    font-size: 3.5em;
   }
   .containerInfo {
     display: flex;
@@ -733,6 +768,44 @@ hr {
   }
   .paragraphs {
     text-align: center;
+  }
+  .visionSection {
+    gap: 0;
+  }
+  .CEO {
+    text-align: center;
+    font-size: 4vw;
+  }
+  .visionContainers {
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+  }
+  #joshContainer {
+    height: 550px;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  #josh {
+    height: 100%;
+  }
+  .visionContainers:nth-child(2) {
+    flex-direction: row-reverse;
+    height: 800px;
+  }
+  .visionContainers:nth-child(3) {
+    width: 100%;
+  }
+  .visionContainers:nth-child(4) {
+    width: 100%;
+    padding-top: 2em;
+  }
+  .containerInfo {
+    justify-content: center;
+  }
+  .containerInfo:nth-child(2) {
+    width: 100%;
   }
 }
 @media all and (min-width: 768px) {
@@ -771,56 +844,18 @@ hr {
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
-@media all and (min-width: 1000px) {
-  .visionSection {
-    gap: 0;
-  }
-  .CEO {
-    text-align: center;
-    font-size: 4vw;
-  }
-  .visionContainers {
-    flex-direction: row;
-    margin: 0;
-    gap: 0;
-  }
-  .imgContainer {
-    width: 10%;
-  }
-  .visionContainers:nth-child(2) {
-    flex-direction: row-reverse;
-    height: 800px;
-  }
-  .visionContainers:nth-child(3) {
-    width: 100%;
-  }
-  .visionContainers:nth-child(4) {
-    width: 100%;
-    padding-top: 5em;
-  }
-  .imgContainer {
-    width: 100%;
-  }
-  .containerInfo {
-    height: 100%;
-    justify-content: center;
-  }
-  .containerInfo:nth-child(2) {
-    width: 100%;
-  }
-  .paragraphs {
-    font-size: 1em;
-  }
-}
 @media all and (min-width: 1280px) {
   .contactForm {
     width: 100vw;
   }
-  .visionHeadings {
-    font-size: 7vw;
+}
+@media all and (min-width: 1500px) {
+  .containerInfo {
+    letter-spacing: 10px;
+    font-size: 1em;
   }
-  .paragraphs {
-    font-size: 1.3vw;
+  .visionHeadings {
+    font-size: 5vw;
   }
 }
 * {
@@ -843,18 +878,12 @@ hr {
   text-transform: uppercase;
 }
 
-.box {
-  gap: 2em;
-  padding-top: 4em;
-}
-
 #contactHeading {
   font-size: 0em;
 }
 
 form {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -865,8 +894,9 @@ form {
   text-transform: uppercase;
 }
 
-.contactForm {
-  margin: auto;
+.contactMap {
+  width: 100%;
+  height: 60vh;
 }
 
 a {
@@ -876,7 +906,7 @@ a {
 }
 
 .inputBox {
-  padding: 0 0.5em;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -946,8 +976,14 @@ span ion-icon {
 }
 
 @media only screen and (min-width: 660px) {
+  main {
+    height: 100vh;
+  }
   .box {
-    padding-top: 0;
+    height: 100vh;
+  }
+  #contactHeading {
+    font-size: 3em;
   }
   .nameSurnameBox {
     flex-direction: row;
@@ -957,13 +993,16 @@ span ion-icon {
     flex-direction: row;
   }
   .contactForm {
-    padding: 1em;
+    height: 100vh;
+  }
+  .contactMap {
+    height: 50vh;
   }
   .contactInfo {
     display: flex;
     width: 100%;
+    height: 10em;
     flex-direction: row;
-    padding: 2em 0;
   }
   .infoBoxChild {
     width: 100%;
@@ -971,14 +1010,12 @@ span ion-icon {
     flex-direction: column;
     text-align: center;
   }
-  .contactMap {
-    height: 50vh;
-  }
 }
 @media only screen and (min-width: 730px) {
   .box {
     display: flex;
     flex-direction: column;
+    height: 95vh;
     justify-content: space-evenly;
   }
   .contactInfo {
@@ -1001,11 +1038,12 @@ span ion-icon {
 }
 @media only screen and (min-width: 1000px) {
   .box {
-    display: flex;
     flex-direction: row;
+    height: 100%;
   }
   .boxContainers {
     width: 100%;
+    height: 100%;
   }
   #contactHeading {
     font-size: 3em;
@@ -1015,7 +1053,6 @@ span ion-icon {
     justify-content: space-around;
   }
   .contactForm {
-    padding: 2em;
     flex-direction: row;
     display: flex;
     width: 100%;
@@ -1024,11 +1061,7 @@ span ion-icon {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .contactMap {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .infoBoxChild {
     flex-direction: column;
@@ -1060,6 +1093,9 @@ body {
   background-color: #202a45;
   font-family: "Abel", sans-serif;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+}
+
+#logo {
+  width: 4em;
+  height: 4em;
 }/*# sourceMappingURL=style.css.map */
