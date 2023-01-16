@@ -150,10 +150,6 @@ nav a {
   box-sizing: border-box;
 }
 
-#indexBody {
-  height: 100vh;
-}
-
 .slogan-container {
   width: 100%;
   display: flex;
@@ -177,13 +173,12 @@ p {
 main {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   width: 100%;
 }
 
 #indexMain {
-  padding-top: 2em;
-  height: 93vh;
-  margin: auto;
+  padding-top: 3em;
 }
 
 .slideshow-container {
@@ -272,7 +267,7 @@ main {
   flex-direction: row;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   color: whitesmoke;
 }
 .contact-info-container a {
@@ -334,7 +329,6 @@ hr {
 @media only screen and (min-width: 660px) {
   #indexMain {
     padding-top: 0em;
-    height: 100vh;
   }
   #slogan {
     padding: 100px;
@@ -366,7 +360,7 @@ hr {
     justify-content: space-evenly;
   }
   .contact-info-container hr {
-    height: 60%;
+    height: 100%;
   }
   .hamburger-menu {
     display: none;
