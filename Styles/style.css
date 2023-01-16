@@ -150,6 +150,10 @@ nav a {
   box-sizing: border-box;
 }
 
+#indexBody {
+  height: 100vh;
+}
+
 .slogan-container {
   width: 100%;
   display: flex;
@@ -663,15 +667,14 @@ a {
 /* ------------------------------------- VISION + PARAGRAPH SECTION ----------------------------- */
 .visionSection {
   overflow: scroll;
-  overflow-x: hidden;
-  overflow: scroll;
-  -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #202a45;
   display: grid;
   flex-direction: column;
   justify-content: space-around;
   gap: 3em;
+  padding-top: 3em;
+  overflow-x: hidden;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
   scrollbar-width: none;
@@ -706,7 +709,7 @@ a {
 .paragraphs {
   line-height: 2;
   letter-spacing: 3px;
-  font-size: 1em;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 0 1em;
 }
@@ -727,6 +730,15 @@ a {
 
 .headingContainer {
   text-align: center;
+}
+
+#reverseContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#reverseImg {
+  flex-direction: column-reverse;
 }
 
 .CEO {
@@ -754,20 +766,28 @@ hr {
     text-align: center;
   }
 }
-@media all and (min-width: 660px) {
+@media all and (min-width: 700px) {
+  .visionSection {
+    gap: 0;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: 0;
+  }
   .visionHeadings {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .containerInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+  #reverseContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .paragraphs {
     text-align: center;
-  }
-  .visionSection {
-    gap: 0;
+    font: 12px;
   }
   .CEO {
     text-align: center;
@@ -789,7 +809,6 @@ hr {
   }
   .visionContainers:nth-child(2) {
     flex-direction: row-reverse;
-    height: 800px;
   }
   .visionContainers:nth-child(3) {
     width: 100%;
@@ -838,6 +857,12 @@ hr {
   .infoContainers {
     width: 80%;
     margin-bottom: 1em;
+  }
+  #reverseContainer {
+    flex-direction: column;
+  }
+  #reverseImg {
+    flex-direction: row;
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
@@ -1091,6 +1116,7 @@ body {
   font-family: "Abel", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #logo {
