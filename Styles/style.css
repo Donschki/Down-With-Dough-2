@@ -177,12 +177,13 @@ p {
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
 }
 
 #indexMain {
-  padding-top: 3em;
+  padding-top: 2em;
+  height: 93vh;
+  margin: auto;
 }
 
 .slideshow-container {
@@ -333,6 +334,7 @@ hr {
 @media only screen and (min-width: 660px) {
   #indexMain {
     padding-top: 0em;
+    height: 100vh;
   }
   #slogan {
     padding: 100px;

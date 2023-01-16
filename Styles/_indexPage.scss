@@ -5,22 +5,22 @@
 }
 
 #indexBody {
-    height: 100vh;
+     height: 100vh;
 }
 
 
 .slogan-container {
-    width: 100%;
+     width: 100%;
     display: flex;
-    text-align: center;
+     text-align: center;
 }
 
 #slogan {
-    font-size: 4vw;
-    letter-spacing: 3px;
-    line-height: 2;
-    margin: auto;
-    width: 100%;
+     font-size: 4vw;
+     letter-spacing: 3px;
+     line-height: 2;
+     margin: auto;
+     width: 100%;
 }
 
 p {
@@ -29,17 +29,16 @@ p {
     list-style: none;
 }
 
-
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%
-
 }
 
 #indexMain {
-    padding-top: 3em;
+    padding-top: 2em;
+    height: 93vh;
+    margin: auto
 }
 
 .slideshow-container {
@@ -143,7 +142,8 @@ hr {
 
 @media only screen and (min-width: 660px) {
     #indexMain {
-        padding-top: 0em
+        padding-top: 0em;
+        height: 100vh;
     }
 
 #slogan {
