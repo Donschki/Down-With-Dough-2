@@ -14,7 +14,7 @@
 </head>
 
 <body>
-        <header>
+     <header>
             <!------------------------------- HEADER + NAVBAR ------------------->
             <nav>
                 <div class="hamburgerBox">
@@ -73,15 +73,16 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+     </header>
 
-        <!------------------------------------------- Vision Section -------------------------------------->
-        <div class="visionSection">
+     <!------------------------------------------- Vision Section -------------------------------------->
+
+     <div class="visionSection">
 
             <div class="visionContainers"  >
 
                 <div class="imgContainer"  >
-                    <img class="visionImages" src="Photos/Emma Josh.jpg" alt="" style="width: 100%; height: 100%;">
+                    <img class="visionImages" src="Photos/Emma Josh.jpg" alt="">
                 </div>
 
                 <div class="containerInfo">
@@ -98,10 +99,10 @@
                 </div>
             </div>
 
-            <div class="visionContainers">
+            <div class="visionContainers" id="joshContainer" >
 
-                <div class="imgContainer" >
-                    <img class="visionImages" src="Photos/DWD-9.jpg" style="width: 100%; height: 100%;" alt="">
+                <div class="imgContainer"  >
+                    <img class="visionImages" id="josh" src="Photos/DWD-9.jpg" alt="">
                 </div>
 
                 <div class="containerInfo">
@@ -117,13 +118,13 @@
                 </div>
             </div>
 
-            <div class="visionContainers">
-                <div class="imgContainer" >
-                    <img class="visionImages" src="Photos/lynneRutherfoord.jpg" alt="">
+                    <div class="visionContainers" id="reverseContainer">
+                     <div class="imgContainer" id="reverseImg">
+                         <img class="visionImages" src="Photos/lynneRutherfoord.jpg" alt="">
 
-                </div>
-                <p class="CEO"> Lynne Rutherfoord - Founder & CEO of Down With Dough</p>
-            </div>
+                         <p class="CEO"> Lynne Rutherfoord - Founder & CEO of Down With Dough</p>
+                     </div>
+
 
             <div class="visionContainers">
 
@@ -141,12 +142,20 @@
 
                     </p>
                 </div>
-            </div>
+                
+                 </div>
+     </div>
 
-    </div>
+     <!--Burger Menu Animation Script-->
+     <script src="Js/Script.js"></script>
+        
+     <!-- OFF CLICK SCRIPT -->
+     <script>
+     document.querySelector('.visionSection').addEventListener('click', () => {
+     sideBar.classList.remove('change');
+   });
 
-        <!--Burger Menu Animation Script-->
-        <script src="Js/Script.js"></script>
+     </script>
 
 </body>
 

@@ -11,24 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css" type="text/css">
-    <script src="Js/Script.js "></script>
-
 </head>
 
 <body>
     <header>
         <!------------------------------- HEADER + NAVBAR ------------------->
-        <nav>
 
-        <div class="hamburgerBox">
+         <nav>
+
+         <div class="hamburgerBox">
             <div class="hamburger-menu">
                 <div class="line line-1"> </div>
                 <div class="line line-2"> </div>
                 <div class="line line-3"> </div>
             </div> 
-        </div>
+         </div>
 
-            <div class="side-bar ">
+         <div class="side-bar">
 
                 <div class="logo-container">
                     <img id="Logo-img" src="Photos/Logo.jpg">
@@ -52,9 +51,9 @@
                         <a href="Contact Form.html" class="nav-link">Contact </a>
                     </li>
                 </ul>
-            </div>
+         </div> 
 
-            <ul class="navListExtended">
+         <ul class="navListExtended">
 
                 <img id="logo" src="Photos/Logo.png" alt="">
 
@@ -73,9 +72,10 @@
                 <li class="extended-nav-item">
                     <a href="Contact Form.html" class="nav-link">Contact </a>
                 </li>
-            </ul>
+         </ul>
 
-        </nav>
+         </nav>
+
     </header>
 
     <div class="bakerySection">
@@ -85,7 +85,6 @@
             <!------------------------------- MAIN HEADING --------------------------->
             <h1>Deliciously Gluten-Free Bakery</h1>
         </div>
-
     <hr>
         
         <div class="Brownies-container containers">
@@ -229,6 +228,16 @@
     </div>
 
     <!-------------------------------SCRIPT --------------------------->
+       <!--Burger Menu Animation Script-->
+       <script src="Js/Script.js"></script>
+        
+       <!-- OFF CLICK SCRIPT -->
+       <script>
+       document.querySelector('.bakerySection').addEventListener('click', () => {
+       sideBar.classList.remove('change');
+     });
+  
+       </script>
 </body>
 
 </html>
