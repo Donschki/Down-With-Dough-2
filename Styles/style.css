@@ -156,8 +156,8 @@ nav a {
 
 .slogan-container {
   width: 100%;
-  display: flex;
   text-align: center;
+  margin: auto;
 }
 
 #slogan {
@@ -192,7 +192,7 @@ main {
   /* The dots/bullets/indicators */
   /* Fading animation */
   /* On smaller screens, decrease text size */
-  height: 500px;
+  height: 70%;
   max-width: 680px;
   margin: auto;
 }
@@ -323,7 +323,7 @@ hr {
 
 @media only screen and (min-width: 400px) {
   #slogan {
-    font-size: 12px;
+    font-size: 1.5em;
     padding: 5px;
   }
   .socialMediaIcons {
