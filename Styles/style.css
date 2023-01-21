@@ -157,11 +157,10 @@ nav a {
 .slogan-container {
   width: 100%;
   text-align: center;
-  margin: auto;
 }
 
 #slogan {
-  font-size: 1em;
+  font-size: 0.7em;
   letter-spacing: 3px;
   line-height: 2;
   margin: auto;
@@ -270,6 +269,7 @@ main {
   flex-direction: row;
   display: flex;
   width: 100%;
+  margin: auto;
   justify-content: space-evenly;
   color: whitesmoke;
 }
