@@ -10,8 +10,8 @@
 
 .slogan-container {
     width: 100%;
-    display: flex;
     text-align: center;
+    margin: auto;
 }
 
 #slogan {
@@ -42,7 +42,7 @@ main {
 
 .slideshow-container {
     @include slideShow;
-    height: 550px;
+    height: 70%;
     max-width: 680px;
     margin: auto;
 }
@@ -126,10 +126,6 @@ hr {
 ///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
 
 @media only screen and (min-width: 400px) {
-#slogan {
-    font-size: 12px;
-    padding: 5px;
-}
 
 .socialMediaIcons {
     height: 7em;
