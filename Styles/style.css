@@ -486,7 +486,7 @@ hr {
   margin: auto;
 }
 
-.dogTreatsHeading {
+MN .dogTreatsHeading {
   margin: auto;
   width: 15em;
   text-align: center;
@@ -807,6 +807,7 @@ hr {
     width: 100vw;
     overflow: hidden;
     overflow-x: 0;
+    padding-top: 0;
   }
   .visionHeadings {
     font-size: 3em;
