@@ -194,7 +194,6 @@ main {
   /* On smaller screens, decrease text size */
   height: 70%;
   max-width: 680px;
-  margin: auto;
 }
 .slideshow-container .text {
   color: #fcd059;
