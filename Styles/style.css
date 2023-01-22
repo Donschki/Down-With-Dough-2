@@ -505,7 +505,6 @@ hr {
 
 .productParagraph {
   font-size: 1em;
-  width: 70%;
   margin: auto;
   line-height: 1.5;
   text-align: center;
@@ -578,7 +577,6 @@ a {
   }
   .productParagraph {
     font-size: 1em;
-    width: 90%;
   }
   .Peanut-Butter-And-Butternut-Dog-Treats-container {
     padding-bottom: 7em;
@@ -598,7 +596,7 @@ a {
   }
   .bakerySection img {
     width: 90%;
-    height: 115%;
+    height: 100%;
   }
   .containers {
     height: 30em;
@@ -626,10 +624,8 @@ a {
   .bakerySection .productParagraph {
     width: 70%;
     line-height: 2;
-    letter-spacing: 8px;
     word-spacing: 2px;
     padding-top: 1em;
-    font-size: 1.5em;
   }
   .containers {
     height: 40em;
@@ -650,16 +646,10 @@ a {
     padding: 1em 0;
   }
   .titles {
-    font-size: 6em;
-  }
-  .bakerySection img {
-    height: 100%;
+    font-size: 4em;
   }
   .containers {
-    height: 50em;
-  }
-  .productParagraph {
-    font-size: 20em;
+    height: 45em;
   }
 }
 * {
