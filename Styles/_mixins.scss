@@ -6,12 +6,18 @@
 }
 
 @mixin navBar {
-    width: 100vw;
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     padding: 0.5em;
 
+}
+
+@mixin navListExtended {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  background:#3b4f8879;
 }
 
 /* Slideshow container */

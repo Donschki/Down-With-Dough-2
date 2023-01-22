@@ -79,7 +79,7 @@
 
 #reverseContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #reverseImg {
@@ -87,12 +87,8 @@
 }
 
 .CEO {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-size: 7vw;
-  padding: 0.95em;
+  text-align: center;
 }
 
 hr {
@@ -118,13 +114,61 @@ hr {
 
  }
 
- @media all and (min-width : 700px) {
+ @media all and (min-width : 800px) {
+/*------------------------------------ Navigation Bar -----------------------------------------*/
+ 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+ }
+ 
+ #Logo-img {   
+   height: 15.5em;
+   border-radius: 100%;   
+   z-index: 1;  
+ }
+   
+ .side-bar {
+   width: 16.3em;
+   height: 10em;  
+   padding-bottom: 25em;
+   left: -18em;
+ }
+ 
+ .change {
+   left: 0;
+ }
+ 
+ .nav-item {
+   margin-top: 3em;
+   display: flex;
+   width: fit-content;
+ }
+ /*------------------------------------ Vision Container -----------------------------------------*/
+
+ .infoContainers {
+  width: 80%;
+  margin-bottom: 1em;
+ }
+
+ #reverseContainer {
+  flex-direction: column;
+
+}
+
+#reverseImg {
+  flex-direction: row;
+  width: 50%;
+}
 
   .visionSection {
     gap: 0;
     width: 100vw;
     overflow: hidden;
     overflow-x:0;
+    padding-top: 0;
     
   }
 
@@ -140,7 +184,10 @@ hr {
 
   #reverseContainer {
     display: flex;
-    flex-direction: column-reverse;
+  }
+
+  #reverseImg {
+    width: 94.8%;
   }
 
   .paragraphs {
@@ -195,60 +242,8 @@ hr {
  }
  }
 
- @media all and (min-width : 768px) {
- 
- /*------------------------------------ Navigation Bar -----------------------------------------*/
- 
- .logo-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 4em;
-  margin-bottom: 1em;
- }
- 
- #Logo-img {   
-   height: 15.5em;
-   border-radius: 100%;   
-   z-index: 1;  
- }
-   
- .side-bar {
-   width: 16.3em;
-   height: 10em;  
-   padding-bottom: 25em;
-   left: -18em;
- }
- 
- .change {
-   left: 0;
- }
- 
- .nav-item {
-   margin-top: 3em;
-   display: flex;
-   width: fit-content;
- }
- /*------------------------------------ Vision Container -----------------------------------------*/
-
- .infoContainers {
-  width: 80%;
-  margin-bottom: 1em;
- }
-
-#reverseContainer {
-  flex-direction: column;
-}
-
-#reverseImg {
-  flex-direction: row;
-}}
  
  /*------------------------------------ Desktop & Laptop -----------------------------------*/
- @media all and (min-width : 1000px) {
-
- 
-
- }
 
  @media all and (min-width : 1280px) {
 

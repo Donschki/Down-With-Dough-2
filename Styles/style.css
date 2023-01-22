@@ -23,7 +23,6 @@ nav a {
   border-radius: 0 20% 60% 0%;
   transition: left 0.5s cubic-bezier(1, 1, 1, 1);
   padding-bottom: 13em;
-  z-index: 1000;
 }
 
 .change {
@@ -54,8 +53,7 @@ nav a {
 
 .nav-item {
   list-style: none;
-  text-align: left;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .nav-link {
@@ -65,6 +63,9 @@ nav a {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .nav-link::before,
@@ -370,9 +371,6 @@ hr {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
@@ -487,11 +485,10 @@ hr {
   margin: auto;
 }
 
-.dogTreatsHeading {
+#doggyTreatsHeading {
   margin: auto;
-  width: 15em;
   text-align: center;
-  font-size: 5vw;
+  font-size: 8vw;
   text-transform: uppercase;
 }
 
@@ -508,7 +505,6 @@ hr {
 
 .productParagraph {
   font-size: 1em;
-  width: 70%;
   margin: auto;
   line-height: 1.5;
   text-align: center;
@@ -522,7 +518,7 @@ a {
 }
 
 .bakerySection img {
-  width: 50vw;
+  width: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: -1;
@@ -543,9 +539,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
   .extended-nav-item {
     list-style: none;
@@ -559,11 +552,11 @@ a {
     gap: 0;
   }
   .bakerySection img {
-    height: 100%;
+    height: 120%;
+    width: 80%;
   }
   .containers {
     display: flex;
-    height: 70vh;
     padding: 4em;
   }
   .reverse {
@@ -584,8 +577,6 @@ a {
   }
   .productParagraph {
     font-size: 1em;
-    width: 90%;
-    padding-top: 1em;
   }
   .Peanut-Butter-And-Butternut-Dog-Treats-container {
     padding-bottom: 7em;
@@ -603,13 +594,20 @@ a {
   .sub-heading {
     font-size: 1vw;
   }
+  .bakerySection img {
+    width: 90%;
+    height: 100%;
+  }
+  .containers {
+    height: 30em;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .mainHeading {
     font-size: 5vw;
   }
   .containers {
-    height: 80vh;
+    height: 35em;
   }
   .titles {
     font-size: 3em;
@@ -620,17 +618,17 @@ a {
   .bakerySection {
     padding-top: 0;
   }
+  .bakerySection img {
+    height: 110%;
+  }
   .bakerySection .productParagraph {
     width: 70%;
     line-height: 2;
-    letter-spacing: 8px;
     word-spacing: 2px;
     padding-top: 1em;
-    font-size: 1.5em;
   }
   .containers {
-    margin: auto;
-    height: 80vh;
+    height: 40em;
   }
   .mainHeading {
     font-size: 3vw;
@@ -648,10 +646,10 @@ a {
     padding: 1em 0;
   }
   .titles {
-    font-size: 6em;
+    font-size: 4em;
   }
-  .productParagraph {
-    font-size: 20em;
+  .containers {
+    height: 45em;
   }
 }
 * {
@@ -730,7 +728,7 @@ a {
 
 #reverseContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #reverseImg {
@@ -738,11 +736,8 @@ a {
 }
 
 .CEO {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 7vw;
-  padding: 0.95em;
+  text-align: center;
 }
 
 hr {
@@ -762,65 +757,7 @@ hr {
     text-align: center;
   }
 }
-@media all and (min-width: 700px) {
-  .visionSection {
-    gap: 0;
-    width: 100vw;
-    overflow: hidden;
-    overflow-x: 0;
-  }
-  .visionHeadings {
-    font-size: 3em;
-  }
-  .containerInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  #reverseContainer {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .paragraphs {
-    text-align: center;
-    font: 12px;
-  }
-  .CEO {
-    text-align: center;
-    font-size: 4vw;
-  }
-  .visionContainers {
-    flex-direction: row;
-    margin: 0;
-    gap: 0;
-  }
-  #joshContainer {
-    height: 550px;
-  }
-  .imgContainer {
-    width: 100%;
-  }
-  #josh {
-    height: 100%;
-  }
-  .visionContainers:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .visionContainers:nth-child(3) {
-    width: 100%;
-  }
-  .visionContainers:nth-child(4) {
-    width: 100%;
-    padding-top: 2em;
-  }
-  .containerInfo {
-    justify-content: center;
-  }
-  .containerInfo:nth-child(2) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
+@media all and (min-width: 800px) {
   /*------------------------------------ Navigation Bar -----------------------------------------*/
   .logo-container {
     display: flex;
@@ -859,6 +796,66 @@ hr {
   }
   #reverseImg {
     flex-direction: row;
+    width: 50%;
+  }
+  .visionSection {
+    gap: 0;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: 0;
+    padding-top: 0;
+  }
+  .visionHeadings {
+    font-size: 3em;
+  }
+  .containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #reverseContainer {
+    display: flex;
+  }
+  #reverseImg {
+    width: 94.8%;
+  }
+  .paragraphs {
+    text-align: center;
+    font: 12px;
+  }
+  .CEO {
+    text-align: center;
+    font-size: 4vw;
+  }
+  .visionContainers {
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+  }
+  #joshContainer {
+    height: 550px;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  #josh {
+    height: 100%;
+  }
+  .visionContainers:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .visionContainers:nth-child(3) {
+    width: 100%;
+  }
+  .visionContainers:nth-child(4) {
+    width: 100%;
+    padding-top: 2em;
+  }
+  .containerInfo {
+    justify-content: center;
+  }
+  .containerInfo:nth-child(2) {
+    width: 100%;
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
@@ -904,6 +901,7 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 3em;
 }
 
 #contactHeading {
@@ -996,6 +994,9 @@ span ion-icon {
 @media only screen and (min-width: 660px) {
   main {
     height: 100vh;
+  }
+  form {
+    padding-top: 0em;
   }
   .box {
     height: 100vh;
@@ -1104,6 +1105,13 @@ span ion-icon {
 
 html {
   scroll-behavior: smooth;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 body {

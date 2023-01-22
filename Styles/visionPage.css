@@ -74,7 +74,7 @@
 
 #reverseContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #reverseImg {
@@ -82,11 +82,8 @@
 }
 
 .CEO {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 7vw;
-  padding: 0.95em;
+  text-align: center;
 }
 
 hr {
@@ -106,65 +103,7 @@ hr {
     text-align: center;
   }
 }
-@media all and (min-width: 700px) {
-  .visionSection {
-    gap: 0;
-    width: 100vw;
-    overflow: hidden;
-    overflow-x: 0;
-  }
-  .visionHeadings {
-    font-size: 3em;
-  }
-  .containerInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  #reverseContainer {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .paragraphs {
-    text-align: center;
-    font: 12px;
-  }
-  .CEO {
-    text-align: center;
-    font-size: 4vw;
-  }
-  .visionContainers {
-    flex-direction: row;
-    margin: 0;
-    gap: 0;
-  }
-  #joshContainer {
-    height: 550px;
-  }
-  .imgContainer {
-    width: 100%;
-  }
-  #josh {
-    height: 100%;
-  }
-  .visionContainers:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .visionContainers:nth-child(3) {
-    width: 100%;
-  }
-  .visionContainers:nth-child(4) {
-    width: 100%;
-    padding-top: 2em;
-  }
-  .containerInfo {
-    justify-content: center;
-  }
-  .containerInfo:nth-child(2) {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
+@media all and (min-width: 800px) {
   /*------------------------------------ Navigation Bar -----------------------------------------*/
   .logo-container {
     display: flex;
@@ -203,6 +142,66 @@ hr {
   }
   #reverseImg {
     flex-direction: row;
+    width: 50%;
+  }
+  .visionSection {
+    gap: 0;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: 0;
+    padding-top: 0;
+  }
+  .visionHeadings {
+    font-size: 3em;
+  }
+  .containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #reverseContainer {
+    display: flex;
+  }
+  #reverseImg {
+    width: 94.8%;
+  }
+  .paragraphs {
+    text-align: center;
+    font: 12px;
+  }
+  .CEO {
+    text-align: center;
+    font-size: 4vw;
+  }
+  .visionContainers {
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+  }
+  #joshContainer {
+    height: 550px;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  #josh {
+    height: 100%;
+  }
+  .visionContainers:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .visionContainers:nth-child(3) {
+    width: 100%;
+  }
+  .visionContainers:nth-child(4) {
+    width: 100%;
+    padding-top: 2em;
+  }
+  .containerInfo {
+    justify-content: center;
+  }
+  .containerInfo:nth-child(2) {
+    width: 100%;
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
