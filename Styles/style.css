@@ -165,6 +165,7 @@ nav a {
   line-height: 2;
   margin: auto;
   width: 100%;
+  padding: 15px;
 }
 
 p {
