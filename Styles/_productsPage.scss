@@ -93,13 +93,12 @@
     height: 50%;
     margin: auto;
 }
-MN
-.dogTreatsHeading {
-    margin: auto;
-    width: 15em;
-    text-align: center;
-    font-size: 5vw;
-    text-transform: uppercase;
+
+#doggyTreatsHeading {
+     margin: auto;
+     text-align: center;
+     font-size: 8vw;
+     text-transform: uppercase;
 }
 
 .titles {
@@ -127,7 +126,7 @@ a {
 }
 
 .bakerySection img {
-    width: 90%;
+    width: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     z-index: -1;
@@ -143,6 +142,10 @@ a {
 }
 
 /*------------------------------------ Mobile Platform -----------------------------------*/
+
+@media only screen and (min-width: 400px) {
+
+}
 
 @media only screen and (min-width: 660px) {
 
@@ -163,73 +166,82 @@ a {
      gap: 0;
 
      img {
-        height: 100%;
+        height: 120%;
+        width: 80%;
      }
 }
 
- .containers {
+.containers {
      display: flex;
-     height: 70vh;
      padding: 4em;
- }
+}
 
- .reverse {
+.reverse {
      flex-direction: row-reverse;
- }
+}
 
- .info {
+.info {
      flex-direction: column;
      display: flex;
- }
+}
 
- .titles {
+.titles {
      font-size: 2em;
      margin: auto;
      letter-spacing: 6px;
       width: 100%;
 
- }
+}
 
- .mainHeading {
+.mainHeading {
      font-size: 5vw;
- }
+}
 
- .productParagraph {
+.productParagraph {
      font-size: 1em;
      width: 90%;
- }
+}
 
-
- .Peanut-Butter-And-Butternut-Dog-Treats-container {
+.Peanut-Butter-And-Butternut-Dog-Treats-container {
      padding-bottom: 7em;
- }
+}
 
- .doggyTreatsHeading {
+.doggyTreatsHeading {
      margin: auto;
      width: 100%;
      text-align: center;
- }
+}
 
 }
 
 @media only screen and (min-width: 760px) {
-    .side-bar {
-        display: none;
-    }
 
-    .sub-heading {
+.side-bar {
+        display: none;
+}
+
+.sub-heading {
         font-size: 1vw;
-    }
+}
+
+.bakerySection img {
+    width: 90%;
+    height: 115%;
+}
+
+.containers {
+    height: 30em;
+}
 }
 
 @media only screen and (min-width: 1000px) {
 
 .mainHeading {
-    font-size: 5vw;
+     font-size: 5vw;
 }
 
 .containers {
-    height: 80vh;
+     height: 35em;
 }
 
 .titles {
@@ -243,6 +255,10 @@ a {
 .bakerySection {
      padding-top: 0;
 
+     img {
+        height: 110%;
+     }
+
 .productParagraph {
      width: 70%;
      line-height: 2;
@@ -254,31 +270,39 @@ a {
 }
 
 .containers {
-    margin: auto;
-    height: 80vh;
+    height: 40em;
 }
 
-    .mainHeading {
+.mainHeading {
          font-size: 3vw;
          padding: 1em 0;
-    }
-        .sub-heading {
+}
+
+.sub-heading {
             height: fit-content;
             font-size: 0.9em;
-        }
+}
 }
 
 @media only screen and (min-width : 1600px) {
-    .mainHeading {
+
+.mainHeading {
         padding: 1em 0;
-    }
+}
 
-
-    .titles {
+.titles {
         font-size: 6em;
-    }
+}
 
-    .productParagraph {
+.bakerySection img {
+    height: 100%;
+}
+
+.containers {
+    height: 50em;
+}
+
+.productParagraph {
         font-size: 20em;
-    }
+}
 }

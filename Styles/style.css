@@ -485,11 +485,10 @@ hr {
   margin: auto;
 }
 
-MN .dogTreatsHeading {
+#doggyTreatsHeading {
   margin: auto;
-  width: 15em;
   text-align: center;
-  font-size: 5vw;
+  font-size: 8vw;
   text-transform: uppercase;
 }
 
@@ -520,7 +519,7 @@ a {
 }
 
 .bakerySection img {
-  width: 90%;
+  width: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: -1;
@@ -554,11 +553,11 @@ a {
     gap: 0;
   }
   .bakerySection img {
-    height: 100%;
+    height: 120%;
+    width: 80%;
   }
   .containers {
     display: flex;
-    height: 70vh;
     padding: 4em;
   }
   .reverse {
@@ -597,13 +596,20 @@ a {
   .sub-heading {
     font-size: 1vw;
   }
+  .bakerySection img {
+    width: 90%;
+    height: 115%;
+  }
+  .containers {
+    height: 30em;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .mainHeading {
     font-size: 5vw;
   }
   .containers {
-    height: 80vh;
+    height: 35em;
   }
   .titles {
     font-size: 3em;
@@ -614,6 +620,9 @@ a {
   .bakerySection {
     padding-top: 0;
   }
+  .bakerySection img {
+    height: 110%;
+  }
   .bakerySection .productParagraph {
     width: 70%;
     line-height: 2;
@@ -623,8 +632,7 @@ a {
     font-size: 1.5em;
   }
   .containers {
-    margin: auto;
-    height: 80vh;
+    height: 40em;
   }
   .mainHeading {
     font-size: 3vw;
@@ -643,6 +651,12 @@ a {
   }
   .titles {
     font-size: 6em;
+  }
+  .bakerySection img {
+    height: 100%;
+  }
+  .containers {
+    height: 50em;
   }
   .productParagraph {
     font-size: 20em;
