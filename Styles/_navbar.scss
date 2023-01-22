@@ -13,22 +13,13 @@ nav {
 }
 
 
-
-@mixin navListExtended {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    background:#3b4f8879;
-    position: sticky;
-    top: 0;
-}
-
 .side-bar {
     width: 11.5em;
     height: 32em;
     background-color: #202a45da;
     border-right: solid thin #fcd059;
     position: fixed;
+
     top: 0;
     left: -18em;
     display: flex;
@@ -36,7 +27,6 @@ nav {
     border-radius: 0 20% 60% 0%;
     transition: left 0.5s cubic-bezier(1, 1, 1, 1);
     padding-bottom: 13em;
-    z-index: 1000;
 }
 
 .change {
@@ -84,7 +74,7 @@ nav {
 .nav-link::before,
 .nav-link::after {
     content: "";
-    width: 100%;
+    width: 50%;
     height: 2px;
     position: absolute;
     background-color: #fcd059;
