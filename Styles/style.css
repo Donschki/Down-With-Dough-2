@@ -53,8 +53,7 @@ nav a {
 
 .nav-item {
   list-style: none;
-  text-align: left;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .nav-link {
@@ -64,12 +63,15 @@ nav a {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .nav-link::before,
 .nav-link::after {
   content: "";
-  width: 50%;
+  width: 100%;
   height: 2px;
   position: absolute;
   background-color: #fcd059;
@@ -518,7 +520,7 @@ a {
 }
 
 .bakerySection img {
-  width: 50vw;
+  width: 90%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: -1;
@@ -578,7 +580,6 @@ a {
   .productParagraph {
     font-size: 1em;
     width: 90%;
-    padding-top: 1em;
   }
   .Peanut-Butter-And-Butternut-Dog-Treats-container {
     padding-bottom: 7em;
@@ -723,7 +724,7 @@ a {
 
 #reverseContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #reverseImg {
@@ -731,11 +732,8 @@ a {
 }
 
 .CEO {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 7vw;
-  padding: 0.95em;
+  text-align: center;
 }
 
 hr {
@@ -815,7 +813,7 @@ hr {
     display: flex;
   }
   #reverseImg {
-    width: 100%;
+    width: 94.8%;
   }
   .paragraphs {
     text-align: center;

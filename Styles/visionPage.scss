@@ -79,7 +79,7 @@
 
 #reverseContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #reverseImg {
@@ -87,12 +87,8 @@
 }
 
 .CEO {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-size: 7vw;
-  padding: 0.95em;
+  text-align: center;
 }
 
 hr {
@@ -191,7 +187,7 @@ hr {
   }
 
   #reverseImg {
-    width: 100%;
+    width: 94.8%;
   }
 
   .paragraphs {
