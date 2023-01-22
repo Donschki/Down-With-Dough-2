@@ -23,7 +23,6 @@ nav a {
   border-radius: 0 20% 60% 0%;
   transition: left 0.5s cubic-bezier(1, 1, 1, 1);
   padding-bottom: 13em;
-  z-index: 1000;
 }
 
 .change {
@@ -70,7 +69,7 @@ nav a {
 .nav-link::before,
 .nav-link::after {
   content: "";
-  width: 100%;
+  width: 50%;
   height: 2px;
   position: absolute;
   background-color: #fcd059;
@@ -165,6 +164,7 @@ nav a {
   line-height: 2;
   margin: auto;
   width: 100%;
+  padding: 15px;
 }
 
 p {
@@ -369,9 +369,6 @@ hr {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
 }
 /*------------------------------------------ Desktop Platform ----------------------------------------*/
@@ -542,9 +539,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
   .extended-nav-item {
     list-style: none;
@@ -1109,6 +1103,13 @@ span ion-icon {
 
 html {
   scroll-behavior: smooth;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 body {
