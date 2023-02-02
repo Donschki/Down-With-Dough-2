@@ -166,8 +166,8 @@ hr {
   .visionSection {
     gap: 0;
     width: 100vw;
-    overflow: hidden;
-    overflow-x:0;
+    height: 100%;
+    overflow: scroll;
     padding-top: 0;
     
   }
@@ -192,7 +192,7 @@ hr {
 
   .paragraphs {
     text-align: center;
-    font: 12px;
+    font-size: 12px;
   }
 
   .CEO {
@@ -239,6 +239,10 @@ hr {
 
  .containerInfo:nth-child(2) {
    width: 100%;
+ }
+
+ #ourProgramme {
+  padding: 3em;
  }
  }
 

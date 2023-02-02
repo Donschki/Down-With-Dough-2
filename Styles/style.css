@@ -153,6 +153,7 @@ nav a {
 
 #indexBody {
   height: 100vh;
+  overflow: hidden;
 }
 
 .slogan-container {
@@ -377,20 +378,25 @@ hr {
 @media only screen and (min-width: 1024px) {
   main {
     height: 100vh;
-    overflow: hidden;
   }
   .slideshow-container {
     min-width: 100%;
     min-height: 90%;
   }
   #slogan {
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 100%;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     font-weight: 1000;
   }
   .hamburgerBox {
     display: none;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  #slogan {
+    font-size: 1.2em;
+    letter-spacing: 7px;
   }
 }
 * {
@@ -605,6 +611,7 @@ a {
 @media only screen and (min-width: 1000px) {
   .mainHeading {
     font-size: 5vw;
+    padding: 0em 3em;
   }
   .containers {
     height: 35em;
@@ -629,10 +636,6 @@ a {
   }
   .containers {
     height: 35em;
-  }
-  .mainHeading {
-    font-size: 3vw;
-    padding: 1em 0;
   }
   .sub-heading {
     height: -webkit-fit-content;
@@ -801,8 +804,8 @@ hr {
   .visionSection {
     gap: 0;
     width: 100vw;
-    overflow: hidden;
-    overflow-x: 0;
+    height: 100%;
+    overflow: scroll;
     padding-top: 0;
   }
   .visionHeadings {
@@ -821,7 +824,7 @@ hr {
   }
   .paragraphs {
     text-align: center;
-    font: 12px;
+    font-size: 12px;
   }
   .CEO {
     text-align: center;
@@ -856,6 +859,9 @@ hr {
   }
   .containerInfo:nth-child(2) {
     width: 100%;
+  }
+  #ourProgramme {
+    padding: 3em;
   }
 }
 /*------------------------------------ Desktop & Laptop -----------------------------------*/
@@ -992,9 +998,6 @@ span ion-icon {
 }
 
 @media only screen and (min-width: 660px) {
-  main {
-    height: 100vh;
-  }
   form {
     padding-top: 0em;
   }
@@ -1031,12 +1034,6 @@ span ion-icon {
   }
 }
 @media only screen and (min-width: 730px) {
-  .box {
-    display: flex;
-    flex-direction: column;
-    height: 95vh;
-    justify-content: space-evenly;
-  }
   .contactInfo {
     flex-direction: row;
   }
@@ -1056,8 +1053,30 @@ span ion-icon {
   }
 }
 @media only screen and (min-width: 1000px) {
-  .box {
+  body {
+    height: 100vh;
+  }
+  #contactMain {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+    margin: auto;
+  }
+  form {
+    margin: auto;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  form .inputBox {
+    display: flex;
+    padding: 0px 0;
+    gap: 10px;
+  }
+  .contactMap {
+    width: 100%;
     height: 100%;
   }
   .boxContainers {
@@ -1067,14 +1086,6 @@ span ion-icon {
   #contactHeading {
     font-size: 3em;
     text-transform: uppercase;
-  }
-  Form {
-    justify-content: space-around;
-  }
-  .contactForm {
-    flex-direction: row;
-    display: flex;
-    width: 100%;
   }
   .contactInfo {
     height: 100%;
@@ -1093,8 +1104,8 @@ span ion-icon {
   }
 }
 @media only screen and (min-width: 1600px) {
-  .box {
-    width: 99vw;
+  .contactForm {
+    width: 1700px;
     height: 80vh;
   }
 }
