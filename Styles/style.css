@@ -167,7 +167,7 @@ nav a {
   line-height: 2;
   margin: auto;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
 }
 
 p {
@@ -295,6 +295,7 @@ main {
   flex-direction: column-reverse;
   font-size: 12px;
   width: 100%;
+  padding: 10px;
   cursor: pointer;
 }
 .socialMediaIcons svg {
@@ -339,7 +340,7 @@ hr {
   }
   .socialMediaIcons {
     height: 100%;
-    padding: 20px;
+    padding: 10px;
   }
   #slogan {
     letter-spacing: 4px;
