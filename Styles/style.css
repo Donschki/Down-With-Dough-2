@@ -63,7 +63,6 @@ nav a {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -228,18 +227,8 @@ main {
   background-color: #717171;
 }
 .slideshow-container .fade {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 @keyframes fade {
   from {
@@ -561,7 +550,7 @@ a {
     gap: 0;
   }
   .bakerySection img {
-    height: 100%;
+    height: 120%;
     width: 80%;
   }
   .containers {
@@ -604,14 +593,10 @@ a {
     font-size: 1vw;
   }
   .bakerySection img {
-    width: 80%;
+    height: 100%;
   }
   .containers {
     height: 30em;
-  }
-
-  .info {
-    width: 50%;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -632,7 +617,7 @@ a {
     padding-top: 0;
   }
   .bakerySection img {
-    margin: 0 auto;
+    height: 100%;
   }
   .bakerySection .productParagraph {
     width: 70%;
@@ -644,7 +629,6 @@ a {
     height: 35em;
   }
   .sub-heading {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     font-size: 0.9em;
@@ -658,9 +642,7 @@ a {
     font-size: 4em;
   }
   .containers {
-    height: 35em;
-    width: 90em;
-    margin: auto;
+    height: 45em;
   }
 }
 * {
@@ -793,7 +775,6 @@ hr {
   .nav-item {
     margin-top: 3em;
     display: flex;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -808,6 +789,7 @@ hr {
   #reverseImg {
     flex-direction: row;
     width: 50%;
+    display: -webkit-inline-box;
   }
   .visionSection {
     gap: 0;
@@ -827,9 +809,6 @@ hr {
   #reverseContainer {
     display: flex;
   }
-  #reverseImg {
-    width: 94.8%;
-  }
   .paragraphs {
     text-align: center;
     font-size: 12px;
@@ -837,6 +816,8 @@ hr {
   .CEO {
     text-align: center;
     font-size: 4vw;
+    margin: auto;
+    width: 100%;
   }
   .visionContainers {
     flex-direction: row;
@@ -1127,7 +1108,6 @@ html {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;

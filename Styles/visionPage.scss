@@ -161,6 +161,7 @@ hr {
 #reverseImg {
   flex-direction: row;
   width: 50%;
+  display: -webkit-inline-box;
 }
 
   .visionSection {
@@ -186,10 +187,6 @@ hr {
     display: flex;
   }
 
-  #reverseImg {
-    width: 94.8%;
-  }
-
   .paragraphs {
     text-align: center;
     font-size: 12px;
@@ -198,6 +195,8 @@ hr {
   .CEO {
     text-align: center;
     font-size: 4vw;
+    margin:  auto;
+    width: 100%;
   }
 
  .visionContainers {
