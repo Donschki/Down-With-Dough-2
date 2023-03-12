@@ -632,7 +632,7 @@ a {
     padding-top: 0;
   }
   .bakerySection img {
-    height: 110%;
+    margin: 0 auto;
   }
   .bakerySection .productParagraph {
     width: 70%;
@@ -658,7 +658,9 @@ a {
     font-size: 4em;
   }
   .containers {
-    height: 45em;
+    height: 35em;
+    width: 90em;
+    margin: auto;
   }
 }
 * {
