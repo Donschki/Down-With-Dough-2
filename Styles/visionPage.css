@@ -128,7 +128,6 @@ hr {
   .nav-item {
     margin-top: 3em;
     display: flex;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
