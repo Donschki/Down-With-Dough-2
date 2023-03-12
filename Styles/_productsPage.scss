@@ -224,7 +224,6 @@ a {
 }
 
 .bakerySection img {
-     width: 90%;
      height: 100%;
 }
 
@@ -254,6 +253,10 @@ a {
 
 .bakerySection {
      padding-top: 0;
+
+     img {
+         height: 100%;
+     }
 
 .productParagraph {
      width: 70%;
