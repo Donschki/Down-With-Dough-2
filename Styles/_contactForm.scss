@@ -125,6 +125,10 @@ span {
 
 @media only screen and (min-width: 660px) {
 
+#contactMain {
+    position: relative;
+    bottom: 0;
+}
 
    form {
     padding-top: 0em;
@@ -202,17 +206,12 @@ span {
 
 @media only screen and (min-width: 1000px){
 
-    body {
-        height: 100vh;
-    }
-
+  
     #contactMain {
          display: flex;
          flex-direction: row;
 
          justify-content: center;
-         padding: 1em;
-         margin: auto;
 
     }
   
@@ -270,7 +269,12 @@ iframe {
 }
 
 @media only screen and (min-width: 1200px){
+#contactMain {
+    padding: 0 3em;
+
+}
     
+
 }
 
 @media only screen and (min-width: 1600px){

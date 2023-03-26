@@ -550,12 +550,13 @@ a {
     gap: 0;
   }
   .bakerySection img {
-    height: 120%;
     width: 80%;
   }
   .containers {
     display: flex;
-    padding: 4em;
+    width: 100%;
+    margin: auto;
+    padding: 2em;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -572,6 +573,10 @@ a {
   }
   .mainHeading {
     font-size: 5vw;
+  }
+  .bakerySection img {
+    height: 100%;
+    margin: auto;
   }
   .productParagraph {
     font-size: 1em;
@@ -593,19 +598,33 @@ a {
     font-size: 1vw;
   }
   .bakerySection img {
-    height: 100%;
+    width: 70%;
   }
   .containers {
-    height: 30em;
+    height: 25em;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 1000px) {
   .mainHeading {
-    font-size: 5vw;
-    padding: 0em 3em;
+    font-size: 4vw;
+    height: 7em;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+  .bakerySection img {
+    width: 100%;
+    padding: 40px;
   }
   .containers {
-    height: 35em;
+    height: 30em;
+    width: 80%;
   }
   .titles {
     font-size: 3em;
@@ -618,6 +637,7 @@ a {
   }
   .bakerySection img {
     height: 100%;
+    padding: 100px;
   }
   .bakerySection .productParagraph {
     width: 70%;
@@ -626,7 +646,7 @@ a {
     padding-top: 1em;
   }
   .containers {
-    height: 35em;
+    height: 30em;
   }
   .sub-heading {
     height: -moz-fit-content;
@@ -987,6 +1007,10 @@ span ion-icon {
 }
 
 @media only screen and (min-width: 660px) {
+  #contactMain {
+    position: relative;
+    bottom: 0;
+  }
   form {
     padding-top: 0em;
   }
@@ -1042,15 +1066,10 @@ span ion-icon {
   }
 }
 @media only screen and (min-width: 1000px) {
-  body {
-    height: 100vh;
-  }
   #contactMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 1em;
-    margin: auto;
   }
   form {
     margin: auto;
@@ -1092,6 +1111,11 @@ span ion-icon {
     margin: auto;
   }
 }
+@media only screen and (min-width: 1200px) {
+  #contactMain {
+    padding: 0 3em;
+  }
+}
 @media only screen and (min-width: 1600px) {
   .contactForm {
     width: 1700px;
@@ -1123,6 +1147,6 @@ body {
 }
 
 #logo {
-  width: 4em;
-  height: 4em;
+  width: 7em;
+  height: 7em;
 }/*# sourceMappingURL=style.css.map */

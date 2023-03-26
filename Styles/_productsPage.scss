@@ -165,14 +165,16 @@ a {
      gap: 0;
 
      img {
-        height: 120%;
         width: 80%;
      }
 }
 
 .containers {
      display: flex;
-     padding: 4em;
+     width: 100%;
+     margin: auto;
+
+     padding: 2em;
 }
 
 .reverse {
@@ -194,6 +196,11 @@ a {
 
 .mainHeading {
      font-size: 5vw;
+}
+
+.bakerySection img {
+    height: 100%;
+    margin: auto;
 }
 
 .productParagraph {
@@ -223,24 +230,43 @@ a {
         font-size: 1vw;
 }
 
-.bakerySection img {
-     height: 100%;
+.bakerySection {
+
+    img {
+        width: 70%;
+    }
 }
 
 .containers {
-     height: 30em;
+     height: 25em;
+     display: flex;
+     @include flexCenter;
 }
 }
 
 @media only screen and (min-width: 1000px) {
 
 .mainHeading {
-     font-size: 5vw;
-     padding: 0em 3em;
+     font-size: 4vw;
+     height: 7em;
+     display: flex;
+     @include flexCenter;
+    padding-top: 0;
+
+}
+
+.bakerySection {
+     
+    img {
+        width: 100%;
+      padding: 40px;
+
+    }
 }
 
 .containers {
-     height: 35em;
+     height: 30em;
+     width: 80%;
 }
 
 .titles {
@@ -256,6 +282,8 @@ a {
 
      img {
          height: 100%;
+      padding: 100px;
+
      }
 
 .productParagraph {
@@ -267,7 +295,7 @@ a {
 }
 
 .containers {
-     height: 35em;
+     height: 30em;
 }
 
 
