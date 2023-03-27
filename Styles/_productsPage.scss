@@ -160,7 +160,7 @@ a {
      flex-direction: column;
      overflow: scroll;
      display: flex;
-     width: 100%;
+     width: 90%;
      margin: auto;
      gap: 0;
 
@@ -230,12 +230,6 @@ a {
         font-size: 1vw;
 }
 
-.bakerySection {
-
-    img {
-        width: 70%;
-    }
-}
 
 .containers {
      height: 25em;
@@ -256,7 +250,7 @@ a {
 }
 
 .bakerySection {
-     
+     width: 100%;
     img {
         width: 100%;
       padding: 40px;
@@ -279,12 +273,7 @@ a {
 
 .bakerySection {
      padding-top: 0;
-
-     img {
-         height: 100%;
-      padding: 100px;
-
-     }
+     padding: 10em;
 
 .productParagraph {
      width: 70%;
@@ -295,7 +284,7 @@ a {
 }
 
 .containers {
-     height: 30em;
+     height: 32em;
 }
 
 

@@ -545,7 +545,7 @@ a {
     flex-direction: column;
     overflow: scroll;
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: auto;
     gap: 0;
   }
@@ -597,9 +597,6 @@ a {
   .sub-heading {
     font-size: 1vw;
   }
-  .bakerySection img {
-    width: 70%;
-  }
   .containers {
     height: 25em;
     display: flex;
@@ -618,6 +615,9 @@ a {
     align-items: center;
     padding-top: 0;
   }
+  .bakerySection {
+    width: 100%;
+  }
   .bakerySection img {
     width: 100%;
     padding: 40px;
@@ -634,10 +634,7 @@ a {
 @media only screen and (min-width: 1200px) {
   .bakerySection {
     padding-top: 0;
-  }
-  .bakerySection img {
-    height: 100%;
-    padding: 100px;
+    padding: 10em;
   }
   .bakerySection .productParagraph {
     width: 70%;
@@ -646,7 +643,7 @@ a {
     padding-top: 1em;
   }
   .containers {
-    height: 30em;
+    height: 32em;
   }
   .sub-heading {
     height: -moz-fit-content;
