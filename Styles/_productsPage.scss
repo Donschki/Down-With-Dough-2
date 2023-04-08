@@ -79,6 +79,9 @@
 
 .containers {
     text-align: center;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 1em;
     
     hr {
     margin: 1em 0;
@@ -143,6 +146,10 @@ a {
 /*------------------------------------ Mobile Platform -----------------------------------*/
 
 @media only screen and (min-width: 400px) {
+.bakerySection {
+    padding: 3em;
+}
+
 
 }
 
@@ -160,21 +167,23 @@ a {
      flex-direction: column;
      overflow: scroll;
      display: flex;
-     width: 90%;
      margin: auto;
-     gap: 0;
+     padding: 0;
+
 
      img {
         width: 80%;
      }
+
+     hr {
+        width: 85%;
+     }
 }
 
 .containers {
-     display: flex;
-     width: 100%;
      margin: auto;
-
      padding: 2em;
+     flex-direction: row;
 }
 
 .reverse {
@@ -199,7 +208,6 @@ a {
 }
 
 .bakerySection img {
-    height: 100%;
     margin: auto;
 }
 
@@ -230,10 +238,7 @@ a {
         font-size: 1vw;
 }
 
-
 .containers {
-     height: 25em;
-     display: flex;
      @include flexCenter;
 }
 }
@@ -251,15 +256,14 @@ a {
 
 .bakerySection {
      width: 100%;
+
     img {
-        width: 100%;
-      padding: 40px;
 
     }
 }
 
 .containers {
-     height: 30em;
+     height: 25em;
      width: 80%;
 }
 
@@ -272,8 +276,6 @@ a {
 @media only screen and (min-width: 1200px) {
 
 .bakerySection {
-     padding-top: 0;
-     padding: 10em;
 
 .productParagraph {
      width: 70%;
@@ -282,11 +284,6 @@ a {
      padding-top: 1em;
 }
 }
-
-.containers {
-     height: 32em;
-}
-
 
 .sub-heading {
      height: fit-content;

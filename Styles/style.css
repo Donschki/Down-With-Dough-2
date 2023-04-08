@@ -468,6 +468,11 @@ hr {
 
 .containers {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
 }
 .containers hr {
   margin: 1em 0;
@@ -531,6 +536,11 @@ a {
 }
 
 /*------------------------------------ Mobile Platform -----------------------------------*/
+@media only screen and (min-width: 400px) {
+  .bakerySection {
+    padding: 3em;
+  }
+}
 @media only screen and (min-width: 660px) {
   .navListExtended {
     flex-direction: row;
@@ -545,18 +555,19 @@ a {
     flex-direction: column;
     overflow: scroll;
     display: flex;
-    width: 90%;
     margin: auto;
-    gap: 0;
+    padding: 0;
   }
   .bakerySection img {
     width: 80%;
   }
+  .bakerySection hr {
+    width: 85%;
+  }
   .containers {
-    display: flex;
-    width: 100%;
     margin: auto;
     padding: 2em;
+    flex-direction: row;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -575,7 +586,6 @@ a {
     font-size: 5vw;
   }
   .bakerySection img {
-    height: 100%;
     margin: auto;
   }
   .productParagraph {
@@ -598,8 +608,6 @@ a {
     font-size: 1vw;
   }
   .containers {
-    height: 25em;
-    display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -618,12 +626,8 @@ a {
   .bakerySection {
     width: 100%;
   }
-  .bakerySection img {
-    width: 100%;
-    padding: 40px;
-  }
   .containers {
-    height: 30em;
+    height: 25em;
     width: 80%;
   }
   .titles {
@@ -632,18 +636,11 @@ a {
 }
 /*------------------------------------- Desktop Platform ------------------------------------*/
 @media only screen and (min-width: 1200px) {
-  .bakerySection {
-    padding-top: 0;
-    padding: 10em;
-  }
   .bakerySection .productParagraph {
     width: 70%;
     line-height: 2;
     word-spacing: 2px;
     padding-top: 1em;
-  }
-  .containers {
-    height: 32em;
   }
   .sub-heading {
     height: -moz-fit-content;
