@@ -155,10 +155,6 @@ a {
 
 @media only screen and (min-width: 660px) {
 
-.navListExtended {
-    @include navListExtended //mixin in navbar.scss
-}
-
 .extended-nav-item {
      list-style: none;
 }
@@ -168,9 +164,7 @@ a {
      overflow: scroll;
      display: flex;
      margin: auto;
-     padding: 0;
-
-
+     
      img {
         width: 80%;
      }
@@ -229,6 +223,9 @@ a {
 }
 
 @media only screen and (min-width: 760px) {
+.navListExtended {
+    @include navListExtended //mixin in navbar.scss
+}
 
 .side-bar {
         display: none;

@@ -186,6 +186,7 @@ main {
 
 #indexMain {
   padding-top: 3em;
+  position: static;
 }
 
 .slideshow-container {
@@ -196,7 +197,7 @@ main {
   /* Fading animation */
   /* On smaller screens, decrease text size */
   height: 70%;
-  max-width: 680px;
+  max-width: 100%;
 }
 .slideshow-container .text {
   color: #fcd059;
@@ -319,13 +320,11 @@ hr {
     height: 7em;
   }
 }
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 768px) {
   #indexMain {
     padding-top: 0em;
     position: static;
-  }
-  #slogan {
-    padding: 100px;
+    flex-direction: row;
   }
   .socialMediaIcons {
     height: 100%;
@@ -336,8 +335,11 @@ hr {
     margin-top: 0;
     padding: 2px;
   }
+  .slogan-container {
+    width: 50%;
+  }
   .slideshow-container {
-    min-width: 100%;
+    width: 50%;
     height: 100%;
   }
   .contact-info-container {
@@ -542,12 +544,6 @@ a {
   }
 }
 @media only screen and (min-width: 660px) {
-  .navListExtended {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    background: rgba(59, 79, 136, 0.4745098039);
-  }
   .extended-nav-item {
     list-style: none;
   }
@@ -556,7 +552,6 @@ a {
     overflow: scroll;
     display: flex;
     margin: auto;
-    padding: 0;
   }
   .bakerySection img {
     width: 80%;
@@ -601,6 +596,12 @@ a {
   }
 }
 @media only screen and (min-width: 760px) {
+  .navListExtended {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(59, 79, 136, 0.4745098039);
+  }
   .side-bar {
     display: none;
   }
