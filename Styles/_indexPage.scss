@@ -16,7 +16,7 @@
 }
 
 #slogan {
-     font-size: 0.7em;
+     font-size: 1.5em;
      letter-spacing: 3px;
      line-height: 2;
      margin: auto;
@@ -47,7 +47,7 @@ main {
 
 .slideshow-container {
     @include slideShow;
-    height: 70%;
+    height: 100%;
     max-width: 100%;
 }
 
@@ -141,34 +141,30 @@ hr {
 @media only screen and (min-width: 450px) {
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 #indexMain {
-        padding-top: 0em;
-        position: static;
-        flex-direction: row;
-}
-
-
-.socialMediaIcons {
     height: 100%;
-    padding: 10px;
-   }
+}
 
 #slogan {
      letter-spacing: 4px;
-     margin-top: 0 ;
-     padding: 2px;
+     height: 100%;
+     font-size: 1.7em;
+     line-height: 2em;
+     
+     @include flexCenter;
+}
 }
 
-.slogan-container {
-    width: 50%;
-
+@media only screen and (min-width: 768px) {
+ #indexMain {
+    padding-top: 0;
 }
 
-.slideshow-container {
-    width: 50%;
+.socialMediaIcons {
     height: 100%;
-}
+    padding: 20px;
+   }
 
 .contact-info-container {
     display: flex;
@@ -201,31 +197,30 @@ hr {
 
 @media only screen and (min-width: 1024px) {
 
-main {
-     height: 100vh;
-}    
-
-
-.slideshow-container {
-     min-width: 100%;
-     min-height: 90%;
+.hamburgerBox {
+         display: none;
 }
 
 #slogan {
-     font-size: 0.8em;
-     width: 100%;
-     letter-spacing: 5px;
-     font-weight: 1000;
+    font-size: 4vw;
+    line-height: 2;
+}
 }
 
-.hamburgerBox {
-         display: none;
+@media only screen and (min-width: 1200px) {
+#indexMain {
+    flex-direction: row;
 }
 }
 
 @media only screen and (min-width: 1500px) {
+#indexMain {
+    max-width: 2000px;
+    margin: auto;
+}
+
 #slogan {
-     font-size: 1.2em;
-     letter-spacing: 7px;
-}  
+    font-size: 4em;
+    padding: 0em;
+}
 }

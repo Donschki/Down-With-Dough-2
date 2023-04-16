@@ -93,8 +93,8 @@
 .info {
     @include flexCenter;
     flex-direction: column;
-    height: 50%;
     margin: auto;
+    width: 90%;
 }
 
 #doggyTreatsHeading {
@@ -146,9 +146,7 @@ a {
 /*------------------------------------ Mobile Platform -----------------------------------*/
 
 @media only screen and (min-width: 400px) {
-.bakerySection {
-    padding: 3em;
-}
+
 
 
 }
@@ -164,7 +162,7 @@ a {
      overflow: scroll;
      display: flex;
      margin: auto;
-     
+
      img {
         width: 80%;
      }
@@ -187,6 +185,7 @@ a {
 .info {
      flex-direction: column;
      display: flex;
+     width: 100%;
 }
 
 .titles {
@@ -235,6 +234,14 @@ a {
         font-size: 1vw;
 }
 
+.bakerySection {
+    padding: 1em;
+}
+
+#bakedBread {
+    width: 70%;
+}
+
 .containers {
      @include flexCenter;
 }
@@ -268,7 +275,7 @@ a {
 @media only screen and (min-width: 1200px) {
 
 .bakerySection {
-
+max-width: 1600px;
 .productParagraph {
      width: 70%;
      line-height: 2;
@@ -276,6 +283,8 @@ a {
      padding-top: 1em;
 }
 }
+
+
 
 .sub-heading {
      height: fit-content;
@@ -294,7 +303,7 @@ a {
 }
 
 .containers {
-     height: 45em;
+     height: 40em;
 }
 
 }
