@@ -5,13 +5,7 @@
     // border: solid 1px black;
 }
 
-#indexBody {
-    height: 100vh;
-    overflow: hidden;
-}
-
 .slogan-container {
-     width: 100%;
      text-align: center;
 }
 
@@ -19,26 +13,9 @@
      font-size: 1.5em;
      letter-spacing: 3px;
      line-height: 2;
-     margin: auto;
      width: 100%;
-     padding: 5px;
 }
 
-p {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-main {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     bottom: 0;
-}
 
 #indexMain {
     padding-top: 3em;
@@ -47,8 +24,7 @@ main {
 
 .slideshow-container {
     @include slideShow;
-    height: 100%;
-    max-width: 100%;
+    
 }
 
 .mySlides {
@@ -62,6 +38,22 @@ main {
 
 .dotsContainer {
     display: none;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.headingContainer {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
 /* --------------------------- Contact Info Footer ------------------- */
@@ -129,98 +121,54 @@ hr {
 }
 
 
-///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
+.visionSection {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2em;
+    padding-top: 3em;
 
-@media only screen and (min-width: 400px) {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
 
-.socialMediaIcons {
-    height: 7em;
-}
-}
-
-@media only screen and (min-width: 450px) {
-}
-
-@media only screen and (min-width: 600px) {
-#indexMain {
-    height: 100%;
 }
 
-#slogan {
-     letter-spacing: 4px;
-     height: 100%;
-     font-size: 1.7em;
-     line-height: 2em;
-     
-     @include flexCenter;
-}
+.visionSection:-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
 }
 
-@media only screen and (min-width: 768px) {
- #indexMain {
-    padding-top: 0;
+.visionContainers {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      height: 100%;
+     gap: 3em;
+     position: relative;
 }
 
-.socialMediaIcons {
-    height: 100%;
-    padding: 20px;
-   }
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  object-position: center;
 
-.contact-info-container {
-    display: flex;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    
-        flex-direction: row;
-        width: 50%;
-        height: 4em;
-       transition: 1s ;
-       position: absolute;
-       justify-content: space-evenly;
-
-       hr {
-        height: 100%;
-    }
+  .visionImages {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
-.hamburger-menu {
-        display: none;
+#reverseContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2em;
 }
 
-.navListExtended {
-        @include navListExtended; //mixin in navbar.scss
-}
-}
-/*------------------------------------------ Desktop Platform ----------------------------------------*/
-
-@media only screen and (min-width: 1024px) {
-
-.hamburgerBox {
-         display: none;
+#reverseImg {
+  flex-direction: column-reverse;
 }
 
-#slogan {
-    font-size: 4vw;
-    line-height: 2;
-}
-}
-
-@media only screen and (min-width: 1200px) {
-#indexMain {
-    flex-direction: row;
-}
-}
-
-@media only screen and (min-width: 1500px) {
-#indexMain {
-    max-width: 2000px;
-    margin: auto;
-}
-
-#slogan {
-    font-size: 4em;
-    padding: 0em;
-}
-}

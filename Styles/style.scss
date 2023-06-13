@@ -1,10 +1,8 @@
 @import "./variables";
 @import "./mixins";
 @import "./navbar";
-@import "./hamburger";
-@import "./IndexPage";
+@import "./indexPage";
 @import "./productsPage";
-@import "./visionPage";
 @import "./contactForm";
 
 * {
@@ -35,8 +33,202 @@ body {
 }
 
 
+/* ---------------------------- Hamburger Menu ----------------------------- */       
+
+.hamburgerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background:#3b4f8879;
+    position: fixed;
+    top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10;
+}
+
+.hamburger-menu {
+    width: 2em;
+    height: 3em; 
+    
+    /*3 Line formation to Hamburger style*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+
+    border-radius: 50%;
+    padding: 0.5em 0;  
+}
+
+.line {
+    width: 100%;
+    height: 2px; 
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.6s;
+}        
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-5px, 5px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-6px, -6px);
+} 
+
 #logo {
     width: 7em;
     height: 7em;
 }
 
+ /* ------------------------------------- SLOGAN ----------------------------- */
+ 
+.slogan-container {
+    width: 100%;
+    display: flex;
+    padding: 0.5em;
+}
+
+#slogan {
+    font-size: 1em;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+
+///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
+
+ 
+@media only screen and (min-width: 768px) {
+
+ .hamburgerBox {
+     display: none;
+ }
+ 
+  #indexMain {
+     padding-top: 0;
+ }
+ 
+ .navListExtended {
+     @include navListExtended; //mixin in navbar.scss
+ }
+ 
+ .slideshow-container img {
+    height: 30em;
+ }
+
+ .slogan-container {
+  order: 1;
+}
+
+#slideshow-container {
+  display: flex;
+  flex-direction: column;
+}
+
+ /*------------------------------------ Vision Container -----------------------------------------*/
+
+.infoContainers {
+  width: 80%;
+  margin-bottom: 1em;
+ }
+
+#reverseContainer {
+  flex-direction: column;
+}
+
+#reverseImg {
+  flex-direction: row;
+  width: 50%;
+  display: -webkit-inline-box;
+}
+
+  .visionSection {
+    gap: 0;
+    padding-top: 0;
+  }
+
+  .containerInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #reverseContainer {
+    display: flex;
+  }
+
+ .visionContainers {
+   flex-direction: row;
+   margin: 0;
+   gap: 0;
+ }
+
+ .imgContainer {
+   width: 100%;
+ }
+
+ #josh {
+   height: 100%;
+ }
+
+ .visionContainers:nth-child(2) {
+   flex-direction: row-reverse;
+
+ }
+
+ .visionContainers:nth-child(3) {
+   width: 100%;
+ }
+ 
+ .visionContainers:nth-child(4) {
+   width: 100%;
+   padding-top: 2em;
+ 
+ }
+
+ .containerInfo {
+   justify-content: center;
+ }
+
+ .containerInfo:nth-child(2) {
+   width: 100%;
+ }
+}
+ 
+@media only screen and (min-width: 1024px) {
+
+.visionSection {
+    max-width: 85%;
+    margin: auto;
+}
+}
+ 
+@media only screen and (min-width: 1200px) {
+
+    #indexMain {
+        flex-direction: row;
+    }
+}
+ 
+@media only screen and (min-width: 1500px) {
+
+    #indexMain {
+        max-width: 2000px;
+        margin: auto;
+    }
+    
+    #slogan {
+        font-size: 4em;
+        padding: 0em;
+    }
+}

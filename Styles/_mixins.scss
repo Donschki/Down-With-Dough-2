@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-evenly;
     padding: 0.5em;
-
 }
 
 @mixin navListExtended {
@@ -23,7 +22,6 @@
 /* Slideshow container */
 
 @mixin slideShow {
-   overflow: hidden;
 
 /* Caption text */
 .text {
