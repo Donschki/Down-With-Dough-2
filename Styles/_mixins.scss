@@ -13,10 +13,16 @@
 }
 
 @mixin navListExtended {
-  flex-direction: row;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background:#3b4f8879;
+  list-style: none;
+
+  position: sticky;
+     position: -webkit-sticky;
+     top: 0em;
+     z-index: 10;
+
 }
 
 /* Slideshow container */

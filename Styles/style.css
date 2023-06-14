@@ -1,5 +1,5 @@
 /* Slideshow container */
-.side-bar {
+.top-bar {
   width: 100%;
   background-color: #202a45;
   position: fixed;
@@ -94,9 +94,8 @@
   width: 100%;
 }
 
-#indexMain {
+#slideshowSection {
   padding-top: 3em;
-  position: static;
 }
 
 .slideshow-container {
@@ -168,7 +167,7 @@ p {
   color: #ffffff;
   font-size: 1em;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .headingContainer {
@@ -243,11 +242,7 @@ hr {
   flex-direction: column;
   justify-content: space-around;
   gap: 2em;
-  padding-top: 3em;
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
+  padding: 0.5em;
 }
 
 .visionSection:-webkit-scrollbar {
@@ -266,11 +261,7 @@ hr {
 
 .imgContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  -o-object-position: center;
-     object-position: center;
+  gap: 2em;
 }
 .imgContainer .visionImages {
   width: 100%;
@@ -300,10 +291,6 @@ hr {
   display: none;
 }
 
-.extended-nav-item {
-  list-style: none;
-}
-
 .bakerySection {
   display: flex;
   flex-direction: column;
@@ -323,24 +310,6 @@ hr {
 
 .bakerySection::-webkit-scrollbar {
   display: none;
-}
-
-.mainHeading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 6vw;
-  margin: auto;
-  color: #fcd059;
-  background-color: rgba(32, 42, 69, 0.8549019608);
-  text-align: center;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 760px) {
-  .mainHeading .mainHeading {
-    font-size: 8vw;
-    width: 8em;
-  }
 }
 
 .sub-heading {
@@ -430,9 +399,6 @@ a {
 
 /*------------------------------------ Mobile Platform -----------------------------------*/
 @media only screen and (min-width: 660px) {
-  .extended-nav-item {
-    list-style: none;
-  }
   .bakerySection {
     flex-direction: column;
     overflow: scroll;
@@ -483,13 +449,7 @@ a {
   }
 }
 @media only screen and (min-width: 760px) {
-  .navListExtended {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    background: rgba(59, 79, 136, 0.4745098039);
-  }
-  .side-bar {
+  .top-bar {
     display: none;
   }
   .sub-heading {
@@ -865,13 +825,12 @@ body {
 
 /* ------------------------------------- SLOGAN ----------------------------- */
 .slogan-container {
-  width: 100%;
-  display: flex;
   padding: 0.5em;
 }
 
 #slogan {
   font-size: 1em;
+  margin: auto;
 }
 
 .slideshow-container img {
@@ -887,24 +846,31 @@ body {
   .hamburgerBox {
     display: none;
   }
-  #indexMain {
+  #slideshowSection {
     padding-top: 0;
-  }
-  .navListExtended {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    background: rgba(59, 79, 136, 0.4745098039);
-  }
-  .slideshow-container img {
-    height: 30em;
-  }
-  .slogan-container {
-    order: 1;
   }
   #slideshow-container {
     display: flex;
     flex-direction: column;
+  }
+  .navListExtended {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(59, 79, 136, 0.4745098039);
+    list-style: none;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0em;
+    z-index: 10;
+  }
+  .slideshow-container img {
+    height: 20em;
+    -o-object-position: center 10%;
+       object-position: center 10%;
+  }
+  .slogan-container {
+    order: 1;
+    font-size: 12px;
   }
   /*------------------------------------ Vision Container -----------------------------------------*/
   .infoContainers {
@@ -921,7 +887,6 @@ body {
   }
   .visionSection {
     gap: 0;
-    padding-top: 0;
   }
   .containerInfo {
     display: flex;
@@ -960,22 +925,20 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .visionSection {
-    max-width: 85%;
+    max-width: 1400px;
     margin: auto;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #indexMain {
+  #slideshowSection {
     flex-direction: row;
   }
 }
 @media only screen and (min-width: 1500px) {
-  #indexMain {
-    max-width: 2000px;
-    margin: auto;
+  .slideshow-container img {
+    height: 30em;
   }
   #slogan {
-    font-size: 4em;
-    padding: 0em;
+    font-size: 1.85em;
   }
 }/*# sourceMappingURL=style.css.map */

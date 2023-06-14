@@ -32,7 +32,6 @@ body {
 
 }
 
-
 /* ---------------------------- Hamburger Menu ----------------------------- */       
 
 .hamburgerBox {
@@ -89,13 +88,12 @@ body {
  /* ------------------------------------- SLOGAN ----------------------------- */
  
 .slogan-container {
-    width: 100%;
-    display: flex;
     padding: 0.5em;
 }
 
 #slogan {
     font-size: 1em;
+    margin: auto;
 }
 
 .slideshow-container img {
@@ -105,66 +103,63 @@ body {
     object-position: center 40%;
 }
 
-
-///  /*----------------------------------------- Mobile Platform -----------------------------------------*/
-
- 
 @media only screen and (min-width: 768px) {
 
  .hamburgerBox {
      display: none;
  }
  
-  #indexMain {
+  #slideshowSection {
      padding-top: 0;
  }
+
+ #slideshow-container {
+  display: flex;
+  flex-direction: column;
+}
  
  .navListExtended {
      @include navListExtended; //mixin in navbar.scss
  }
  
  .slideshow-container img {
-    height: 30em;
+    height: 20em;
+    object-position: center 10%;
  }
 
  .slogan-container {
   order: 1;
-}
-
-#slideshow-container {
-  display: flex;
-  flex-direction: column;
+  font-size: 12px;
 }
 
  /*------------------------------------ Vision Container -----------------------------------------*/
 
 .infoContainers {
-  width: 80%;
-  margin-bottom: 1em;
- }
+   width: 80%;
+   margin-bottom: 1em;
+}
 
 #reverseContainer {
-  flex-direction: column;
+   flex-direction: column;
 }
 
 #reverseImg {
-  flex-direction: row;
-  width: 50%;
-  display: -webkit-inline-box;
+   flex-direction: row;
+   width: 50%;
+   display: -webkit-inline-box;
 }
 
   .visionSection {
-    gap: 0;
-    padding-top: 0;
+   gap: 0;
   }
 
   .containerInfo{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
   }
 
   #reverseContainer {
-    display: flex;
+   display: flex;
   }
 
  .visionContainers {
@@ -179,56 +174,56 @@ body {
 
  #josh {
    height: 100%;
- }
+}
 
- .visionContainers:nth-child(2) {
-   flex-direction: row-reverse;
+.visionContainers:nth-child(2) {
+  flex-direction: row-reverse;
+}
 
- }
+.visionContainers:nth-child(3) {
+  width: 100%;
+}
 
- .visionContainers:nth-child(3) {
-   width: 100%;
- }
- 
- .visionContainers:nth-child(4) {
-   width: 100%;
-   padding-top: 2em;
- 
- }
+.visionContainers:nth-child(4) {
+  width: 100%;
+  padding-top: 2em;
 
- .containerInfo {
-   justify-content: center;
- }
+}
+.containerInfo {
+  justify-content: center;
+}
 
- .containerInfo:nth-child(2) {
-   width: 100%;
- }
+.containerInfo:nth-child(2) {
+  width: 100%;
+}
 }
  
 @media only screen and (min-width: 1024px) {
 
+
 .visionSection {
-    max-width: 85%;
+    max-width: 1400px ;
     margin: auto;
 }
+
 }
  
 @media only screen and (min-width: 1200px) {
 
-    #indexMain {
+ 
+
+    #slideshowSection {
         flex-direction: row;
     }
 }
  
 @media only screen and (min-width: 1500px) {
 
-    #indexMain {
-        max-width: 2000px;
-        margin: auto;
-    }
-    
+  .slideshow-container img {
+    height: 30em;
+  }
+  
     #slogan {
-        font-size: 4em;
-        padding: 0em;
+        font-size:1.85em;
     }
 }

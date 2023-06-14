@@ -1,5 +1,5 @@
 
-.side-bar {
+.top-bar {
     width: 100%;
     background-color: #202a45;
     position: fixed;
@@ -9,10 +9,10 @@
     flex-direction: column;
     transition:  0.5s ease-in-out;
 }
-
 .change {
     top: 0;
 }
+
 
 .logo-container {
     display: flex;

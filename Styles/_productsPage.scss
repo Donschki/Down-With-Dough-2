@@ -5,15 +5,10 @@
     box-sizing: border-box;
 }
 
-
 .navListExtended {
     display: flex;
     align-items: center;
     display: none;
-}
-
-.extended-nav-item {
-    list-style: none;
 }
 
 .bakerySection {
@@ -38,23 +33,6 @@
 
 .bakerySection::-webkit-scrollbar {
     display: none
-}
-
-.mainHeading {
-    @include flexCenter;
-    font-size: 6vw;
-    margin: auto;
-    color: $maize;
-    background-color: $blue;
-    text-align: center;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 760px) {
-        .mainHeading {
-            font-size: 8vw;
-            width: 8em;
-        }
-    }
 }
 
 .sub-heading {
@@ -141,17 +119,9 @@ a {
 
 /*------------------------------------ Mobile Platform -----------------------------------*/
 
-@media only screen and (min-width: 400px) {
-
-
-
-}
 
 @media only screen and (min-width: 660px) {
 
-.extended-nav-item {
-     list-style: none;
-}
 
 .bakerySection {
      flex-direction: column;
@@ -218,11 +188,8 @@ a {
 }
 
 @media only screen and (min-width: 760px) {
-.navListExtended {
-    @include navListExtended //mixin in navbar.scss
-}
 
-.side-bar {
+.top-bar {
         display: none;
 }
 

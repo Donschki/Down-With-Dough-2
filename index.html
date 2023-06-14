@@ -16,71 +16,61 @@
 
 <body id="indexBody">   
 
-<!-- NAVBAR -->
+<!-- HEADER -->
 
 <header>  
-        <nav>
-            <div class="hamburgerBox">
-                <div class="hamburger-menu">
-                    <div class="line line-2"> </div>
-                    <div class="line line-2"> </div>
-                    <div class="line line-3"> </div>
-                </div>
+     <nav>
+        <div class="hamburgerBox">
+            <div class="hamburger-menu">
+                <div class="line line-2"> </div>
+                <div class="line line-2"> </div>
+                <div class="line line-3"> </div>
             </div>
-         </nav>   
+        </div>
+     </nav>   
      
-            <div class="side-bar">
+        <div class="top-bar">
     
-                 <a href="./index.html" class="logo-container">
-                     <img id="Logo-img" src="Photos/Logo.jpg">
-                 </a>
+             <a href="./index.html" class="logo-container">
+                 <img id="Logo-img" src="Photos/Logo.jpg">
+             </a>
     
-                <!------------------------------- NAV_LIST -------------------------------------->
-                 <ul class="nav-list ">
-                     
-                     <li class="nav-item">
-                         <a href="index.html" class="nav-link">Home</a>
-                     </li>
-    
-                     <li class="nav-item">
-                         <a href="Products.html" class="nav-link">Products</a>
-                     </li>
-    
-                     <li class="nav-item">
-                         <a href="Contact Form.html" class="nav-link">Contact </a>
-                     </li>
-                 </ul>
-             </div>
-                        <!-- EXTENDED NAV LIST 1024px -->
-             <ul class="navListExtended">
+            <!------------------------------- NAV_LIST -------------------------------------->
 
-                 <a href="./index.html"> 
-                     <img id="logo" src="Photos/Logo.png" alt="">
-                 </a>
-     
-                 <li class="extended-nav-item">
+             <ul class="nav-list ">
+                 
+                 <li class="nav-item">
                      <a href="index.html" class="nav-link">Home</a>
                  </li>
-     
-                 <li class="extended-nav-item">
+    
+                 <li class="nav-item">
                      <a href="Products.html" class="nav-link">Products</a>
                  </li>
-                 
-                 <li class="extended-nav-item">
+    
+                 <li class="nav-item">
                      <a href="Contact Form.html" class="nav-link">Contact </a>
                  </li>
              </ul>
-         </nav>
- </header>
+         </div>
 
-<section id="indexMain">
+        
+
+     </nav>
+</header>
+
+<!-- SLIDESHOWW SECTION -->
+
+<section id="slideshowSection">
   
-    
      <div class="slideshow-container" id="slideshow-container"> <!-- SLIDESHOW CONTAINER -->
                
      <div class="slogan-container" >  <!-- SLOGAN CONTAINER -->
         <h1 id="slogan">PROVIDING REAL & MEANINGFUL OPPORTUNITIES FOR YOUNG ADULTS WITH INTELLECTUAL DISABILITIES </h1>
      </div>
+
+           <!-- EXTENDED NAV LIST 768px -->
+
+      
 
          <div class="mySlides fade"> 
              <!-- <div class="numbertext">1 / 5</div> -->
@@ -114,6 +104,8 @@
 
      </div>
 
+    
+
      <div class="dotsContainer">  <!-- 3 DOT-LIKE CONTAINERS TO INDICATE EACH SLIDE POSITION-->
                 <span class="dot"></span> 
                 <span class="dot"></span> 
@@ -123,6 +115,29 @@
      </div>
 
 </section>  
+
+
+      
+<ul class="navListExtended">
+
+    <a href="./index.html"> 
+        <img id="logo" src="Photos/Logo.png" alt="">
+    </a>
+
+    <li class="extended-nav-item">
+        <a href="index.html" class="nav-link">Home</a>
+    </li>
+
+    <li class="extended-nav-item">
+        <a href="Products.html" class="nav-link">Products</a>
+    </li>
+    
+    <li class="extended-nav-item">
+        <a href="Contact Form.html" class="nav-link">Contact </a>
+    </li>
+</ul>
+
+      
 
 <!-- Vision Section -->
   
@@ -135,9 +150,9 @@
          </div>
 
          <div class="containerInfo">
+            
              <div class="headingContainer">
-                 <h1 class="visionHeadings"> Our Vision</h1>
-                
+                 <h1> Our Vision</h1>
              </div>
 
              <p class="paragraphs ">
@@ -154,14 +169,16 @@
          </div>
 
          <div class="containerInfo">
-            <div class="headingContainer">
-                <h1 class="visionHeadings"> Why We Started</h1>
 
-            </div>
-            <p class="paragraphs ">
-                Having a son with Down syndrome opened our eyes to the lack of suitable facilities and infrastructure after school. Moving into adulthood, young adults with intellectual disabilities have limited possibilities. If we could change this for Joshua, and
-                others in the Northern Suburbs community, it would equip them for a future where they could work and contribute to society around them in a meaningful way.
-            </p>
+             <div class="headingContainer">
+                 <h1 class=""> Why We Started</h1>
+             </div>
+
+             <p class="paragraphs ">
+                 Having a son with Down syndrome opened our eyes to the lack of suitable facilities and infrastructure after school. Moving into adulthood, young adults with intellectual disabilities have limited possibilities. If we could change this for Joshua, and
+                 others in the Northern Suburbs community, it would equip them for a future where they could work and contribute to society around them in a meaningful way.
+             </p>
+
          </div>
      </div>
 
@@ -170,8 +187,16 @@
          <div class="imgContainer" id="reverseImg">
 
                  <img class="visionImages" src="Photos/lynneRutherfoord.jpg" alt="">
-
-                 <h2 class="headingContainer" > Lynne Rutherfoord - Founder & CEO of Down With Dough</h2>
+                 <div class="containerInfo">
+            
+                     <div class="headingContainer">
+                         <h1> Lynne Rutherfoord</h1>
+                     </div>
+       
+                     <p class="paragraphs ">
+                         Founder & CEO of Down With Dough
+                    </p>
+                </div>
          </div>
 
          <div id="ourProgramme">
@@ -191,51 +216,11 @@
                      </p>
 
              </div>
-        
          </div>
-
      </div>
-
 </section>
 
-
-<!-- SLIDESHOW SCRIPT -->
-
-     <script> 
- let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
-     </script>
-
-<!-- OFF CLICK SCRIPT -->
-
-     <script>
- document.querySelector('main').addEventListener('click', () => {
- sideBar.classList.remove('change');
-});
-
- document.querySelector('.contact-info-container').addEventListener('click', () => {
- sideBar.classList.remove('change');
-});
-
-     </script>
-     <script src="Js/Script.js"></script><!-- MAIN JAVASCRIPT FILE-->
+<script src="Js/Script.js"></script><!-- MAIN JAVASCRIPT FILE-->
     
 </body>
 

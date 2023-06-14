@@ -17,9 +17,8 @@
 }
 
 
-#indexMain {
+#slideshowSection {
     padding-top: 3em;
-    position: static
 }
 
 .slideshow-container {
@@ -44,7 +43,7 @@ p {
     color: #ffffff;
     font-size: 1em;
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .headingContainer {
@@ -120,19 +119,12 @@ hr {
     width: 30%;
 }
 
-
 .visionSection {
     display: grid;
     flex-direction: column;
     justify-content: space-around;
     gap: 2em;
-    padding-top: 3em;
-
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-    scrollbar-width: none;
-    /* Firefox */
-
+    padding: 0.5em;
 }
 
 .visionSection:-webkit-scrollbar {
@@ -151,10 +143,8 @@ hr {
 
 .imgContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  object-position: center;
+  gap: 2em;
+  
 
   .visionImages {
     width: 100%;
