@@ -69,7 +69,8 @@
             </ul>
         </nav>
      </header>
-     <main id="contactMain"> <!--FORM-->
+
+     <main class="contactMain"> <!--FORM-->
        
          <form class="form " method="post" action="https://forms.un-static.com/forms/4c27c59b97566818288bd4e85dfde6dedd142486">
              <h1 id="contactHeading">Get in touch</h1>
@@ -133,21 +134,15 @@
          </div>
     </main>
  
-<script src="Js/Script.js"></script>
 
-<!-- OFF CLICK SCRIPT -->
 <script>
-    document.querySelector('.contactForm').addEventListener('click', () => {
-    sideBar.classList.remove('change');
-   });
-   
-    document.querySelector('.contact-info-container').addEventListener('click', () => {
-    sideBar.classList.remove('change');
-   });
-   
-        </script>
+    document.querySelector('.contactMain').addEventListener('click', () => {
+  sideBar.classList.remove('change');
+});
 
+</script>
 
+<script src="Js/Script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

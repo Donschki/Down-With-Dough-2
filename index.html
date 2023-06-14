@@ -14,7 +14,7 @@
 </head>
 
 
-<body id="indexBody">   
+<body>   
 
 <!-- HEADER -->
 
@@ -27,100 +27,79 @@
                 <div class="line line-3"> </div>
             </div>
         </div>
-     </nav>   
      
-        <div class="top-bar">
-    
-             <a href="./index.html" class="logo-container">
-                 <img id="Logo-img" src="Photos/Logo.jpg">
-             </a>
-    
-            <!------------------------------- NAV_LIST -------------------------------------->
+     <!------------------------------- SLIDE-OUT TOP MENU -------------------------------------->
 
-             <ul class="nav-list ">
-                 
-                 <li class="nav-item">
-                     <a href="index.html" class="nav-link">Home</a>
-                 </li>
+     <div class="top-bar">
     
-                 <li class="nav-item">
-                     <a href="Products.html" class="nav-link">Products</a>
-                 </li>
+         <a href="./index.html" class="logo-container">
+             <img id="Logo-img" src="Photos/Logo.jpg">
+         </a>
+
+         <ul class="nav-list ">
+             
+             <li class="nav-item">
+                 <a href="index.html" class="nav-link">Home</a>
+             </li>
     
-                 <li class="nav-item">
-                     <a href="Contact Form.html" class="nav-link">Contact </a>
-                 </li>
-             </ul>
-         </div>
+             <li class="nav-item">
+                 <a href="Products.html" class="nav-link">Products</a>
+             </li>
+    
+             <li class="nav-item">
+                 <a href="Contact Form.html" class="nav-link">Contact </a>
+             </li>
+         </ul>
+     </div>
+    </nav>   
 
-        
-
-     </nav>
 </header>
+
+<main class="main">
 
 <!-- SLIDESHOWW SECTION -->
 
 <section id="slideshowSection">
   
      <div class="slideshow-container" id="slideshow-container"> <!-- SLIDESHOW CONTAINER -->
-               
-     <div class="slogan-container" >  <!-- SLOGAN CONTAINER -->
-        <h1 id="slogan">PROVIDING REAL & MEANINGFUL OPPORTUNITIES FOR YOUNG ADULTS WITH INTELLECTUAL DISABILITIES </h1>
-     </div>
-
-           <!-- EXTENDED NAV LIST 768px -->
-
-      
 
          <div class="mySlides fade"> 
-             <!-- <div class="numbertext">1 / 5</div> -->
              <img src="Photos/Family.jpg" >
-             <!-- <div class="text">Caption Text</div> -->
          </div>
 
          <div class="mySlides fade"> 
-             <!-- <div class="numbertext">2 / 5</div> -->
              <img src="Photos/FamilyFlo.jpg" >
-             <!-- <div class="text">Caption Two</div> -->
          </div>
 
          <div class="mySlides fade"> 
-             <!-- <div class="numbertext">3 / 5</div> -->
              <img src="Photos/familyFromTop.jpg">
-             <!-- <div class="text">Caption Three</div> -->
          </div>
 
          <div class="mySlides fade"> 
-             <!-- <div class="numbertext">4 / 5</div> -->
              <img src="Photos/familyBreakTime.jpg">
-             <!-- <div class="text">Caption Three</div> -->
          </div>
 
          <div class="mySlides fade"> 
-             <!-- <div class="numbertext">5 / 5</div> -->
              <img src="Photos/family4.jpg">
-             <!-- <div class="text">Caption Three</div> -->
          </div>
 
      </div>
-
-    
 
      <div class="dotsContainer">  <!-- 3 DOT-LIKE CONTAINERS TO INDICATE EACH SLIDE POSITION-->
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
      </div>
 
 </section>  
-
-
       
+<!-- EXTENDED NAV LIST 768px-->
+
 <ul class="navListExtended">
 
-    <a href="./index.html"> 
+    <a href="./index.html" id="logoContainer"> 
         <img id="logo" src="Photos/Logo.png" alt="">
     </a>
 
@@ -137,8 +116,9 @@
     </li>
 </ul>
 
-      
-
+<div class="slogan-container" >  <!-- SLOGAN CONTAINER -->
+    <h1 id="slogan">PROVIDING REAL & MEANINGFUL OPPORTUNITIES FOR YOUNG ADULTS WITH INTELLECTUAL DISABILITIES </h1>
+ </div>
 <!-- Vision Section -->
   
 <section class="visionSection">
@@ -220,8 +200,17 @@
      </div>
 </section>
 
-<script src="Js/Script.js"></script><!-- MAIN JAVASCRIPT FILE-->
+</main>
+
+<script>
+    document.querySelector('.main').addEventListener('click', () => {
+  sideBar.classList.remove('change');
+});
+
+</script>
     
+<script src="Js/Script.js"></script><!-- MAIN JAVASCRIPT FILE-->
+
 </body>
 
 </html>
