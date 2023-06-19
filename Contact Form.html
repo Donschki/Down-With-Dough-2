@@ -13,7 +13,11 @@
 </head>
 
 <body>
-    <header> <!-- HEADER + NAVBAR -->
+
+<!-- HEADER + NAVBAR -->
+
+<header>
+        
        
         <nav>
             <div class="hamburgerBox">
@@ -66,15 +70,18 @@
                  </li>
              </ul>
          </nav>
-     </header>
+</header>
+
+<section class="contactSection">
 
 <!--FORM-->
-       
          <form class="form" method="post" action="https://forms.un-static.com/forms/4c27c59b97566818288bd4e85dfde6dedd142486">
+             
+             <div class="contactHeading">
+                 <h1 >Get in touch</h1>
+             </div>
 
              <div class="formInner d-grid">
-            
-                 <h1 class="contactHeading">Get in touch</h1>
                         
                      <div class="inputBox">
                              <span>First Name</span>
@@ -96,16 +103,15 @@
                             <input name="mobile" type="text" placeholder="*Optional">
                         </div>
 
-                         <div class="inputBox">
-                            <span>Write To Us!..</span>
-                            <textarea name="message" placeholder="*Write here" required></textarea>
-                         </div>
                         
-                         <div class="inputBox">
-                             <input type="submit" value="Send">
-                         </div>
-                        
-             </div>
+                    </div>
+                    
+                    <div class="inputBox">
+                       <span>Write To Us!..</span>
+                       <textarea name="message" placeholder="*Write here" required></textarea>
+                    </div>
+                   
+                        <input type="submit" value="Send">
          </form>
 
                    <!-- info box-->
@@ -129,10 +135,12 @@
 
          <div class="contactMap "> <!-- MAP-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.2417183218868!2d18.631164351163505!3d-33.83187648057154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc576ef7ab6f2d%3A0xb177cb760576a6ba!2s17%20Rustig%20St%2C%20Aurora%2C%20Cape%20Town%2C%207550!5e0!3m2!1sen!2sza!4v1675319703903!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
+        </div>
+         
+</section>
 
 <script>
-    document.querySelector('.contactMain').addEventListener('click', () => {
+    document.querySelector('.contactSection').addEventListener('click', () => {
   sideBar.classList.remove('change');
 });
 
