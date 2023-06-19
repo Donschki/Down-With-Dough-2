@@ -46,48 +46,45 @@
                     </li>
                 </ul>
             </div>
+
                         <!-- EXTENDED NAV LIST 1024px -->
-            <ul class="navListExtended">
+
+             <ul class="navListExtended">
     
-                <img id="logo" src="Photos/Logo.png" alt="">
+                 <img id="logo" src="Photos/Logo.png" alt="">
     
-                <li class="extended-nav-item">
+                 <li class="extended-nav-item">
                     <a href="index.html" class="nav-link">Home</a>
-                </li>
+                 </li>
     
-                <li class="extended-nav-item">
+                 <li class="extended-nav-item">
                     <a href="Products.html" class="nav-link">Products</a>
-                </li>
+                 </li>
     
-                <li class="extended-nav-item">
-                    <a href="Vision.html" class="nav-link">Vision</a>
-                </li>
-    
-                <li class="extended-nav-item">
+                 <li class="extended-nav-item">
                     <a href="Contact Form.html" class="nav-link">Contact </a>
-                </li>
-            </ul>
-        </nav>
+                 </li>
+             </ul>
+         </nav>
      </header>
 
-     <main class="contactMain"> <!--FORM-->
+<!--FORM-->
        
-         <form class="form " method="post" action="https://forms.un-static.com/forms/4c27c59b97566818288bd4e85dfde6dedd142486">
-             <h1 id="contactHeading">Get in touch</h1>
+         <form class="form" method="post" action="https://forms.un-static.com/forms/4c27c59b97566818288bd4e85dfde6dedd142486">
+
+             <div class="formInner d-grid">
+            
+                 <h1 class="contactHeading">Get in touch</h1>
                         
-                <div class=" inputBox nameSurnameBox">
-                        <div class="inputBox">
-                            <span>First Name</span>
-                            <input name="name" type="text" placeholder="*Required" required>
-                        </div>
+                     <div class="inputBox">
+                             <span>First Name</span>
+                             <input name="name" type="text" placeholder="*Required" required>
+                     </div>
                         
                         <div class="inputBox">
                             <span>last Name</span>
                             <input name="lastName" type="text" placeholder="*Required" required>
                         </div>
-                </div>
-                        
-                <div class=" inputBox emailMobileBox ">
 
                         <div class="inputBox">
                             <span>Email</span>
@@ -98,32 +95,33 @@
                             <span>Mobile</span>
                             <input name="mobile" type="text" placeholder="*Optional">
                         </div>
-                    </div>
 
-                        <div class="inputBox">
+                         <div class="inputBox">
                             <span>Write To Us!..</span>
                             <textarea name="message" placeholder="*Write here" required></textarea>
-                        </div>
+                         </div>
                         
-                        <div class="inputBox">
-                            <input type="submit" value="Send">
-                        </div>
+                         <div class="inputBox">
+                             <input type="submit" value="Send">
+                         </div>
+                        
+             </div>
          </form>
 
                    <!-- info box-->
-         <div class="contactInfo boxContainers">
+         <div class="contactInfo">
              
-             <div class="mail infoBoxChild">
+             <div class="contactIcons">
                     <span><ion-icon name="mail"></ion-icon></span>
                     <a href="mailto:info@downwithdoug.co.za">info@downwithdoug.co.za</a>
              </div>
 
-             <div class="call infoBoxChild">
+             <div class="contactIcons">
                     <span><ion-icon name="call"></ion-icon></span>
                     <a href="tel:+27607300487">083 649 7693</a>
              </div>
 
-             <div class=" infoBoxChild">
+             <div class="contactIcons">
                     <span><ion-icon name="map"></ion-icon></span>
                     <P id="addressP">17 Rustig St, Aurora, Cape Town, 7550</P>
              </div>
@@ -132,8 +130,6 @@
          <div class="contactMap "> <!-- MAP-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.2417183218868!2d18.631164351163505!3d-33.83187648057154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc576ef7ab6f2d%3A0xb177cb760576a6ba!2s17%20Rustig%20St%2C%20Aurora%2C%20Cape%20Town%2C%207550!5e0!3m2!1sen!2sza!4v1675319703903!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
-    </main>
- 
 
 <script>
     document.querySelector('.contactMain').addEventListener('click', () => {

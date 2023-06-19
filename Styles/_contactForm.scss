@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.d-grid {
+    display: grid;
 }
-
-
-
 .infoBox {
     display: flex;
     flex-direction: column;
@@ -20,22 +16,21 @@
     text-transform: uppercase;
 }
 
-#contactHeading {
-    font-size: 0em;
-}
-
 form {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 3em;
 }
 
-#contactHeading {
-    text-align: center;
-    font-size: 14vw;
-    text-transform: uppercase;
+.formInner {
+    display: grid;
+    padding: 1em;
+    padding-top: 5em;
+}
 
+.contactHeading {
+    text-align: center;
+    font-size: clamp(1em, 8vw, 9em);
+    text-transform: uppercase;
 }
 
 .contactMap {
@@ -50,29 +45,28 @@ a {
 }
 
 .inputBox {
-     padding: 10px;
      display: flex;  
      flex-direction: column;
      text-align: center;
      text-decoration: none;
-     width: 100%;
 }
 
 input {
     background:#3b4f8879;
     color: white;
-    padding: 1.5em;
     border: none;
-    width: 100%;
+    padding: 1em;
+}
 
+span {
+    padding-block: 0.5em;
 }
 
 textarea {
     background:#3b4f8879;
     border-style: none;
     padding: 1em;
-    width: 100%;
-    height: 10em;
+    height: 5em;
     color: white;
 }
 
@@ -107,7 +101,6 @@ span {
     font-size: 0.8em;
     text-decoration: none;
     color: white;
-
 }
 
 .nameSurnameBox {
@@ -124,23 +117,6 @@ span {
 
 
 @media only screen and (min-width: 660px) {
-
-#contactMain {
-    position: relative;
-    bottom: 0;
-}
-
-   form {
-    padding-top: 0em;
-     
-} 
-    .box {
-        height: 100vh;
-    }
-
-    #contactHeading {
-        font-size: 3em;
-    }
 
     .nameSurnameBox {
         flex-direction: row;
@@ -177,6 +153,10 @@ span {
 
 @media only screen and (min-width: 730px){
 
+.formInner {
+    padding-top: 0;
+}
+
 .contactInfo {
     flex-direction: row;
 }
@@ -186,20 +166,8 @@ span {
     margin: 0;
 }
 
-
-.contactHeading {
-    font-size: 6em;
-}
-
-
-.infoBoxChild {
-    width: 100%;
-    height: 100%;
-}
-
 #contactInfoh3 {
     font-size: 5vw;
-
 }
 
 }
@@ -234,22 +202,15 @@ form {
     height: 100%;
 }
 
-.boxContainers {
-    width: 100%;
-    height: 100%;
-}
-
-#contactHeading {
-    font-size: 3em;
-    text-transform: uppercase;
-}
-
-
 .contactInfo {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.contactIcons {
+    display: flex;
+    @include flexCenter;
 }
 
 .infoBoxChild {
