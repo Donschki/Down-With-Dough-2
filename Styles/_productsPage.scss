@@ -9,15 +9,12 @@
     display: flex;
     flex-direction: column;
     background-color: #202a45;
-    overflow: scroll;
     gap: 3em;
 
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
-
-    padding-top: 4em;
 
     hr {
         width: 80%;
@@ -49,7 +46,8 @@
     text-align: center;
     @include flexCenter;
     flex-direction: column;
-    gap: 1em;
+    padding: 1em;
+
     
     hr {
     margin: 1em 0;
@@ -61,8 +59,16 @@
 .info {
     @include flexCenter;
     flex-direction: column;
-    margin: auto;
-    width: 90%;
+    gap: 1em;
+    background: rgba(59, 79, 136, 0.4745098039);
+    padding: 1em;
+
+    
+    border-top-left-radius: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius:15%;
+    border-bottom-left-radius: 20%;
+
 }
 
 #doggyTreatsHeading {
@@ -75,20 +81,22 @@
 .titles {
     color: $maize;
     text-align: center;
-    margin: auto;
     @include flexCenter;
     text-transform: uppercase;
     font-size: 7vw;
 }
 
 .productsHeading {
-    font-size: clamp(2em, 4vw, 4em);
+    font-size: clamp(2em, 6vw, 2.5em);
     text-align: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+
+    text-transform: uppercase;
 }
 
 .productParagraph {
     font-size: 1em;
-    margin: auto;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 4px;
@@ -101,11 +109,7 @@ a {
 }
 
 .bakerySection img {
-    width: 60%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    z-index: -1;
-  
+    max-width: 100%;
 }
 
 .productParagraph {
@@ -194,11 +198,6 @@ a {
 
 .sub-heading {
         font-size: 1vw;
-}
-
-
-#bakedBread {
-    width: 70%;
 }
 
 .containers {
