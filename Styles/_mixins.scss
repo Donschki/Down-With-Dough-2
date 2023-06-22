@@ -26,22 +26,3 @@
 
 /* Slideshow container */
 
-@mixin slideShow {
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation: fade ease-in;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-
-
-}
