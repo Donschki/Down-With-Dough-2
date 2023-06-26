@@ -55,11 +55,15 @@
 
 </header>
 
+<main>
+
 <!-- SLIDESHOWW SECTION -->
 
 <section class="slideshowSection">
   
-     <div class="slideshow-container"> <!-- SLIDESHOW CONTAINER -->
+<!-- SLIDESHOW CONTAINER -->
+
+     <div class="slideshow-container"> 
 
          <div class="mySlides fade"> 
              <img src="Photos/Family.jpg" >
@@ -83,7 +87,9 @@
 
      </div>
 
-     <div class="dotsContainer">  <!-- 3 DOT-LIKE CONTAINERS TO INDICATE EACH SLIDE POSITION-->
+<!-- 3 DOT-LIKE CONTAINERS TO INDICATE EACH SLIDE POSITION-->
+
+     <div class="dotsContainer">  
          <span class="dot"></span> 
          <span class="dot"></span> 
          <span class="dot"></span> 
@@ -114,91 +120,107 @@
     </li>
 </ul>
 
-<div class="slogan-container" >  <!-- SLOGAN CONTAINER -->
+<!-- SLOGAN CONTAINER -->
+
+<div class="slogan-container" >  
     <h1 id="slogan">PROVIDING REAL & MEANINGFUL OPPORTUNITIES FOR YOUNG ADULTS WITH INTELLECTUAL DISABILITIES </h1>
  </div>
+
 <!-- Vision Section -->
   
 <section class="visionSection">
 
      <div class="visionContainers"  >
 
-         <div class="imgContainer"  >
+         <div class="visionPhotoContainer"  >
              <img class="visionImages" src="Photos/Emma Josh.jpg" alt="">
          </div>
 
-         <div class="containerInfo">
+         <div class="visionInfoContainer">
             
-             <div class="headingContainer">
-                 <h1> Our Vision</h1>
+             <div class="visionHeadingContainer">
+                 <h2> Our Vision</h2>
              </div>
 
-             <p class="paragraphs ">
+             <p class="visionParagraphContainer ">
                  Our vision and ultimate goal is to train and upskill young adults with intellectual disabilities for meaningful work placement, furthermore encouraging a life of appropriate independence.
             </p>
+            
          </div>
+
+     </div>
+
+       <div class="visionContainers" id="reverse">
+        
+         <div class="visionPhotoContainer" >
+
+                 <img class="visionImages" src="Photos/lynneRutherfoord.jpg" alt="">
+         </div>
+                 
+         <div class="visionInfoContainer">
+            
+             <div class="visionHeadingContainer">
+                 <h2> Lynne Rutherfoord</h2>
+             </div>
+       
+             <p class="visionParagraphContainer ">
+                 Founder & CEO of Down With Dough
+            </p>
+        </div>
 
      </div>
 
      <div class="visionContainers">
 
-         <div class="imgContainer"  >
-             <img class="visionImages" id="josh" src="Photos/DWD-9.jpg" alt="">
+         <div class="visionPhotoContainer"  >
+             <img class="visionImages" src="Photos/DWD-9.jpg" id="josh" alt="">
          </div>
 
-         <div class="containerInfo">
+         <div class="visionInfoContainer">
 
-             <div class="headingContainer">
-                 <h1 class=""> Why We Started</h1>
+             <div class="visionHeadingContainer">
+                 <h2> Why We Started</h2>
              </div>
 
-             <p class="paragraphs ">
+             <p class="visionParagraphContainer ">
                  Having a son with Down syndrome opened our eyes to the lack of suitable facilities and infrastructure after school. Moving into adulthood, young adults with intellectual disabilities have limited possibilities. If we could change this for Joshua, and
                  others in the Northern Suburbs community, it would equip them for a future where they could work and contribute to society around them in a meaningful way.
              </p>
 
          </div>
+
      </div>
 
-     <div class="visionContainers" id="reverseContainer">
-        
-         <div class="imgContainer" id="reverseImg">
+   
 
-                 <img class="visionImages" src="Photos/lynneRutherfoord.jpg" alt="">
-                 
-                 <div class="containerInfo">
-            
-                     <div class="headingContainer">
-                         <h1> Lynne Rutherfoord</h1>
-                     </div>
-       
-                     <p class="paragraphs ">
-                         Founder & CEO of Down With Dough
-                    </p>
-                </div>
+     <div class="visionInfoContainer" id="ourProgramme">
+        
+         <div class="visionHeadingContainer">
+             <h2> Our Programme</h2>
+
          </div>
 
-             <div class="containerInfo" >
-                
-                 <div class="headingContainer">
-                     <h1> Our Programme</h1>
+         <div class="visionParagraphContainer d-grid" ></div>
 
-                 </div>
+             <p class="visionParagraph">
+                 Our proven training and personal development programme equips young adults with intellectual disabilities, between 18-30 years of age, for successful placement in a work environment. Through our baking process and group sessions we train our members with
+                 the basic skills needed for employment. Interactions would revolve around topics such as communication, appropriate behaviour and personal hygiene. We aim to source appropriate work opportunities, tailored to suit our member's
+                 abilities and the requirements of the employer.
+             </p>
 
-                     <p class="paragraphs ">
-                         Our proven training and personal development programme equips young adults with intellectual disabilities, between 18-30 years of age, for successful placement in a work environment. Through our baking process and group sessions we train our members with
-                         the basic skills needed for employment. Interactions would revolve around topics such as communication, appropriate behaviour and personal hygiene. We aim to source appropriate work opportunities, tailored to suit our member's
-                         abilities and the requirements of the employer. <br><br> This process includes various assessments and work exposure in different environments. Once placed, on-going support is provided to both the member and employer, to ensure sustainable
-                         employment and work satisfaction. We will continually strive to provide varied possibilities for accommodating all our members; keeping them stimulated and included in a safe, friendly, and social environment.
-                     </p>
+             <p class="visionParagraph">
+                 This process includes various assessments and work exposure in different environments. Once placed, on-going support is provided to both the member and employer, to ensure sustainable
+                 employment and work satisfaction. We will continually strive to provide varied possibilities for accommodating all our members; keeping them stimulated and included in a safe, friendly, and social environment.
+             </p>
 
-             </div>
      </div>
+
 </section>
 
+</main>
 
 <script>
-    document.querySelector('.main').addEventListener('click', () => {
+    document.querySelector('main').addEventListener('click', () => {
   sideBar.classList.remove('change');
 });
 

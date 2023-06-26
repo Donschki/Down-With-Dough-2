@@ -83,25 +83,6 @@
   display: none;
 }
 
-.bakerySection {
-  display: flex;
-  flex-direction: column;
-  background-color: #202a45;
-  gap: 3em;
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
-}
-.bakerySection hr {
-  width: 80%;
-  margin: auto;
-}
-
-.bakerySection::-webkit-scrollbar {
-  display: none;
-}
-
 .sub-heading {
   justify-content: center;
   padding: 5px;
@@ -118,134 +99,44 @@
   left: 0;
 }
 
-.containers {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1em;
-}
-.containers hr {
-  margin: 1em 0;
-  width: 50%;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1em;
-  background: rgba(59, 79, 136, 0.4745098039);
-  padding: 1em;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 20%;
-  border-bottom-right-radius: 15%;
-  border-bottom-left-radius: 20%;
-}
-
-#doggyTreatsHeading {
-  margin: auto;
-  text-align: center;
-  font-size: 8vw;
-  text-transform: uppercase;
-}
-
-.titles {
-  color: #fcd059;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 7vw;
-}
-
-.productsHeading {
-  font-size: clamp(2em, 6vw, 2.5em);
-  text-align: center;
-  padding-top: 3em;
-  padding-bottom: 2em;
-  text-transform: uppercase;
-}
-
-.productParagraph {
-  font-size: 1em;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 4px;
-  word-spacing: 2px;
-  text-transform: uppercase;
-}
-
-a {
-  text-align: center;
+.bakerySection {
+  padding-top: 8em;
+  gap: 4em;
+  padding: 6em 2em;
 }
 
 .bakerySection img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.productsSection, .dogTreatsSection {
+  grid-gap: 2em;
+  grid-column-gap: 4em;
+  grid-row-gap: 5em;
+}
+
+.productsContainer {
+  display: grid;
+  text-align: center;
+  gap: 1em;
+  max-width: 500px;
+  margin: auto;
 }
 
 .productParagraph {
   font-size: 1em;
 }
 
-.Peanut-Butter-And-Butternut-Dog-Treats-container {
-  padding-bottom: 7em;
+.productsHeading {
+  text-transform: uppercase;
+  font-size: clamp(2em, 4vw, 2em);
 }
 
-/*------------------------------------ Mobile Platform -----------------------------------*/
-@media only screen and (min-width: 660px) {
-  .bakerySection {
-    flex-direction: column;
-    overflow: scroll;
-    display: flex;
-    margin: auto;
-  }
-  .bakerySection img {
-    width: 80%;
-  }
-  .bakerySection hr {
-    width: 85%;
-  }
-  .containers {
-    margin: auto;
-    padding: 2em;
-    flex-direction: row;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
-  .info {
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-  }
-  .titles {
-    font-size: 2em;
-    margin: auto;
-    letter-spacing: 6px;
-    width: 100%;
-  }
-  .mainHeading {
-    font-size: 5vw;
-  }
-  .bakerySection img {
-    margin: auto;
-  }
-  .productParagraph {
-    font-size: 1em;
-  }
-  .Peanut-Butter-And-Butternut-Dog-Treats-container {
-    padding-bottom: 7em;
-  }
-  .doggyTreatsHeading {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-  }
+.dogTreatsSection {
+  gap: 10em;
 }
+
 @media only screen and (min-width: 760px) {
   .top-bar {
     display: none;
@@ -253,10 +144,14 @@ a {
   .sub-heading {
     font-size: 1vw;
   }
-  .containers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .productsSection {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    grid-column-gap: 0;
+    grid-row-gap: 5em;
+  }
+  .dogTreatsSection {
+    grid-template-columns: auto auto;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -269,48 +164,17 @@ a {
     align-items: center;
     padding-top: 0;
   }
-  .bakerySection {
-    width: 100%;
-  }
-  .containers {
-    width: 80%;
-  }
-  .titles {
-    font-size: 3em;
-  }
 }
-/*------------------------------------- Desktop Platform ------------------------------------*/
-@media only screen and (min-width: 1200px) {
-  .bakerySection {
-    max-width: 1600px;
+@media only screen and (min-width: 1500px) {
+  .productsSection {
+    grid-template-columns: auto auto auto;
+    grid-gap: 6em;
+    grid-row-gap: 0;
   }
-  .bakerySection .productParagraph {
-    width: 70%;
-    line-height: 2;
-    word-spacing: 2px;
-    padding-top: 1em;
-  }
-  .sub-heading {
-    height: -moz-fit-content;
-    height: fit-content;
-    font-size: 0.9em;
-  }
-}
-@media only screen and (min-width: 1600px) {
   .mainHeading {
     padding: 1em 0;
   }
-  .titles {
-    font-size: 4em;
-  }
-  .containers {
-    height: 40em;
-  }
 }
-.d-grid {
-  display: grid;
-}
-
 .infoBox {
   display: flex;
   flex-direction: column;
@@ -329,13 +193,6 @@ form {
   display: flex;
   flex-direction: column;
   padding: 0 1em;
-}
-
-.contactHeading {
-  text-align: center;
-  font-size: clamp(2em, 7vw, 4em);
-  text-transform: uppercase;
-  padding-top: 2em;
 }
 
 .contactMap {
@@ -439,6 +296,8 @@ span ion-icon {
 :root {
   --mobile-font-size: 16px;
   --desktop-font-size: 20px;
+  --h1-font-color: #fcd059;
+  --gap:2em;
 }
 
 html {
@@ -452,12 +311,28 @@ header {
 }
 
 body {
-  color: #fcd059;
   background-color: #202a45;
   font-family: "Abel", sans-serif;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+}
+
+h1, h2 {
+  color: var(--h1-font-color);
+}
+
+p {
+  font-variant: var(--desktop-font-size);
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: white;
+}
+@media (min-width: 800px) {
+  p {
+    font-variant: var(--desktop-font-size);
+  }
+}
+
+.d-grid {
+  display: grid;
 }
 
 /* ---------------------------- Hamburger Menu ----------------------------- */
@@ -522,7 +397,7 @@ body {
 .slideshowSection {
   padding-top: 3em;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .slideshowSection {
     padding-top: 0;
   }
@@ -549,13 +424,13 @@ body {
 
 .slideshow-container img {
   width: 100%;
-  max-height: 50vh;
+  min-height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 10%;
      object-position: center 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .slideshow-container img {
     max-height: 80vh;
   }
@@ -565,19 +440,17 @@ body {
   display: none;
 }
 
-p {
-  color: #ffffff;
-  text-align: center;
-  padding: 0.5em;
+.visionHeadingContainer {
+  font-size: 1.5em;
+  color: #fcd059;
 }
 
-.headingContainer {
-  display: flex;
-  font-size: 1.5em;
-  align-items: center;
+.heading {
   text-align: center;
-  justify-content: center;
-  width: 100%;
+  font-size: clamp(1.5em, 5vw, 3em);
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  color: #fcd059;
 }
 
 /* ------------------------------------- SLOGAN ----------------------------- */
@@ -587,7 +460,8 @@ p {
 }
 
 #slogan {
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(1em, 3vw, 1.5em);
+  color: #fcd059;
 }
 
 /* --------------------------- Contact Info Footer ------------------- */
@@ -617,15 +491,6 @@ p {
   width: 1em;
 }
 
-.headings {
-  color: #ffffff;
-  font-size: 0.7em;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  width: 100%;
-}
-
 #copyright {
   position: absolute;
   color: rgb(255, 255, 255);
@@ -643,104 +508,109 @@ hr {
 .visionSection {
   display: grid;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 3em;
-  padding: 0 0.5em;
 }
 
 .visionContainers {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
-  height: 100%;
-  gap: 3em;
+  gap: 2em;
+  padding-bottom: 2em;
 }
 
-.containerInfo {
-  display: flex;
+.visionInfoContainer {
   flex-direction: column;
-  gap: 1em;
+  text-align: left;
+  gap: 0.3em;
+  margin: auto;
+  padding: 1em;
 }
 
-.imgContainer {
+.visionPhotoContainer {
   display: flex;
 }
-.imgContainer .visionImages {
+.visionPhotoContainer .visionImages {
   width: 100%;
+  height: 15em;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+@media (min-width: 675px) {
+  .visionPhotoContainer .visionImages {
+    height: 20em;
+  }
 }
 
 #reverseContainer {
   display: flex;
-  flex-direction: column-reverse;
-  gap: 2em;
+  flex-direction: row;
 }
 
-#reverseImg {
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .hamburgerBox {
     display: none;
   }
   #slideshowSection {
     padding-top: 0;
-    height: 100%;
   }
   .navListExtended {
     display: flex;
     justify-content: space-around;
     background: rgba(59, 79, 136, 0.4745098039);
     list-style: none;
+    min-height: 10vh;
     position: sticky;
     position: -webkit-sticky;
     top: 0em;
     z-index: 10;
   }
+  .slideshow-container img {
+    height: 10em;
+  }
   /*------------------------------------ Vision Container -----------------------------------------*/
-  .infoContainers {
-    width: 80%;
-    margin-bottom: 1em;
-  }
-  #reverseContainer {
-    flex-direction: column;
-  }
-  #reverseImg {
-    flex-direction: row;
-    width: 50%;
-    display: -webkit-inline-box;
-  }
-  .visionSection {
-    gap: 0;
-  }
-  .containerInfo {
-    display: flex;
-    flex-direction: column;
-  }
-  #reverseContainer {
-    display: flex;
-  }
-  .visionContainers {
-    flex-direction: row;
-    margin: 0;
-    gap: 0;
-  }
-  .imgContainer {
-    width: 100%;
-  }
-  .visionContainers:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .containerInfo {
-    width: 100%;
-    justify-content: center;
+}
+@media only screen and (min-width: 800px) and (min-width: 1024px) {
+  .slideshow-container img {
+    height: 42em;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
   .visionSection {
-    max-width: 95%;
+    max-width: 1400px;
     margin: auto;
+    padding: 0 1em;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .visionContainers {
+    flex-direction: row;
+    padding-block: 1em;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .visionInfoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .visionInfoContainer, .visionPhotoContainer {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #ourProgramme {
+    width: 90%;
+    padding-block: 1em;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #reverse {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }/*# sourceMappingURL=style.css.map */

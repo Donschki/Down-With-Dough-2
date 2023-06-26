@@ -1,4 +1,3 @@
-@import "./variables";
 @import "./mixins";
 @import "./navbar";
 @import "./productsPage";
@@ -13,6 +12,8 @@
 :root {
   --mobile-font-size: 16px;
   --desktop-font-size: 20px;
+  --h1-font-color: #fcd059;
+  --gap:2em;
 }
 
 html {
@@ -27,16 +28,32 @@ header {
 }
 
 body {
-    color: #fcd059;
     background-color: #202a45;
     font-family: 'Abel', sans-serif;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+}
+
+h1, h2 {
+  color: var(--h1-font-color);
+}
+
+p {
+  font-variant: var(--desktop-font-size);
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: white;
+
+  @media (min-width:800px) {
+    font-variant: var(--desktop-font-size);
+  }
+}
+
+.d-grid {
+  display: grid;
 }
 
 
 /* ---------------------------- Hamburger Menu ----------------------------- */       
+
 
 .hamburgerBox {
   height: 3em;
@@ -97,19 +114,18 @@ body {
   display: flex;
 }
 
+
  /* ------------------------------- SLIDESHOW CONTAINER ----------------------------- */
 
 
- .slideshowSection {
+.slideshowSection {
   padding-top: 3em;
 
-  @media (min-width:768px) {
-
+  @media (min-width: 800px) {
     padding-top: 0;
   }
 
 }
-
 
 .slideshow-container {
 
@@ -117,7 +133,9 @@ body {
   background-color: #717171;
 }
 
+
 /* Fading animation */
+
 .fade {
   animation: fade ease-in;
   animation-duration: 1s;
@@ -127,18 +145,16 @@ body {
   from {opacity: .6} 
   to {opacity: 1}
 }
-
-  
 }
 
 .slideshow-container img {
   width: 100%;
-  max-height: 50vh;
+  min-height: 20em;
 
   object-fit: cover;
   object-position: center 10%;
 
-  @media (min-width:768px) {
+  @media (min-width: 800px) {
     max-height: 80vh;
   }
 }
@@ -147,22 +163,22 @@ body {
   display: none;
 }
 
-p {
-  color: #ffffff;
-  text-align: center;
-  padding: 0.5em;
+.visionHeadingContainer {
+  font-size: 1.5em;
+  color: #fcd059;
 }
 
-.headingContainer {
-  display: flex;
-  font-size: 1.5em;
-  align-items: center;
+.heading {
   text-align: center;
-  justify-content: center;
-  width: 100%;
+  font-size: clamp(1.5em, 5vw, 3em);
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  color: #fcd059;
 }
+
 
 /* ------------------------------------- SLOGAN ----------------------------- */
+
 
 .slogan-container {
   text-align: center;
@@ -170,10 +186,13 @@ p {
 }
 
 #slogan {
-  font-size: clamp(1em, 3vw, 2em);
+  font-size: clamp(1em, 3vw, 1.5em);
+  color: #fcd059;
 }
 
+
 /* --------------------------- Contact Info Footer ------------------- */
+
 
 .contact-info-container {
   background-color: #202a45b9;
@@ -202,15 +221,6 @@ padding: 10px;
   }
 }
 
-.headings {
-  color: #ffffff;
-  font-size: 0.7em;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  width: 100%;
-}
-
 #copyright {
   position: absolute;
   color: rgb(255, 255, 255);
@@ -224,124 +234,119 @@ hr {
   width: 30%;
 }
 
+
 /* --------------------------- Vision Section------------------- */
 
 
 .visionSection {
   display: grid;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 3em;
-  padding: 0 0.5em;
 }
 
 .visionContainers {
-display: flex;
-flex-direction: column-reverse;
-justify-content: center;
-height: 100%;
-gap: 3em;
-}
-
-.containerInfo {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
+  flex-direction: column-reverse;
+  gap: 2em;
+  padding-bottom: 2em;
 }
 
-.imgContainer {
-display: flex;
+.visionInfoContainer {
+  flex-direction: column;
+  text-align: left;
+  gap: 0.3em;
+  margin: auto;
+  padding: 1em;
+}
+
+.visionPhotoContainer {
+  display: flex;
 
 .visionImages {
-width: 100%;
-object-fit: cover;
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+  object-position: top;
+
+@media (min-width:675px) {
+    height: 20em;
+  }
 }
 }
 
 #reverseContainer {
-display: flex;
-flex-direction: column-reverse;
-gap: 2em;
+ display: flex;
+ flex-direction: row;
 }
 
-#reverseImg {
-flex-direction: column;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
 
  .hamburgerBox {
      display: none;
  }
  
   #slideshowSection {
-     padding-top: 0;
-     height: 100%
+  padding-top: 0;
  }
 
  .navListExtended {
-     @include navListExtended; //mixin in navbar.scss
+   display: flex;
+   justify-content: space-around;
+   background:#3b4f8879;
+   list-style: none;
+   min-height: 10vh;
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0em;
+   z-index: 10;
  }
- 
+
+ .slideshow-container img {
+  height: 10em;
+
+  @media (min-width: 1024px) {
+    height: 42em;
+  }
+ }
 
 
  /*------------------------------------ Vision Container -----------------------------------------*/
 
-.infoContainers {
-   width: 80%;
-   margin-bottom: 1em;
-}
 
-#reverseContainer {
-   flex-direction: column;
-}
-
-#reverseImg {
-   flex-direction: row;
-   width: 50%;
-   display: -webkit-inline-box;
-}
-
-  .visionSection {
-   gap: 0;
+ .visionSection {
+   max-width: 1400px;
+   margin: auto;
+   padding: 0 1em;
   }
 
-  .containerInfo{
+  .visionContainers {
+   flex-direction: row;
+   padding-block: 1em;
+  }
+
+  .visionInfoContainer{
    display: flex;
    flex-direction: column;
+   padding: 0;
+   align-items: center;
   }
 
-  #reverseContainer {
-   display: flex;
-  }
+.visionInfoContainer, .visionPhotoContainer {
+  width: 50%;
+  text-align: center;
+}
 
- .visionContainers {
-   flex-direction: row;
-   margin: 0;
-   gap: 0;
- }
+#ourProgramme {
+  width: 90%;
+  padding-block: 1em;
+}
 
- .imgContainer {
-   width: 100%;
- }
-
-.visionContainers:nth-child(2) {
+#reverse {
+  display: flex;
   flex-direction: row-reverse;
 }
-
-.containerInfo {
-  width: 100%;
-  justify-content: center;
-}
-
 }
  
 @media only screen and (min-width: 1024px) {
-
-.visionSection {
-    max-width: 95% ;
-    margin: auto;
-}
 
 }
  
