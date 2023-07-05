@@ -422,8 +422,12 @@ p {
   }
 }
 
+.mySlides {
+  height: 100%;
+}
+
 .slideshow-container img {
-  width: 100%;
+  max-width: 100%;
   min-height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
@@ -500,11 +504,28 @@ p {
   font-size: 0.5em;
 }
 
-hr {
-  width: 30%;
+.hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media (min-width: 800px) {
+  .hr .hr {
+    display: none;
+  }
 }
 
 /* --------------------------- Vision Section------------------- */
+@media (min-width: 800px) {
+  #reverse {
+    flex-direction: row-reverse;
+  }
+  #reverse .hr {
+    display: none;
+  }
+}
+
 .visionSection {
   display: grid;
   flex-direction: column;
@@ -522,7 +543,7 @@ hr {
   text-align: left;
   gap: 0.3em;
   margin: auto;
-  padding: 1em;
+  padding: 0 0.5em;
 }
 
 .visionPhotoContainer {
@@ -579,13 +600,13 @@ hr {
   .visionSection {
     max-width: 1400px;
     margin: auto;
-    padding: 0 1em;
   }
 }
 @media only screen and (min-width: 800px) {
   .visionContainers {
     flex-direction: row;
-    padding-block: 1em;
+    padding-block: 0;
+    gap: 0;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -594,6 +615,11 @@ hr {
     flex-direction: column;
     padding: 0;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .visionParagraphContainer {
+    padding: 1em;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -606,11 +632,5 @@ hr {
   #ourProgramme {
     width: 90%;
     padding-block: 1em;
-  }
-}
-@media only screen and (min-width: 800px) {
-  #reverse {
-    display: flex;
-    flex-direction: row-reverse;
   }
 }/*# sourceMappingURL=style.css.map */

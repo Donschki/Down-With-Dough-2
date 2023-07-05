@@ -147,8 +147,12 @@ p {
 }
 }
 
+.mySlides {
+  height: 100%;
+}
+
 .slideshow-container img {
-  width: 100%;
+  max-width: 100%;
   min-height: 20em;
 
   object-fit: cover;
@@ -211,6 +215,7 @@ p {
 flex-direction: column-reverse;
 font-size: 12px;
 width: 100%;
+
 padding: 10px;
 
   cursor: pointer;
@@ -230,13 +235,26 @@ padding: 10px;
   font-size: 0.5em;
 }
 
-hr {
-  width: 30%;
+
+.hr {
+  @include flexCenter;
+  height: 100%;
+
+  @media (min-width:800px){ 
+    .hr{display: none;}
+  }
 }
 
 
 /* --------------------------- Vision Section------------------- */
 
+#reverse {
+
+  @media (min-width:800px){ 
+    .hr{display: none;}
+    flex-direction: row-reverse;
+  }
+}
 
 .visionSection {
   display: grid;
@@ -255,7 +273,7 @@ hr {
   text-align: left;
   gap: 0.3em;
   margin: auto;
-  padding: 1em;
+  padding: 0 0.5em;
 }
 
 .visionPhotoContainer {
@@ -315,12 +333,12 @@ hr {
  .visionSection {
    max-width: 1400px;
    margin: auto;
-   padding: 0 1em;
   }
 
   .visionContainers {
    flex-direction: row;
-   padding-block: 1em;
+   padding-block: 0;
+   gap: 0;
   }
 
   .visionInfoContainer{
@@ -328,6 +346,11 @@ hr {
    flex-direction: column;
    padding: 0;
    align-items: center;
+   
+  }
+
+  .visionParagraphContainer {
+    padding: 1em;
   }
 
 .visionInfoContainer, .visionPhotoContainer {
@@ -340,10 +363,7 @@ hr {
   padding-block: 1em;
 }
 
-#reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
+
 }
  
 @media only screen and (min-width: 1024px) {
