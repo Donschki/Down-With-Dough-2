@@ -403,16 +403,16 @@ p {
   }
 }
 
-.slideshow-container {
-  /* Fading animation */
-}
-.slideshow-container .active {
+.active {
   background-color: #717171;
 }
-.slideshow-container .fade {
+
+/* Fading animation */
+.fade {
   animation: fade ease-in;
   animation-duration: 1s;
 }
+
 @keyframes fade {
   from {
     opacity: 0.6;
@@ -421,23 +421,17 @@ p {
     opacity: 1;
   }
 }
-
-.mySlides {
-  height: 100%;
+.slideshow-container {
+  height: 25em;
 }
 
 .slideshow-container img {
-  max-width: 100%;
-  min-height: 20em;
+  width: 100%;
+  max-height: 25em;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 10%;
      object-position: center 10%;
-}
-@media (min-width: 800px) {
-  .slideshow-container img {
-    max-height: 80vh;
-  }
 }
 
 .dotsContainer {
@@ -586,49 +580,29 @@ p {
     top: 0em;
     z-index: 10;
   }
-  .slideshow-container img {
-    height: 10em;
-  }
   /*------------------------------------ Vision Container -----------------------------------------*/
-}
-@media only screen and (min-width: 800px) and (min-width: 1024px) {
-  .slideshow-container img {
-    height: 42em;
-  }
-}
-@media only screen and (min-width: 800px) {
   .visionSection {
     max-width: 1400px;
     margin: auto;
   }
-}
-@media only screen and (min-width: 800px) {
   .visionContainers {
     flex-direction: row;
     padding-block: 0;
     gap: 0;
   }
-}
-@media only screen and (min-width: 800px) {
   .visionInfoContainer {
     display: flex;
     flex-direction: column;
     padding: 0;
     align-items: center;
   }
-}
-@media only screen and (min-width: 800px) {
   .visionParagraphContainer {
     padding: 1em;
   }
-}
-@media only screen and (min-width: 800px) {
   .visionInfoContainer, .visionPhotoContainer {
     width: 50%;
     text-align: center;
   }
-}
-@media only screen and (min-width: 800px) {
   #ourProgramme {
     width: 90%;
     padding-block: 1em;
