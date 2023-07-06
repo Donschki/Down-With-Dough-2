@@ -305,20 +305,18 @@ padding: 10px;
 
  .navListExtended {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    background:#3b4f8879;
    list-style: none;
-   min-height: 10vh;
    position: sticky;
    position: -webkit-sticky;
    top: 0em;
    z-index: 10;
- }
+  }
 
  .slideshow-container {
    height: 25em;
  }
-
 
 
  /*------------------------------------ Vision Container -----------------------------------------*/
@@ -365,10 +363,10 @@ padding: 10px;
 @media only screen and (min-width: 1500px) {
 
 .slideshow-container {
-  height: 35em;
+  height: 40em;
 
   img {
-    height: 35em;
+    height: 40em;
   }
 }
 

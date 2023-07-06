@@ -41,7 +41,7 @@
 .nav-link {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -597,10 +597,9 @@ p {
   }
   .navListExtended {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background: rgba(59, 79, 136, 0.4745098039);
     list-style: none;
-    min-height: 10vh;
     position: sticky;
     position: -webkit-sticky;
     top: 0em;
@@ -639,9 +638,9 @@ p {
 }
 @media only screen and (min-width: 1500px) {
   .slideshow-container {
-    height: 35em;
+    height: 40em;
   }
   .slideshow-container img {
-    height: 35em;
+    height: 40em;
   }
 }/*# sourceMappingURL=style.css.map */
