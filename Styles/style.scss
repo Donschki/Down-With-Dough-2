@@ -106,8 +106,6 @@ p {
 #logo {
     width: 6em;
     height: 6em;
-    border: solid white 2px;
-    border-radius: 50%;
 }
 
 #logoContainer {
@@ -144,14 +142,9 @@ p {
 }
 
 
-.slideshow-container {
-  height: 25em;
-
-}
-
 .slideshow-container img {
   width: 100%;
-  max-height: 25em;
+  height: 25em;
 
   object-fit: cover;
   object-position: center 10%;
@@ -180,13 +173,17 @@ p {
 
 .slogan-container {
   text-align: center;
-  padding-block: 2em;
+  padding-top: 3em;
 }
 
 #slogan {
   font-size: clamp(1em, 3vw, 1.5em);
   color: #fcd059;
 }
+
+.hr-container {
+  padding-block: 3em;
+ }
 
 
 /* --------------------------- Contact Info Footer ------------------- */
@@ -259,7 +256,7 @@ padding: 10px;
   display: flex;
   flex-direction: column-reverse;
   gap: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 
 .visionInfoContainer {
@@ -312,6 +309,15 @@ padding: 10px;
    z-index: 10;
  }
 
+ .slideshow-container {
+  height: 25em;
+
+  img {
+    height: 25em;
+  }
+ }
+
+
 
  /*------------------------------------ Vision Container -----------------------------------------*/
 
@@ -332,11 +338,10 @@ padding: 10px;
    flex-direction: column;
    padding: 0;
    align-items: center;
-   
   }
 
   .visionParagraphContainer {
-    padding: 1em;
+    padding: 0 1em;
   }
 
 .visionInfoContainer, .visionPhotoContainer {
@@ -346,13 +351,13 @@ padding: 10px;
 
 #ourProgramme {
   width: 90%;
-  padding-block: 1em;
+  padding: 2em;
 }
-
 
 }
  
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
+
 
 }
  
