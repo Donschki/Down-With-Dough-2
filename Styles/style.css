@@ -86,38 +86,31 @@
 .sub-heading {
   justify-content: center;
   padding: 5px;
-  margin: auto;
   color: #fcd059;
   text-align: center;
   font-size: 0.6em;
-  border-top: solid 1px #fcd059;
-  border-bottom: solid 1px #fcd059;
-  background-color: rgba(32, 42, 69, 0.8549019608);
+  letter-spacing: 2px;
+  background-color: rgba(32, 42, 69, 0.2666666667);
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
 }
 
-.heading {
-  font: clamp(2em, 4vw, 4em);
-}
-
 .bakerySection {
-  padding-top: 8em;
-  gap: 4em;
+  padding-top: 6em;
+  gap: 2em;
 }
 
 .bakerySection img {
   width: 100%;
-  height: 100%;
+  height: 15em;
 }
 
 .productsSection, .dogTreatsSection {
   display: grid;
-  grid-gap: 2em;
   grid-column-gap: 4em;
-  grid-row-gap: 5em;
+  grid-row-gap: 7em;
 }
 .productsSection hr, .dogTreatsSection hr {
   display: none;
@@ -126,31 +119,33 @@
 .productsContainer {
   display: grid;
   text-align: center;
-  gap: 2em;
+  grid-gap: 2em;
+  max-width: 20em;
   margin: auto;
 }
 
 .productsPhotoContainer {
-  width: 20em;
-  height: 20em;
-  margin: auto;
+  width: 100%;
+  height: 15em;
+}
+
+.productsParagraph {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.productParagraph {
-  font-size: 1.2em;
-  padding: 0 1em;
-}
-
 .productsHeadings {
   text-transform: uppercase;
-  font-size: clamp(1.2em, 2vw, 2em);
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dogTreatsSection {
-  gap: 10em;
+  position: relative;
+  padding-bottom: 4em;
 }
 
 @media only screen and (min-width: 760px) {
@@ -160,40 +155,46 @@
   .sub-heading {
     font-size: 1vw;
   }
-  .dogTreatsSection {
-    grid-template-columns: auto auto;
+  h2 {
+    font-size: 1.2em;
   }
-}
-@media only screen and (min-width: 810px) {
   .productsSection {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    grid-column-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5em;
     grid-row-gap: 5em;
   }
-  .productsSection img {
-    width: 15em;
-    height: 15em;
+  .productsContainer {
+    gap: 1.5em;
+  }
+  .dogTreatsSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .mainHeading {
-    font-size: 4vw;
-    height: 7em;
-    display: flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
+  .productsHeadings {
+    font-size: 1.4em;
+  }
+  .productsParagraph {
+    font-size: 1.1;
+  }
+  .productsContainer .productsPhotoContainer {
+    width: 20em;
+    height: 20em;
+  }
+  .productsContainer .productsPhotoContainer img {
+    height: 100%;
   }
 }
 @media only screen and (min-width: 1500px) {
   .productsSection {
-    grid-template-columns: auto auto auto;
-    grid-gap: 6em;
-    grid-row-gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    grid-row-gap: 2em;
+    display: -ms-inline-grid;
   }
-  .mainHeading {
-    padding: 1em 0;
+  .productsPhotoContainer {
+    width: 18em;
   }
 }
 .infoBox {
@@ -318,7 +319,7 @@ span ion-icon {
   --mobile-font-size: 16px;
   --desktop-font-size: 20px;
   --h1-font-color: #fcd059;
-  --gap:2em;
+  --gap: 2em;
 }
 
 html {
@@ -340,8 +341,12 @@ h1, h2 {
   color: var(--h1-font-color);
 }
 
+h1 {
+  letter-spacing: 10px;
+}
+
 p {
-  font-variant: var(--desktop-font-size);
+  font-variant: var(--mobile-font-size);
   line-height: 1.5;
   letter-spacing: 2px;
   color: white;
@@ -460,7 +465,7 @@ p {
 
 .heading {
   text-align: center;
-  font-size: clamp(1.5em, 5vw, 3em);
+  font-size: clamp(2em, 4vw, 3em);
   text-transform: uppercase;
   padding-bottom: 1em;
   color: #fcd059;
@@ -475,6 +480,8 @@ p {
 #slogan {
   font-size: clamp(1em, 3vw, 1.5em);
   color: #fcd059;
+  letter-spacing: 4px;
+  padding: 10px;
 }
 
 .hr-container {
@@ -602,9 +609,6 @@ p {
   .slideshow-container {
     height: 25em;
   }
-  .slideshow-container img {
-    height: 25em;
-  }
   /*------------------------------------ Vision Container -----------------------------------------*/
   .visionSection {
     max-width: 1400px;
@@ -631,5 +635,13 @@ p {
   #ourProgramme {
     width: 90%;
     padding: 2em;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .slideshow-container {
+    height: 35em;
+  }
+  .slideshow-container img {
+    height: 35em;
   }
 }/*# sourceMappingURL=style.css.map */
