@@ -44,6 +44,7 @@ p {
   line-height: 1.5;
   letter-spacing: 2px;
   color: white;
+  word-spacing: 4px;
 
   @media (min-width:800px) {
     font-variant: var(--desktop-font-size);
@@ -228,13 +229,14 @@ padding: 10px;
 }
 
 .hr {
-  @include flexCenter;
-  height: 100%;
+   margin: auto;
+   transform: rotate(90deg); 
+   width: 3em;
+   opacity: 0.4; 
 }
 
 
 /* --------------------------- Vision Section------------------- */
-
 
 
 .visionSection {
@@ -245,8 +247,8 @@ padding: 10px;
 .visionContainers {
   display: flex;
   flex-direction: column-reverse;
-  gap: 2em;
   padding-bottom: 4em;
+  gap: 3em;
 }
 
 .visionInfoContainer {
@@ -279,6 +281,7 @@ padding: 10px;
 
 
 @media only screen and (min-width: 768px) {
+
   .top-bar {
     display: none;
 }
@@ -307,7 +310,6 @@ padding: 10px;
   z-index: 10;
  }
 
- 
   #slideshowSection {
   padding-top: 0;
  }
@@ -321,6 +323,10 @@ padding: 10px;
  .visionSection {
   max-width: 1400px;
   margin: auto;
+  
+  .hr {
+    display: none;
+  }
  }
 
  .visionContainers {
@@ -344,55 +350,31 @@ padding: 10px;
  width: 50%;
  text-align: center;
 }
+
 #reverse {
   flex-direction: row-reverse;
-
 }
 
 #ourProgramme {
- width: 90%;
- padding: 2em;
+  width: 90%;
+  padding-block: 4em;
 }
 
- h2 {
-  font-size: 1.2em;
-}
-
- /*------------------------------------ Vision Container -----------------------------------------*/
-
+ /*------------------------------------ PRODUCTS SECTION -----------------------------------------*/
 
 .productsSection {
    grid-template-columns: repeat(2, 1fr);
 }
 
 .productsContainer {
-   gap: 1em;
+  gap: 3.5em;
 }
-
- .hr{display: none;}
-
-
-
-
 }
 
 @media only screen and (min-width: 1024px) {
 
 .productsHeadings {
     font-size: 1.4em;
-}
-
-.productsParagraph {
-    font-size: 1.1;
-}
-
-.productsContainer .productsPhotoContainer {
-    width: 20em;
-    height: 20em;
-
-    img {
-         height: 100%;
-    }
 }
 }
 
@@ -402,6 +384,10 @@ padding: 10px;
   grid-gap: 2em;
   grid-row-gap: 8em;
 }
+
+.productsContainer {
+  gap: 2em; 
+ }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -414,9 +400,9 @@ padding: 10px;
   }
 }
 
-.productsPhotoContainer {
-  width: 18em; 
-}
+.productsContainer {
+  gap: 4em; 
+ }
 
 }
  

@@ -99,6 +99,7 @@
 
 .bakerySection img {
   width: 100%;
+  height: 100%;
 }
 
 .productsSection, .dogTreatsSection {
@@ -107,16 +108,14 @@
   grid-row-gap: 7em;
   align-items: baseline;
 }
-.productsSection hr, .dogTreatsSection hr {
-  display: none;
-}
 
 .productsContainer {
   display: grid;
   text-align: center;
-  grid-gap: 1em;
+  grid-gap: 3em;
   max-width: 20em;
   margin: 0 auto;
+  transition: 1s ease-in-out;
 }
 
 .productsPhotoContainer {
@@ -132,7 +131,7 @@
 
 .productsHeadings {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,6 +295,7 @@ p {
   line-height: 1.5;
   letter-spacing: 2px;
   color: white;
+  word-spacing: 4px;
 }
 @media (min-width: 800px) {
   p {
@@ -468,10 +468,10 @@ p {
 }
 
 .hr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  margin: auto;
+  transform: rotate(90deg);
+  width: 3em;
+  opacity: 0.4;
 }
 
 /* --------------------------- Vision Section------------------- */
@@ -483,8 +483,8 @@ p {
 .visionContainers {
   display: flex;
   flex-direction: column-reverse;
-  gap: 2em;
   padding-bottom: 4em;
+  gap: 3em;
 }
 
 .visionInfoContainer {
@@ -552,6 +552,9 @@ p {
     max-width: 1400px;
     margin: auto;
   }
+  .visionSection .hr {
+    display: none;
+  }
   .visionContainers {
     flex-direction: row;
     padding-block: 0;
@@ -575,35 +578,19 @@ p {
   }
   #ourProgramme {
     width: 90%;
-    padding: 2em;
+    padding-block: 4em;
   }
-  h2 {
-    font-size: 1.2em;
-  }
-  /*------------------------------------ Vision Container -----------------------------------------*/
+  /*------------------------------------ PRODUCTS SECTION -----------------------------------------*/
   .productsSection {
     grid-template-columns: repeat(2, 1fr);
   }
   .productsContainer {
-    gap: 1em;
-  }
-  .hr {
-    display: none;
+    gap: 3.5em;
   }
 }
 @media only screen and (min-width: 1024px) {
   .productsHeadings {
     font-size: 1.4em;
-  }
-  .productsParagraph {
-    font-size: 1.1;
-  }
-  .productsContainer .productsPhotoContainer {
-    width: 20em;
-    height: 20em;
-  }
-  .productsContainer .productsPhotoContainer img {
-    height: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -611,6 +598,9 @@ p {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
     grid-row-gap: 8em;
+  }
+  .productsContainer {
+    gap: 2em;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -620,7 +610,7 @@ p {
   .slideshow-container img {
     height: 40em;
   }
-  .productsPhotoContainer {
-    width: 18em;
+  .productsContainer {
+    gap: 4em;
   }
 }/*# sourceMappingURL=style.css.map */
