@@ -97,11 +97,6 @@
   left: 0;
 }
 
-.bakerySection {
-  padding-top: 6em;
-  gap: 2em;
-}
-
 .bakerySection img {
   width: 100%;
   height: 15em;
@@ -111,6 +106,7 @@
   display: grid;
   grid-column-gap: 4em;
   grid-row-gap: 7em;
+  align-items: baseline;
 }
 .productsSection hr, .dogTreatsSection hr {
   display: none;
@@ -121,7 +117,7 @@
   text-align: center;
   grid-gap: 2em;
   max-width: 20em;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .productsPhotoContainer {
@@ -148,55 +144,6 @@
   padding-bottom: 4em;
 }
 
-@media only screen and (min-width: 760px) {
-  .top-bar {
-    display: none;
-  }
-  .sub-heading {
-    font-size: 1vw;
-  }
-  h2 {
-    font-size: 1.2em;
-  }
-  .productsSection {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5em;
-    grid-row-gap: 5em;
-  }
-  .productsContainer {
-    gap: 1.5em;
-  }
-  .dogTreatsSection {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .productsHeadings {
-    font-size: 1.4em;
-  }
-  .productsParagraph {
-    font-size: 1.1;
-  }
-  .productsContainer .productsPhotoContainer {
-    width: 20em;
-    height: 20em;
-  }
-  .productsContainer .productsPhotoContainer img {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .productsSection {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    grid-row-gap: 2em;
-    display: -ms-inline-grid;
-  }
-  .productsPhotoContainer {
-    width: 18em;
-  }
-}
 .infoBox {
   display: flex;
   flex-direction: column;
@@ -467,25 +414,22 @@ p {
   text-align: center;
   font-size: clamp(2em, 4vw, 3em);
   text-transform: uppercase;
-  padding-bottom: 1em;
   color: #fcd059;
+  padding-block: 3em;
 }
 
 /* ------------------------------------- SLOGAN ----------------------------- */
 .slogan-container {
   text-align: center;
-  padding-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  width: 100%;
 }
 
 #slogan {
   font-size: clamp(1em, 3vw, 1.5em);
   color: #fcd059;
   letter-spacing: 4px;
-  padding: 10px;
-}
-
-.hr-container {
-  padding-block: 3em;
 }
 
 /* --------------------------- Contact Info Footer ------------------- */
@@ -530,22 +474,8 @@ p {
   align-items: center;
   height: 100%;
 }
-@media (min-width: 800px) {
-  .hr .hr {
-    display: none;
-  }
-}
 
 /* --------------------------- Vision Section------------------- */
-@media (min-width: 800px) {
-  #reverse {
-    flex-direction: row-reverse;
-  }
-  #reverse .hr {
-    display: none;
-  }
-}
-
 .visionSection {
   display: grid;
   flex-direction: column;
@@ -588,12 +518,19 @@ p {
   flex-direction: row;
 }
 
-@media only screen and (min-width: 800px) {
-  .hamburgerBox {
+@media only screen and (min-width: 768px) {
+  .top-bar {
     display: none;
   }
-  #slideshowSection {
-    padding-top: 0;
+  .sub-heading {
+    font-size: 1vw;
+  }
+  .dogTreatsSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
+  }
+  .hamburgerBox {
+    display: none;
   }
   .navListExtended {
     display: flex;
@@ -604,6 +541,9 @@ p {
     position: -webkit-sticky;
     top: 0em;
     z-index: 10;
+  }
+  #slideshowSection {
+    padding-top: 0;
   }
   .slideshow-container {
     height: 25em;
@@ -631,16 +571,57 @@ p {
     width: 50%;
     text-align: center;
   }
+  #reverse {
+    flex-direction: row-reverse;
+  }
   #ourProgramme {
     width: 90%;
     padding: 2em;
   }
+  h2 {
+    font-size: 1.2em;
+  }
+  /*------------------------------------ Vision Container -----------------------------------------*/
+  .productsSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .productsContainer {
+    gap: 1em;
+  }
+  .hr {
+    display: none;
+  }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1024px) {
+  .productsHeadings {
+    font-size: 1.4em;
+  }
+  .productsParagraph {
+    font-size: 1.1;
+  }
+  .productsContainer .productsPhotoContainer {
+    width: 20em;
+    height: 20em;
+  }
+  .productsContainer .productsPhotoContainer img {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .productsSection {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    grid-row-gap: 8em;
+  }
+}
+@media only screen and (min-width: 1440px) {
   .slideshow-container {
     height: 40em;
   }
   .slideshow-container img {
     height: 40em;
+  }
+  .productsPhotoContainer {
+    width: 18em;
   }
 }/*# sourceMappingURL=style.css.map */

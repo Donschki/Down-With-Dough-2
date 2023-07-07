@@ -24,7 +24,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-
 }
 
 body {
@@ -166,8 +165,8 @@ p {
   text-align: center;
   font-size: clamp(2em, 4vw, 3em);
   text-transform: uppercase;
-  padding-bottom: 1em;
   color: #fcd059;
+  padding-block: 3em;
 }
 
 
@@ -176,20 +175,16 @@ p {
 
 .slogan-container {
   text-align: center;
-  padding-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  width: 100%;
 }
 
 #slogan {
   font-size: clamp(1em, 3vw, 1.5em);
   color: #fcd059;
   letter-spacing: 4px;
-  padding: 10px;
-
 }
-
-.hr-container {
-  padding-block: 3em;
- }
 
 
 /* --------------------------- Contact Info Footer ------------------- */
@@ -232,26 +227,15 @@ padding: 10px;
   font-size: 0.5em;
 }
 
-
 .hr {
   @include flexCenter;
   height: 100%;
-
-  @media (min-width:800px){ 
-    .hr{display: none;}
-  }
 }
 
 
 /* --------------------------- Vision Section------------------- */
 
-#reverse {
 
-  @media (min-width:800px){ 
-    .hr{display: none;}
-    flex-direction: row-reverse;
-  }
-}
 
 .visionSection {
   display: grid;
@@ -293,74 +277,136 @@ padding: 10px;
  flex-direction: row;
 }
 
-@media only screen and (min-width: 800px) {
+
+@media only screen and (min-width: 768px) {
+  .top-bar {
+    display: none;
+}
+
+.sub-heading {
+    font-size: 1vw;
+}
+
+.dogTreatsSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0;
+}
 
  .hamburgerBox {
      display: none;
  }
+
+ .navListExtended {
+  display: flex;
+  justify-content: space-evenly;
+  background:#3b4f8879;
+  list-style: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0em;
+  z-index: 10;
+ }
+
  
   #slideshowSection {
   padding-top: 0;
  }
 
- .navListExtended {
-   display: flex;
-   justify-content: space-evenly;
-   background:#3b4f8879;
-   list-style: none;
-   position: sticky;
-   position: -webkit-sticky;
-   top: 0em;
-   z-index: 10;
-  }
-
  .slideshow-container {
-   height: 25em;
+  height: 25em;
+}
+
+ /*------------------------------------ Vision Container -----------------------------------------*/
+
+ .visionSection {
+  max-width: 1400px;
+  margin: auto;
  }
 
+ .visionContainers {
+  flex-direction: row;
+  padding-block: 0;
+  gap: 0;
+ }
+
+ .visionInfoContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+ }
+
+ .visionParagraphContainer {
+   padding: 0 1em;
+ }
+
+.visionInfoContainer, .visionPhotoContainer {
+ width: 50%;
+ text-align: center;
+}
+#reverse {
+  flex-direction: row-reverse;
+
+}
+
+#ourProgramme {
+ width: 90%;
+ padding: 2em;
+}
+
+ h2 {
+  font-size: 1.2em;
+}
 
  /*------------------------------------ Vision Container -----------------------------------------*/
 
 
- .visionSection {
-   max-width: 1400px;
-   margin: auto;
-  }
-
-  .visionContainers {
-   flex-direction: row;
-   padding-block: 0;
-   gap: 0;
-  }
-
-  .visionInfoContainer{
-   display: flex;
-   flex-direction: column;
-   padding: 0;
-   align-items: center;
-  }
-
-  .visionParagraphContainer {
-    padding: 0 1em;
-  }
-
-.visionInfoContainer, .visionPhotoContainer {
-  width: 50%;
-  text-align: center;
+.productsSection {
+   grid-template-columns: repeat(2, 1fr);
 }
 
-#ourProgramme {
-  width: 90%;
-  padding: 2em;
+.productsContainer {
+   gap: 1em;
 }
 
+ .hr{display: none;}
+
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+
+  .productsHeadings {
+    font-size: 1.4em;
+}
+
+.productsParagraph {
+    font-size: 1.1;
+}
+
+.productsContainer .productsPhotoContainer {
+    width: 20em;
+    height: 20em;
+
+    img {
+         height: 100%;
+    }
+}
 }
 
 @media only screen and (min-width: 1200px) {
-
+.productsSection {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  grid-row-gap: 8em;
 }
- 
-@media only screen and (min-width: 1500px) {
+}
+
+@media only screen and (min-width: 1440px) {
 
 .slideshow-container {
   height: 40em;
@@ -368,6 +414,10 @@ padding: 10px;
   img {
     height: 40em;
   }
+}
+
+.productsPhotoContainer {
+  width: 18em; 
 }
 
 }
