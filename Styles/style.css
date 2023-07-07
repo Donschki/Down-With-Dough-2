@@ -85,11 +85,9 @@
 
 .sub-heading {
   justify-content: center;
-  padding: 5px;
   color: #fcd059;
   text-align: center;
-  font-size: 0.6em;
-  letter-spacing: 2px;
+  font-size: 12px;
   background-color: rgba(32, 42, 69, 0.2666666667);
   width: 100%;
   position: fixed;
@@ -518,11 +516,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .heading {
+    word-spacing: 5px;
+    width: 69%;
+    margin: auto;
+  }
   .top-bar {
     display: none;
-  }
-  .sub-heading {
-    font-size: 1vw;
   }
   .dogTreatsSection {
     grid-template-columns: repeat(2, 1fr);
@@ -592,6 +592,9 @@ p {
   .productsHeadings {
     font-size: 1.4em;
   }
+  .sub-heading {
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .productsSection {
@@ -600,10 +603,13 @@ p {
     grid-row-gap: 8em;
   }
   .productsContainer {
-    gap: 2em;
+    gap: 3em;
   }
 }
 @media only screen and (min-width: 1440px) {
+  p {
+    font-size: var(--desktop-font-size);
+  }
   .slideshow-container {
     height: 40em;
   }
@@ -612,5 +618,8 @@ p {
   }
   .productsContainer {
     gap: 4em;
+  }
+  .productsHeadings {
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */

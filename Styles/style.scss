@@ -282,12 +282,14 @@ padding: 10px;
 
 @media only screen and (min-width: 768px) {
 
-  .top-bar {
-    display: none;
+.heading {
+  word-spacing: 5px;
+    width: 69%;
+    margin: auto;
 }
 
-.sub-heading {
-    font-size: 1vw;
+  .top-bar {
+    display: none;
 }
 
 .dogTreatsSection {
@@ -376,9 +378,16 @@ padding: 10px;
 .productsHeadings {
     font-size: 1.4em;
 }
+
+.sub-heading {
+  font-size: 1em;
+}
 }
 
 @media only screen and (min-width: 1200px) {
+
+
+
 .productsSection {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
@@ -386,11 +395,15 @@ padding: 10px;
 }
 
 .productsContainer {
-  gap: 2em; 
+  gap: 3em; 
  }
 }
 
 @media only screen and (min-width: 1440px) {
+
+p {
+  font-size: var(--desktop-font-size);
+}
 
 .slideshow-container {
   height: 40em;
@@ -404,6 +417,9 @@ padding: 10px;
   gap: 4em; 
  }
 
+ .productsHeadings {
+  font-size: 1.5em;
+ }
 }
  
 
