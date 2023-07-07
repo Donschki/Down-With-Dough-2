@@ -15,7 +15,6 @@
 form {
     display: flex;
     flex-direction: column;
-    padding: 0 1em;
 }
 
 .contactMap {
@@ -38,9 +37,21 @@ a {
 
 }
 
+span {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    display: inline-flex;
+    color: var(--heading-color);
+    
+    ion-icon {
+        font-size: 3em;
+        margin: auto;
+        color: var(--heading-color);
+    }
+}
+
 input {
     background:#3b4f8879;
-    color: white;
     border: none;
     padding: 1em;
 }
@@ -53,79 +64,67 @@ textarea {
     color: white;
 }
 
-span {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    display: inline-flex;
-
-    
-    ion-icon {
-        font-size: 3em;
-    }
-}
-
 .contactInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+    display: grid;
+    padding: 3em;
 }
 
 .contactIcons {
     display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 50%;
-    margin: auto;
+    align-items: baseline;
     padding-block: 2em;
-
-    a {
-        margin: auto;
-    }
+    gap: 1em;
+    align-items: center;
+    width: 100%;
 }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 768px) {
+
+.contactSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3em;
+}
 
 .contactInfo {
     display: flex;
-    width: 100%;
-    height: 10em;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    flex-direction: column;
+}
+
+.contactIcons {
+    margin: auto;
+}
+
+.contactMap  {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 1024px) {
 
 .formInner {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
 }
 
-.contactHeading {
-    padding-block: 0.5em;
-}
-
 .contactInfo {
     flex-direction: row;
+    padding: 2em;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
 
 }
 
-}
-
-@media only screen and (min-width: 1000px){
-
-
-
-}
-
-@media only screen and (min-width: 1200px){
-#contactMain {
-    padding: 0 3em;
-}
-
-}
-
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1600px) {
+    
     .contactForm {
         width: 1700px;
         height: 80vh;

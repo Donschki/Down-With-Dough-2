@@ -12,8 +12,9 @@
 :root {
   --mobile-font-size: 16px;
   --desktop-font-size: 20px;
-  --h1-font-color: #fcd059;
+  --heading-color: #fcd059;
   --gap: 2em;
+
 }
 
 html {
@@ -32,7 +33,7 @@ body {
 }
 
 h1, h2 {
-  color: var(--h1-font-color);
+  color: var(--heading-color);
 }
 
 h1 {
@@ -45,10 +46,6 @@ p {
   letter-spacing: 2px;
   color: white;
   word-spacing: 4px;
-
-  @media (min-width:800px) {
-    font-variant: var(--desktop-font-size);
-  }
 }
 
 .d-grid {
@@ -164,7 +161,7 @@ p {
 
 .heading {
   text-align: center;
-  font-size: clamp(2em, 4vw, 3em);
+  font-size: clamp(1.4em, 4vw, 2em);
   text-transform: uppercase;
   color: #fcd059;
   padding-block: 3em;
@@ -386,8 +383,6 @@ padding: 10px;
 
 @media only screen and (min-width: 1200px) {
 
-
-
 .productsSection {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
@@ -395,8 +390,8 @@ padding: 10px;
 }
 
 .productsContainer {
-  gap: 3em; 
- }
+  gap: 3em;
+}
 }
 
 @media only screen and (min-width: 1440px) {
@@ -414,12 +409,17 @@ p {
 }
 
 .productsContainer {
-  gap: 2.5em; 
+  gap: 4em; 
  }
 
  .productsHeadings {
-  font-size: 1.5em;
+  font-size: 1.4em;
  }
+ 
+.productsPhotoContainer img {
+  width: 110%;
+  
+}
 }
  
 
