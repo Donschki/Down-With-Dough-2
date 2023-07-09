@@ -37,6 +37,9 @@
      max-width: 20em;
      margin: 0 auto;
      transition: all 0.5s ease-in-out;
+
+    background: rgba(59, 79, 136, 0.4745098039);
+
 }
 
 .productsPhotoContainer img {
@@ -53,6 +56,7 @@
      font-size: 1.4em;
      letter-spacing: 3px;
      @include flexCenter;
+     color: var(--heading-color);
 }
 
 .dogTreatsSection {
