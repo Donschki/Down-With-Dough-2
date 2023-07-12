@@ -152,10 +152,6 @@
   left: 0;
 }
 
-.bakerySection img {
-  width: 100%;
-}
-
 .productsSection, .dogTreatsSection {
   display: grid;
   grid-column-gap: 4em;
@@ -173,7 +169,7 @@
 }
 
 .productsPhotoContainer img {
-  width: 90%;
+  width: 100%;
   transition: all 0.8s ease-in-out;
 }
 
@@ -182,12 +178,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4em;
+  gap: 3em;
 }
 
 .productsHeadings {
   text-transform: uppercase;
-  font-size: 1.4em;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
@@ -233,7 +228,6 @@ form {
 .contactIcons {
   display: flex;
   padding-block: 2em;
-  gap: 1em;
   align-items: center;
   width: 100%;
 }
@@ -255,8 +249,7 @@ a {
   text-align: center;
   text-decoration: none;
 }
-
-input {
+.inputBox input {
   background: rgba(59, 79, 136, 0.4745098039);
   border: none;
   padding: 1em;
@@ -268,7 +261,7 @@ span {
   text-transform: uppercase;
   display: inline-flex;
   color: var(--heading-color);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 span ion-icon {
   font-size: 2.5em;
@@ -285,11 +278,19 @@ textarea {
 }
 
 .submit {
-  width: 100%;
+  width: 25%;
+  margin: auto;
   text-align: center;
+  background: rgba(59, 79, 136, 0.4745098039);
+  border: none;
+  cursor: pointer;
+  padding: 1em;
+  color: var(--heading-color);
 }
-.submit input {
-  width: 50%;
+
+.submit:hover {
+  background-color: var(--background-color-dark);
+  transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -297,7 +298,6 @@ textarea {
     padding-top: 1em;
   }
   .contactSection {
-    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1em;
   }
   .contactInfo {
@@ -306,9 +306,12 @@ textarea {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     flex-direction: column;
+    padding: 0;
   }
   .contactIcons {
     margin: auto;
+    flex-direction: column;
+    padding-block: 0;
   }
   .contactMap {
     grid-row-start: 3;
@@ -320,10 +323,6 @@ textarea {
   .formInner {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-  }
-  .contactInfo {
-    flex-direction: column;
-    margin: auto;
   }
   .textArea {
     grid-column-start: 1;
@@ -340,6 +339,8 @@ textarea {
   --desktop-font-size: 20px;
   --heading-color: #fcd059;
   --gap: 2em;
+  --background-color-dark: #202a45;
+  --background-color-light: #3b4f8879;
 }
 
 html {
@@ -353,7 +354,7 @@ header {
 }
 
 body {
-  background-color: #202a45;
+  background-color: var(--background-color-dark);
   font-family: "Abel", sans-serif;
 }
 
@@ -408,7 +409,7 @@ p {
 
 .heading {
   text-align: center;
-  font-size: clamp(1.4em, 4vw, 2em);
+  font-size: clamp(1.4em, 4vw, 2.5em);
   text-transform: uppercase;
   color: #fcd059;
   padding-top: 5em;
@@ -546,6 +547,9 @@ p {
     height: 25em;
   }
   /*------------------------------------ Vision Container -----------------------------------------*/
+  .heading {
+    padding-block: 2em;
+  }
   .visionSection {
     max-width: 1400px;
     margin: auto;
@@ -588,7 +592,7 @@ p {
 }
 @media only screen and (min-width: 1024px) {
   .productsHeadings {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .sub-heading {
     font-size: 12px;
@@ -602,7 +606,10 @@ p {
     grid-row-gap: 8em;
   }
   .productsContainer {
-    gap: 3em;
+    gap: 2em;
+  }
+  .productsContainer:nth-child(7) {
+    grid-column-start: 2;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -617,11 +624,5 @@ p {
   }
   .productsContainer {
     gap: 4em;
-  }
-  .productsHeadings {
-    font-size: 1.4em;
-  }
-  .productsPhotoContainer img {
-    width: 110%;
   }
 }/*# sourceMappingURL=style.css.map */

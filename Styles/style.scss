@@ -14,6 +14,8 @@
   --desktop-font-size: 20px;
   --heading-color: #fcd059;
   --gap: 2em;
+  --background-color-dark: #202a45;
+  --background-color-light: #3b4f8879;
 
 }
 
@@ -28,7 +30,7 @@ header {
 }
 
 body {
-    background-color: #202a45;
+    background-color: var(--background-color-dark);
     font-family: 'Abel', sans-serif;
 }
 
@@ -83,7 +85,7 @@ p {
 
 .heading {
   text-align: center;
-  font-size: clamp(1.4em, 4vw, 2em);
+  font-size: clamp(1.4em, 4vw, 2.5em);
   text-transform: uppercase;
   color: #fcd059;
   padding-top: 5em;
@@ -238,7 +240,9 @@ padding: 10px;
 }
 
  /*------------------------------------ Vision Container -----------------------------------------*/
-
+.heading {
+  padding-block: 2em;
+}
 
 .visionSection {
   max-width: 1400px;
@@ -290,12 +294,13 @@ padding: 10px;
 .productsContainer {
   gap: 3.5em;
 }
+
 }
 
 @media only screen and (min-width: 1024px) {
 
 .productsHeadings {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .sub-heading {
@@ -313,7 +318,11 @@ padding: 10px;
 }
 
 .productsContainer {
-  gap: 3em;
+  gap: 2em;
+}
+
+.productsContainer:nth-child(7) {
+  grid-column-start: 2 ;
 }
 }
 
@@ -334,15 +343,7 @@ p {
 .productsContainer {
   gap: 4em; 
  }
-
- .productsHeadings {
-  font-size: 1.4em;
- }
  
-.productsPhotoContainer img {
-  width: 110%;
-  
-}
 }
  
 

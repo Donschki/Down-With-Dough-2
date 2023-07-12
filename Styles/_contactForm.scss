@@ -33,7 +33,6 @@ form {
 .contactIcons {
     display: flex;
     padding-block: 2em;
-    gap: 1em;
     align-items: center;
     width: 100%;
 }
@@ -57,21 +56,23 @@ a {
      flex-direction: column;
      text-align: center;
      text-decoration: none;
+
+     input {
+        background:#3b4f8879;
+        border: none;
+        padding: 1em;
+        color: var(--heading-color);
+    }
 }
 
-input {
-    background:#3b4f8879;
-    border: none;
-    padding: 1em;
-    color: var(--heading-color);
-}
+
 
 span {
     font-size: 1.2em;
     text-transform: uppercase;
     display: inline-flex;
     color: var(--heading-color);
-        letter-spacing: 5px;
+        letter-spacing: 3px;
 
     ion-icon {
         font-size: 2.5em;
@@ -89,24 +90,29 @@ textarea {
 }
 
 .submit {
-    width: 100%;
+    width: 25%;
+    margin: auto;
     text-align: center;
-
-    input {
-        width: 50%;
-    }
+    background:#3b4f8879;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    color: var(--heading-color);
 }
 
+.submit:hover {
+    background-color: var(--background-color-dark);
+    transition: all 0.5s ease-in-out;
+}
+
+
 @media only screen and (min-width: 768px) {
-
-
 
 .contactHeading {
     padding-top: 1em;
 }
 
 .contactSection {
-    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1em;
 }
 
@@ -116,10 +122,13 @@ textarea {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     flex-direction: column;
+    padding: 0;
 }
 
 .contactIcons {
     margin: auto;
+    flex-direction: column;
+    padding-block: 0;
 }
 
 .contactMap  {
@@ -134,11 +143,6 @@ textarea {
 .formInner {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-}
-
-.contactInfo {
-    flex-direction: column;
-    margin: auto;
 }
 
 .textArea {
