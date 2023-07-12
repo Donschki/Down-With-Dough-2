@@ -20,7 +20,6 @@
 
 .bakerySection img {
      width: 100%;
-     height: 100%;
 }
 
 .productsSection, .dogTreatsSection {
@@ -37,18 +36,17 @@
      max-width: 20em;
      margin: 0 auto;
      transition: all 0.5s ease-in-out;
-
-    background: rgba(59, 79, 136, 0.4745098039);
-
 }
 
 .productsPhotoContainer img {
-     width: 100%; height: 100%;
+     width: 90%; 
      transition: all 0.8s ease-in-out;
 }
 
 .productsParagraph {
      @include flexCenter;
+     flex-direction: column;
+     gap: 4em
 }
 
 .productsHeadings {

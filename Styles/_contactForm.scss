@@ -13,13 +13,6 @@
     text-transform: uppercase;
 }
 
-.contactHeading {
-    color: #fcd059;
-    text-align: center;
-    font-size: clamp(1.4em, 4vw, 2em);
-    text-transform: uppercase;
-    padding-top: 3em;
-  }
 
 form {
     display: grid;
@@ -27,9 +20,14 @@ form {
     padding: 0 0.5em;
 }
 
+.formInner {
+    gap: 1em;
+    padding: 1em;
+}
+
 .contactInfo {
-    margin: auto;
     display: grid;
+    padding: 2em;
 }
 
 .contactIcons {
@@ -59,8 +57,13 @@ a {
      flex-direction: column;
      text-align: center;
      text-decoration: none;
-    margin: 0.5em 0;
+}
 
+input {
+    background:#3b4f8879;
+    border: none;
+    padding: 1em;
+    color: var(--heading-color);
 }
 
 span {
@@ -77,13 +80,6 @@ span {
     }
 }
 
-input {
-    background:#3b4f8879;
-    border: none;
-    padding: 1em;
-    color: var(--heading-color);
-}
-
 textarea {
     background:#3b4f8879;
     border-style: none;
@@ -92,7 +88,18 @@ textarea {
     color: white;
 }
 
+.submit {
+    width: 100%;
+    text-align: center;
+
+    input {
+        width: 50%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+
+
 
 .contactHeading {
     padding-top: 1em;
@@ -102,7 +109,6 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1em;
 }
-
 
 .contactInfo {
     display: flex;
@@ -125,7 +131,6 @@ textarea {
 
 @media only screen and (min-width: 1024px) {
 
-
 .formInner {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
@@ -133,6 +138,12 @@ textarea {
 
 .contactInfo {
     flex-direction: column;
+    margin: auto;
+}
+
+.textArea {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 }
 
