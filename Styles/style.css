@@ -583,6 +583,9 @@ p {
     padding-block: 4em;
   }
   /*------------------------------------ PRODUCTS SECTION -----------------------------------------*/
+  .bakerySection {
+    padding-top: 5em;
+  }
   .productsSection {
     grid-template-columns: repeat(2, 1fr);
   }
